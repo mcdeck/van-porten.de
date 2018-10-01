@@ -1,0 +1,129 @@
+---
+layout: post
+title: Pilight
+date: 2016-03-12 08:30:06.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- electronics
+- home automation
+- pilight
+meta:
+  _publicize_twitter_user: "@mcdeck"
+  _wpcom_is_markdown: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523342095;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:143;}i:1;a:1:{s:2:"id";i:475;}i:2;a:1:{s:2:"id";i:699;}}}}
+  _edit_last: '2'
+  _yoast_wpseo_primary_category: '1'
+  _wpas_done_all: '1'
+  dsq_thread_id: '4654860743'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>I recently read an article in the German computer magazine <a href="http://www.heise.de/ct" target="_blank"><span></span><span></span>c't</a> about <a href="http://www.heise.de/ct/ausgabe/2016-2-Funksteckdosen-und-mehr-mit-dem-Raspi-steuern-3057510.html" target="_blank"><span></span><span></span>controlling simple plugin switches via pilight</a>. <a href="https://www.pilight.org/" target="_blank"><span></span><span></span>Pilight </a><span></span><span></span>is a small piece of software with a built in web-based GUI that can <a href="https://wiki.pilight.org/doku.php/protocols" target="_blank">control a variety of devices</a><span></span><span></span>. This intrigued me quite a bit since I still had a cheap Brennstuhl RCS 1000 N comfort lying around here, which is exactly the switch set used in the article and is apparently supported quite well by pilight.</p>
+<p>So, of course, I sat down and ordered a <a href="https://www.pilight.org/shop/#" target="_blank"><span></span><span></span>GPIO Full Kit from the pilight shop</a> as well as a <a href="http://www.amazon.de/gp/product/B00L3I91TO" target="_blank"><span></span><span></span>DHT22/AMS2302 temperature and humidity sensor from Amazon</a>, plus <a href="http://www.amazon.de/gp/product/B00DGNZ9G8" target="_blank"><span></span>some resistors, cables and my very first bread board</a>.</p>
+<p><!--more--></p>
+<p>The net result of the assembly, <a href="https://manual.pilight.org/en/electronics-wiring" target="_blank">following the instructions for wiring up the sender/receiver</a> and <a href="http://www.home-automation-community.com/temperature-and-humidity-from-am2302-dht22-sensor-displayed-as-chart/" target="_blank"><span></span><span></span>these instruction for wiring up the AMs2302</a><span></span>, looks a bit messy, but works splendidly :)</p>
+<p>[caption id="attachment_594" align="aligncenter" width="300"]<a href="https://www.van-porten.de/wp-content/uploads/2016/03/2016-03-11-23.06.36.jpg"><img class="wp-image-594 size-medium" src="{{ site.baseurl }}/assets/2016-03-11-23.06.36-300x225.jpg" alt="RaspberryPi wired to breadboard" width="300" height="225" /></a> <span></span><span></span>Raspberry PI (old B+ for testing) wired up to 433Mhz sender/receiver and AMS2303 temperature/humidity sensor.[/caption]</p>
+<p>Note that I intentionally left away the wiring for firmware updates because I wanted it to be as simple as possible for this test setup.</p>
+<p>After finishing the hardware setup I went at the software part, which is quite straight forward.</p>
+<pre class="t m0 x5 h6 y17 ff2 fs3 fc2 sc0 ls0 ws2">sudo su
+echo "deb http://apt.pilight.org/ stable main" &gt; /etc/apt/sources.list.d/pilight.list
+wget -O - http://apt.pilight.org/pilight.key | apt-key add -
+apt-get update
+apt-get install pilight
+service pilight start</pre>
+<p class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0"><span></span><span></span>That is it, basically. You can now reach (an empty) pilight GUI on <strong><em>http://&lt;yourhost&gt;:5001.</em></strong></p>
+<p class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0"><span></span>Figuring out the configuration you need is also fairly trivial. Simply start <em><strong><span></span>pilight-receive</strong></em> as root and push the button on your remote, if you have one (my RCS 1000 N set came with one).</p>
+<pre class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0">sudo su
+pilight-receive</pre>
+<p class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0"><span></span><span></span>You will see whatever is sent by the remote in your console. For my Brennstuhl switches I saw the following piece of code - next to some others which we do not need to care about too much now. According to the c't article they are backwards compatibility measure.</p>
+<pre class="lang:js decode:true t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0">{
+ "message": {
+   "systemcode": 17,
+   "unitcode": 2,
+   "state": "on"
+ },
+ "origin": "receiver",
+ "protocol": "elro_800_switch",
+ "uuid": "0000-74-da-38-0091fa",
+ "repeats": 1
+}</pre>
+<p class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0">The interesting parts are:</p>
+<ul>
+<li class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0"><span></span><span></span>protocol: we need this to be able to tell pilight how to talk to devices</li>
+<li class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0"><span></span><span></span>systemcode: to tell pilight the system code</li>
+<li class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0"><span></span><span></span>unitcode: so pilight knows which device to talk to</li>
+</ul>
+<p><span></span>With that information we can now create a config.json (<em><strong><span></span>/etc/pilight/config.json</strong></em><span></span>). The pilight wiki also <a href="https://wiki.pilight.org/doku.php/elro_he_switch_v7_0" target="_blank">explains in some detail</a> how to do this for this kind of switch.</p>
+<pre class="lang:js decode:true">{
+    "devices" : {
+        "Brennstuhl_A" : {
+            "protocol" : ["elro_800_switch"],
+            "id" : [{
+                    "systemcode" : 17,
+                    "unitcode" : 1
+                }
+            ],
+            "state" : "off"
+        },
+        "temperature" : {
+            "protocol" : ["dht22"],
+            "id" : [{
+                    "gpio" : 7
+                }
+            ],
+            "humidity" : 5.2,
+            "temperature" : 1.7,
+            "poll-interval" : 5
+        }
+    },
+    "rules" : {},
+    "gui" : {
+        "Brennstuhl_A" : {
+            "name" : "Brennstuhl A",
+            "group" : ["Test"],
+            "media" : ["all"],
+            "readonly" : 0
+        },
+        "temperature" : {
+            "name" : "Temperature Sensor",
+            "group" : ["Test"],
+            "media" : ["all"]
+        }
+    },
+    "settings" : {
+        "log-level" : 6,
+        "pid-file" : "/var/run/pilight.pid",
+        "log-file" : "/var/log/pilight.log",
+        "webserver-enable" : 1,
+        "webserver-root" : "/usr/local/share/pilight/",
+        "webserver-http-port" : 5001,
+        "webserver-cache" : 1
+    },
+    "hardware" : {
+        "433gpio" : {
+            "sender" : 0,
+            "receiver" : 1
+        }
+    },
+    "registry" : {
+        "pilight" : {
+            "version" : {
+                "current" : "7.0"
+            }
+        }
+    }
+}
+</pre>
+<p><span></span><span></span>Note the settings in devices and in GUI. You will also note that I already added the AM2303 sensor in the same way, using the DHT22 protocol. Also note the GPIO pin. If you follow the instructions I linked to earlier you will also have connected your AM2303 to GPIO pin 7, otherwise adjust as necessary (following the <a href="http://wiringpi.com/pins/" target="_blank"><span></span>wiringpi scheme</a>). Detailed instruction to configure that sensor are <a href="https://wiki.pilight.org/doku.php/dht22_v7_0" target="_blank"><span></span><span></span>found in the pilight wiki</a>.</p>
+<p class="t m0 x5 h6 y18 ff2 fs3 fc2 sc0 ls0"><span></span><span></span>And that's that. Restart pilight and you should be good to go.</p>
+<p>[caption id="attachment_626" align="aligncenter" width="486"]<img class="alignnone size-full wp-image-626" src="{{ site.baseurl }}/assets/2016-03-11-23_12_29-pilight-webgui.png" alt="pilight" width="486" height="351" /> <span></span><span></span>pilight fully configured with all three plugin switches plus AM2303 sensor[/caption]</p>
+<p><span></span><span></span>This now gives me a set of cheap switches I can play with. In a next step I am going to try and see if I can attach pilight to <a href="https://home-assistant.io/" target="_blank">Home Assistant</a>.</p>

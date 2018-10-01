@@ -1,0 +1,48 @@
+---
+layout: post
+title: Generating Faults in Pylons XMLRPCController
+date: 2010-12-20 18:22:00.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- Pylons
+- Python
+- web
+- XML-RPC
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1522087184;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:145;}i:1;a:1:{s:2:"id";i:146;}i:2;a:1:{s:2:"id";i:162;}}}}
+  dsq_thread_id: '1287231243'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>This might seem easy enough, but it took me a while to get it right<br />
+since the Pylons documentation is a bit misleading here, really. It says<br />
+you should use <strong>xmlrpc_fault</strong> from <strong>pylons.controllers.xmlrpc</strong> but<br />
+that's actually not working if you're doing something like:</p>
+<div class="highlight">
+<pre><span class="kn">from</span> <span class="nn">pylons.controllers.xmlrpc</span> <span class="kn">import</span> <span class="n">xmlrpc_fault</span>
+<span class="o">...</span>
+<span class="k">return</span> <span class="n">xmlrpc_fault</span><span class="p">(</span> <span class="mi">101</span><span class="p">,</span> <span class="s">&quot;My Error&quot;</span> <span class="p">)</span>
+</pre>
+</div>
+<p>This will wrap an <strong>xmlrpclib.Fault</strong> into a<br />
+<strong>pylons.controllers.util.Reponse</strong> object which will fail to marshal<br />
+with something like:</p>
+<div class="highlight">
+<pre><span class="ne">TypeError</span><span class="p">:</span> <span class="n">cannot</span> <span class="n">marshal</span>  <span class="n">objects</span>
+</pre>
+</div>
+<p>The correct way to do it is:</p>
+<div class="highlight">
+<pre><span class="kn">import</span> <span class="nn">xmlrpclib...return</span> <span class="nn">xmlrpclib.Fault</span><span class="p">(</span> <span class="mi">101</span><span class="p">,</span> <span class="s">&quot;My Error&quot;</span> <span class="p">)</span>
+</pre>
+</div>

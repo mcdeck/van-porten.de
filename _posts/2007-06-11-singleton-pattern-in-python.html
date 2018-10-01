@@ -1,0 +1,46 @@
+---
+layout: post
+title: Singleton Pattern in Python
+date: 2007-06-11 14:50:00.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1521330729;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:145;}i:1;a:1:{s:2:"id";i:137;}i:2;a:1:{s:2:"id";i:699;}}}}
+  dsq_thread_id: '1373494972'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>I was looking for a smooth way to create singletons in python. Here is a<br />
+metaclass solution that seems to work:</p>
+<div class="highlight">
+<pre><span class="k">class</span> <span class="nc">Singleton</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">bases</span><span class="p">,</span><span class="n">dic</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Singleton</span><span class="p">,</span><span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">bases</span><span class="p">,</span><span class="n">dic</span><span class="p">)</span>
+        <span class="n">cls</span><span class="o">.</span><span class="n">instance</span><span class="o">=</span><span class="bp">None</span>
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">cls</span><span class="o">.</span><span class="n">instance</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">cls</span><span class="o">.</span><span class="n">instance</span><span class="o">=</span><span class="nb">super</span><span class="p">(</span><span class="n">Singleton</span><span class="p">,</span><span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">__call__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">cls</span><span class="o">.</span><span class="n">instance</span>
+</pre>
+</div>
+<p>This was originally posted by Michele Simionato as a comment on a python<br />
+singleton recipe on<br />
+<a class="reference external" href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/102187">http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/102187</a></p>
+<p>You use it like this:</p>
+<div class="highlight">
+<pre><span class="k">class</span> <span class="nc">A</span><span class="p">(</span> <span class="nb">object</span> <span class="p">):</span>
+  <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">Singleton</span>
+  <span class="c"># here goes the rest of you class definiton ..</span>
+</pre>
+</div>
+<p>But you knew that anyway, didn't you? ;)</p>

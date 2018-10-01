@@ -1,0 +1,73 @@
+---
+layout: post
+title: Capture card config for MediaCenter and HVR-1100
+date: 2006-11-12 20:00:00.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _wpas_done_all: '1'
+  _edit_last: '1'
+  _wpas_skip_2057687: '1'
+  _wpas_skip_2057689: '1'
+  _wpas_skip_2057702: '1'
+  _wpas_skip_2057714: '1'
+  _wpas_skip_7715030: '1'
+  _wpas_skip_7715001: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1522588464;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:140;}i:1;a:1:{s:2:"id";i:270;}i:2;a:1:{s:2:"id";i:567;}}}}
+  dsq_thread_id: '1265389482'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>As I am trying to setup my TV tuner for use with MediaPortal right now I had to write a configuration file for my card. Here is what I added to CaptureCardDefinitions.xml. The digital part actually seems to work, the analog however does not until now but I'm working on that one.</p>
+<p>Here is what I've got so far:</p>
+<div class="highlight">
+<pre><span class="nt">&lt;capturecard</span> <span class="na">commercialname=</span><span class="s">"Hauppauge HVR-1100 (67xx) Digital"</span> <span class="na">capturename=</span><span class="s">"Hauppauge WinTV-HVR 713X BDA Digital Capture"</span> <span class="na">devid=</span><span class="s">"ven_1131&amp;amp;dev_7133&amp;amp;subsys_67010070&amp;amp;rev_d1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;capabilities</span> <span class="na">tv=</span><span class="s">"true"</span> <span class="na">radio=</span><span class="s">"true"</span> <span class="na">mpeg2=</span><span class="s">"false"</span> <span class="na">mce=</span><span class="s">"true"</span> <span class="na">sw=</span><span class="s">"true"</span> <span class="na">bda=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;tv&gt;</span>
+      <span class="nt">&lt;interface</span> <span class="na">cat=</span><span class="s">"capture"</span> <span class="na">video=</span><span class="s">"2"</span> <span class="na">audio=</span><span class="s">"3"</span> <span class="na">mpeg2=</span><span class="s">"1"</span> <span class="na">sectionsandtables=</span><span class="s">"5"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;filters&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"networkprovider"</span> <span class="na">name=</span><span class="s">"Microsoft DVBT Network Provider"</span>                        <span class="na">checkdevice=</span><span class="s">"false"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"tunerdevice"</span>     <span class="na">name=</span><span class="s">"Hauppauge WinTV-HVR 713X BDA DVBT Tuner"</span>                <span class="na">checkdevice=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"capture"</span>         <span class="na">name=</span><span class="s">"Hauppauge WinTV-HVR 713X BDA Digital Capture"</span>       <span class="na">checkdevice=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/filters&gt;</span>
+      <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"networkprovider"</span> <span class="na">sourcepin=</span><span class="s">"0"</span> <span class="na">sinkfilter=</span><span class="s">"tunerdevice"</span>   <span class="na">sinkpin=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"tunerdevice"</span>     <span class="na">sourcepin=</span><span class="s">"0"</span> <span class="na">sinkfilter=</span><span class="s">"capture"</span>               <span class="na">sinkpin=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/connections&gt;</span>
+    <span class="nt">&lt;/tv&gt;</span>
+  <span class="nt">&lt;/capturecard&gt;</span>
+
+  <span class="nt">&lt;capturecard</span> <span class="na">commercialname=</span><span class="s">"Hauppauge HVR-1100 (67xx) Analog"</span> <span class="na">capturename=</span><span class="s">"Hauppauge WinTV-HVR 713X BDA Analog Capture"</span> <span class="na">devid=</span><span class="s">"ven_1131&amp;amp;dev_7133&amp;amp;subsys_67010070&amp;amp;rev_d1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;capabilities</span> <span class="na">tv=</span><span class="s">"true"</span> <span class="na">radio=</span><span class="s">"true"</span> <span class="na">mpeg2=</span><span class="s">"false"</span> <span class="na">mce=</span><span class="s">"true"</span> <span class="na">sw=</span><span class="s">"true"</span> <span class="na">bda=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;tv&gt;</span>
+      <span class="nt">&lt;interface</span> <span class="na">cat=</span><span class="s">"encoder"</span> <span class="na">video=</span><span class="s">"0"</span> <span class="na">audio=</span><span class="s">"1"</span> <span class="na">mpeg2=</span><span class="s">""</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;filters&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"tvtuner"</span>  <span class="na">name=</span><span class="s">"Hauppauge WinTV-HVR 713X BDA Analog TV Tuner"</span>                  <span class="na">checkdevice=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"tvaudio"</span>  <span class="na">name=</span><span class="s">"Hauppauge WinTV-HVR 713X BDA Analog TV Audio"</span>          <span class="na">checkdevice=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"crossbar"</span> <span class="na">name=</span><span class="s">"Hauppauge WinTV-HVR 713X BDA Analog Xbar"</span>              <span class="na">checkdevice=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"capture"</span>  <span class="na">name=</span><span class="s">"Hauppauge WinTV-HVR 713X BDA Analog Capture"</span> <span class="na">checkdevice=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"encoder"</span>  <span class="na">name=</span><span class="s">"MainConcept (MCE) MPEG Encoder"</span>        <span class="na">checkdevice=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">cat=</span><span class="s">"mux"</span>  <span class="na">name=</span><span class="s">"MainConcept (MCE) MPEG Encoder"</span>    <span class="na">checkdevice=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/filters&gt;</span>
+      <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"tvtuner"</span>  <span class="na">sourcepin=</span><span class="s">"0"</span>   <span class="na">sinkfilter=</span><span class="s">"crossbar"</span>   <span class="na">sinkpin=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"tvtuner"</span>  <span class="na">sourcepin=</span><span class="s">"1"</span>   <span class="na">sinkfilter=</span><span class="s">"tvaudio"</span>    <span class="na">sinkpin=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"tvaudio"</span>  <span class="na">sourcepin=</span><span class="s">"0"</span>   <span class="na">sinkfilter=</span><span class="s">"crossbar"</span>   <span class="na">sinkpin=</span><span class="s">"3"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"crossbar"</span> <span class="na">sourcepin=</span><span class="s">"0"</span>   <span class="na">sinkfilter=</span><span class="s">"capture"</span>    <span class="na">sinkpin=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"crossbar"</span> <span class="na">sourcepin=</span><span class="s">"1"</span>   <span class="na">sinkfilter=</span><span class="s">"capture"</span>    <span class="na">sinkpin=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"capture"</span>  <span class="na">sourcepin=</span><span class="s">"0"</span>   <span class="na">sinkfilter=</span><span class="s">"encoder"</span>    <span class="na">sinkpin=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;connection</span> <span class="na">sourcefilter=</span><span class="s">"capture"</span>  <span class="na">sourcepin=</span><span class="s">"2"</span>   <span class="na">sinkfilter=</span><span class="s">"encoder"</span>    <span class="na">sinkpin=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/connections&gt;</span>
+    <span class="nt">&lt;/tv&gt;</span>
+  <span class="nt">&lt;/capturecard&gt;</span>
+</pre>
+</div>

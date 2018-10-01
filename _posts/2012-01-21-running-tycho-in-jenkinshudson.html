@@ -1,0 +1,50 @@
+---
+layout: post
+title: Running Tycho in Jenkins/Hudson
+date: 2012-01-21 17:56:00.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- ci
+- eclipse
+- hudson
+- jenkins
+- maven
+- tycho
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523345312;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:139;}i:1;a:1:{s:2:"id";i:141;}i:2;a:1:{s:2:"id";i:142;}}}}
+  dsq_thread_id: '3210307236'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>When I first started running my Tycho/Maven build of my visual editor in<br />
+Jenkins the build would always fail if a single test failed. That was<br />
+mainly because the Maven build would run the surefire test automatically<br />
+but cancel the build if there were any failures in them. In turn, this<br />
+would not keep artifacts from being generated and thus not create a new<br />
+snapshot release. To make matters worse, my tests are not that stable<br />
+yet - running them on Linux sometimes fails for no reason whatsoever,<br />
+leading to yet another broken build.</p>
+<p>Now, this is obviously not what you (or Jenkins, for that matter) would<br />
+expect to happen. What I wanted and what I guess you would normally want<br />
+is for the build to pass but for Jenkins to mark the build as<br />
+&quot;unstable&quot;.</p>
+<p>To acomplish this on the command line, you simply need to tell Maven to<br />
+ignore test failures</p>
+<div class="highlight">
+<pre><span class="go">mvn clean install -Dmaven.test.failure.ignore=true</span>
+</pre>
+</div>
+<p>With Jenkins, this is equally straight forward:</p>
+<p><a class="reference external" href="http://wordpress.van-porten.de/wp-content/uploads/2012/01/vREST-Config-Jenkins-Mozilla-Firefox_2012-01-21_17-45-38.png"><img alt="image0" src="{{ site.baseurl }}/assets/vREST-Config-Jenkins-Mozilla-Firefox_2012-01-21_17-45-38.png" /></a></p>
+<p>Now Jenkins acts nicely and reports unstable builds while still<br />
+producing all artifacts.</p>

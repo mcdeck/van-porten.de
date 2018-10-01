@@ -1,0 +1,50 @@
+---
+layout: post
+title: pilight2mqtt
+date: 2016-05-15 22:43:29.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- mqtt
+- pilight
+- Python
+- smart home
+meta:
+  _edit_last: '2'
+  _yoast_wpseo_focuskw_text_input: mqtt
+  _yoast_wpseo_focuskw: mqtt
+  _yoast_wpseo_linkdex: '54'
+  _yoast_wpseo_primary_category: ''
+  _wpas_done_all: '1'
+  enclosure: |
+    https://www.van-porten.de/wp-content/uploads/2016/05/pilight2mqtt_demo.mp4
+    1717190
+    video/mp4
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523304124;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:475;}i:1;a:1:{s:2:"id";i:699;}i:2;a:1:{s:2:"id";i:438;}}}}
+  dsq_thread_id: '4829650493'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>Some days ago <a href="https://www.van-porten.de/blog/2016/03/pilight/">I blogged about my first experiments with pilight</a> and mentioned that I intended to attach it to <a href="https://home-assistant.io/">Home Assistant</a>. Today I finally found the time to get started and now have a working prototype ready.</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/05/2016-05-15-23_25_54-cmd-python-service.py_.png" rel="attachment wp-att-687"><img class="aligncenter size-medium wp-image-687" src="{{ site.baseurl }}/assets/2016-05-15-23_25_54-cmd-python-service.py_-300x178.png" alt="pilight2mqtt" width="300" height="178" /></a></p>
+<p><!--more--></p>
+<p>I started a new project on GitHub called <a href="https://github.com/mcdeck/pilight2mqtt">pilight2mqtt</a>. What it does is basically talk to the <a href="https://manual.pilight.org/en/api#pf1">pilight API</a> and broker between an <a href="http://mqtt.org/">MQTT</a> channel and <a href="https://www.pilight.org/">pilight</a> that way.</p>
+<p>The following video gives an impression of how it works. I'm using the awesome <a href="https://kamilfb.github.io/mqtt-spy/">mqtt-spy</a> to send MQTT messages, in case you are wondering.</p>
+<p>[video width="916" height="832" mp4="https://www.van-porten.de/wp-content/uploads/2016/05/pilight2mqtt_demo.mp4"][/video]</p>
+<p>The whole thing is based on <a href="https://www.python.org/">python</a>, using <a href="https://pypi.python.org/pypi/paho-mqtt/1.1">paho-mqtt</a> for the MQTT part, which makes things fairly easy. The idea is to eventually install this as a service on my <a href="https://www.raspberrypi.org/">Raspberry Pi</a> and transfer messages that way. Obviously it will work in Home Assistant the same way all other MQTT devices work there.</p>
+<p>My to do list is still somewhat long-ish, the most important part being support for brokering message from pilight to MQTT (today only the other direction is implemented, as shown in the video).</p>
+<p>Then there are still some more items on my list the will need a closer look</p>
+<ul>
+<li>Robustness against connection loss</li>
+<li>Infrastructure to install/run service</li>
+<li>documentation</li>
+</ul>
+<p>In any case, if you are interested, <a href="https://github.com/mcdeck/pilight2mqtt">head over to GitHub and check out the project</a>. I will post some more details on the implementation in the next days.</p>

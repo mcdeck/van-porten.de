@@ -1,0 +1,45 @@
+---
+layout: post
+title: Home Smart Home - A Few Weeks Later
+date: 2015-01-29 17:13:17.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- homematic
+- smarthome
+- zwave
+meta:
+  _edit_last: '2'
+  otw_grid_manager_content: "[]"
+  _publicize_facebook_user: https://www.facebook.com/ovanporten
+  _publicize_twitter_user: "@mcdeck"
+  _jetpack_related_posts_cache: a:1:{s:32:"8cbd4640402bcc25d2b60530133db760";a:2:{s:7:"expires";i:1523332727;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:337;}i:1;a:1:{s:2:"id";i:360;}i:2;a:1:{s:2:"id";i:567;}}}}
+  _wpas_done_all: '1'
+  _wpas_skip_2057687: '1'
+  _wpas_skip_2057689: '1'
+  _wpas_skip_2057702: '1'
+  _wpas_skip_7715001: '1'
+  _wpcom_is_markdown: '1'
+  _yoast_wpseo_focuskw_text_input: Smart Home
+  _yoast_wpseo_focuskw: Smart Home
+  _yoast_wpseo_linkdex: '71'
+  dsq_thread_id: '3466545752'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>After a few attempts to get my Z-Wave network to work reliably I finally decided to maybe try something else for the outdoor lights. The Z-Wave setup did not have the range to cover my driveway and yard, unfortunately.</p>
+<p>Now, I decided to go with the <a href="http://www.homematic.com/" target="_blank">HomeMatic</a>. That really worked like a charm from day one. My current setup now looks like illustrated on the following picture.</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2015/01/My-Smart-Home2.png" rel="attachment wp-att-366"><img class="alignnone wp-image-371 size-full" src="{{ site.baseurl }}/assets/My-Smart-Home2.png" alt="" width="865" height="608" /></a></p>
+<p>I use three HomeMatic Actors to switch the five lamps in my yard and driveway (2+2+1). The HomeMatic motion detector is used to measure lumincance as well and switches on the lights when it gets dark permanently. At nine o'clock it then goes into motion detector mode and only switches the lights on if motion is detected. In the morning, I also turn on the lights at seven or so and turn t hem off when it gets too bright or after nine o'clock, whichever comes first.</p>
+<p>The Z-Wave Plugin Switch control a chain of lights at the moment. Once winter is over I will find other uses for it. Finally, the WALLC-S is used to turn on the lights outside manually and I am planning on installing the AEO_MULTISENS as a secondary motion detector at some point.</p>
+<p>Control of course happens through my OpenHAB installation on my RaspberyPI that is now equipped with a Z-Wave Plus controller and also acts as the central control unit for the HomeMatic devices through a CCU2.</p>
+<p>Of course I also use OpenHAB to <a title="Controlling Diskstation via openHAB" href="http://www.van-porten.de/blog/2014/11/controlling-diskstation-via-openhab/">turn my DiskStation DS212+ on and off</a>.</p>
+<p>Finally a working setup - now off to the next advenctures in home automation. Automatic roller shutters probably. Or finally installation a tablet-based control unit in my living room. Or probably both :)</p>

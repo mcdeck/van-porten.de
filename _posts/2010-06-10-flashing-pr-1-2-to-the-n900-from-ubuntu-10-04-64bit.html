@@ -1,0 +1,48 @@
+---
+layout: post
+title: Flashing PR 1.2 to the N900 from Ubuntu 10.04 64bit
+date: 2010-06-10 13:47:00.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- N900
+- ubuntu
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1522609805;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:150;}i:1;a:1:{s:2:"id";i:475;}i:2;a:1:{s:2:"id";i:491;}}}}
+  dsq_thread_id: '1349320504'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>To install flasher, do</p>
+<div class="highlight">
+<pre><span class="go">sudo dpkg -i --force-architecture maemo_flasher-3.5_2.5.2.2_i386.deb</span>
+</pre>
+</div>
+<p>afterwards, install ia32-libs from multiverse:</p>
+<div class="highlight">
+<pre><span class="go">sudo apt-get install ia32-libs</span>
+</pre>
+</div>
+<p>Before installing ia32-libs flasher kept telling me this:</p>
+<div class="highlight">
+<pre><span class="gp">ubuntu@ubuntu:~/Desktop$</span> flasher-3.5
+<span class="go">bash: /usr/bin/flasher-3.5: No such file or directory</span>
+</pre>
+</div>
+<p>Now, to flash PR1.2 and the vanilla eMMC content, issue the following<br />
+two commands:</p>
+<div class="highlight">
+<pre><span class="go">sudo flasher-3.5 -F RX-51_2009SE_10.2010.19-1_PR_COMBINED_MR0_ARM.bin -f</span>
+<span class="go">sudo flasher-3.5 -F RX-51_2009SE_10.2010.13-2.VANILLA_PR_EMMC_MR0_ARM.bin -f -R</span>
+</pre>
+</div>
+<p>This will flash and reboot after flashing the eMMC contents.</p>

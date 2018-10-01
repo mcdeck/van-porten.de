@@ -1,0 +1,126 @@
+---
+layout: post
+title: Running WindowTester Pro from Maven/Tycho
+date: 2012-01-22 12:40:00.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- eclipse
+- maven
+- tycho
+- windowtester pro
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523030178;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:140;}i:1;a:1:{s:2:"id";i:141;}i:2;a:1:{s:2:"id";i:567;}}}}
+  dsq_thread_id: '3293535728'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>Running SWTBot tests as part of your maven/tycho build cycle is rather<br />
+well documented and pretty straight forward (see for example the<br />
+<a class="reference external" href="https://docs.sonatype.org/display/TYCHO/How+to+run+SWTBot+tests+with+Tycho">sonatype docs</a>). Doing so with a <a class="reference external" href="http://code.google.com/javadevtools/wintester/html/index.html">WindowTester Pro</a> recorded test is<br />
+not - but then again it is pretty straigt forward as well.</p>
+<p>There are just two things that you need to change from the SWTBot tests<br />
+pom.xml (as presented in the <a class="reference external" href="https://docs.sonatype.org/display/TYCHO/How+to+run+SWTBot+tests+with+Tycho">sonatype docs</a>):</p>
+<ul class="simple">
+<li>have <strong>useUIThread = true</strong></li>
+<li>add a dependecy to <strong>com.windowtester.runtime.feature.group</strong> to pull<br />
+in platform specific plugins</li>
+</ul>
+<p>You will also need to tell maven/tycho where to find the latter feature,<br />
+of course, by adding<br />
+<a class="reference external" href="http://dl.google.com/eclipse/inst/windowtester/beta/3.7">http://dl.google.com/eclipse/inst/windowtester/beta/3.7</a> to your<br />
+repositories.</p>
+<p>A sample pom.xml looks like this:</p>
+<div class="highlight">
+<pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;project</span> <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>
+  <span class="na">xmlns=</span><span class="s">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;modelversion&gt;</span>4.0.0<span class="nt">&lt;/modelversion&gt;</span>
+  <span class="nt">&lt;parent&gt;</span>
+    <span class="nt">&lt;artifactid&gt;</span>de.van_porten.vrest.build<span class="nt">&lt;/artifactid&gt;</span>
+    <span class="nt">&lt;groupid&gt;</span>de.van_porten<span class="nt">&lt;/groupid&gt;</span>
+    <span class="nt">&lt;version&gt;</span>0.0.1-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;relativepath&gt;</span>../de.van_porten.vrest.build<span class="nt">&lt;/relativepath&gt;</span>
+  <span class="nt">&lt;/parent&gt;</span>
+  <span class="nt">&lt;groupid&gt;</span>de.van_porten<span class="nt">&lt;/groupid&gt;</span>
+  <span class="nt">&lt;artifactid&gt;</span>de.van_porten.vrest.tests.recorded<span class="nt">&lt;/artifactid&gt;</span>
+  <span class="nt">&lt;version&gt;</span>1.0.0-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;packaging&gt;</span>eclipse-test-plugin<span class="nt">&lt;/packaging&gt;</span>
+
+  <span class="nt">&lt;repositories&gt;</span>
+    <span class="nt">&lt;repository&gt;</span>
+      <span class="nt">&lt;id&gt;</span>windowtester<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;layout&gt;</span>p2<span class="nt">&lt;/layout&gt;</span>
+      <span class="nt">&lt;url&gt;</span>http://dl.google.com/eclipse/inst/windowtester/beta/3.7<span class="nt">&lt;/url&gt;</span>
+    <span class="nt">&lt;/repository&gt;</span>
+  <span class="nt">&lt;/repositories&gt;</span>
+
+  <span class="nt">&lt;build&gt;</span>
+    <span class="nt">&lt;plugins&gt;</span>
+      <span class="nt">&lt;plugin&gt;</span>
+        <span class="nt">&lt;groupid&gt;</span>org.eclipse.tycho<span class="nt">&lt;/groupid&gt;</span>
+        <span class="nt">&lt;artifactid&gt;</span>tycho-surefire-plugin<span class="nt">&lt;/artifactid&gt;</span>
+        <span class="nt">&lt;version&gt;</span>${tycho-version}<span class="nt">&lt;/version&gt;</span>
+
+        <span class="nt">&lt;configuration&gt;</span>
+          <span class="nt">&lt;testsuite&gt;</span>de.van_porten.vrest.tests.recorded<span class="nt">&lt;/testsuite&gt;</span>
+          <span class="nt">&lt;testclass&gt;</span>de.van_porten.vrest.tests.recorded.AllTests<span class="nt">&lt;/testclass&gt;</span>
+
+          <span class="nt">&lt;useuiharness&gt;</span>true<span class="nt">&lt;/useuiharness&gt;</span>
+          <span class="nt">&lt;useuithread&gt;</span>true<span class="nt">&lt;/useuithread&gt;</span>
+          <span class="c">&lt;!-- use our product and application to launch the tests --&gt;</span>
+          <span class="nt">&lt;product&gt;</span>de.van_porten.vrest.bundle.product<span class="nt">&lt;/product&gt;</span>
+          <span class="nt">&lt;application&gt;</span>org.eclipse.ui.ide.workbench<span class="nt">&lt;/application&gt;</span>
+
+          <span class="nt">&lt;dependencies&gt;</span>
+            <span class="nt">&lt;dependency&gt;</span>
+              <span class="nt">&lt;type&gt;</span>p2-installable-unit<span class="nt">&lt;/type&gt;</span>
+              <span class="nt">&lt;artifactid&gt;</span>com.windowtester.runtime.feature.group<span class="nt">&lt;/artifactid&gt;</span>
+              <span class="nt">&lt;version&gt;</span>0.0.0<span class="nt">&lt;/version&gt;</span>
+            <span class="nt">&lt;/dependency&gt;</span>
+          <span class="nt">&lt;/dependencies&gt;</span>
+        <span class="nt">&lt;/configuration&gt;</span>
+
+      <span class="nt">&lt;/plugin&gt;</span>
+    <span class="nt">&lt;/plugins&gt;</span>
+  <span class="nt">&lt;/build&gt;</span>
+
+
+  <span class="nt">&lt;profiles&gt;</span>
+    <span class="nt">&lt;profile&gt;</span>
+      <span class="nt">&lt;id&gt;</span>osx<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;activation&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+          <span class="nt">&lt;name&gt;</span>java.vendor.url<span class="nt">&lt;/name&gt;</span>
+          <span class="nt">&lt;value&gt;</span>http://www.apple.com/<span class="nt">&lt;/value&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+      <span class="nt">&lt;/activation&gt;</span>
+      <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;pluginmanagement&gt;</span>
+          <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+              <span class="nt">&lt;groupid&gt;</span>org.eclipse.tycho<span class="nt">&lt;/groupid&gt;</span>
+              <span class="nt">&lt;artifactid&gt;</span>tycho-surefire-plugin<span class="nt">&lt;/artifactid&gt;</span>
+              <span class="nt">&lt;version&gt;</span>${tycho-version}<span class="nt">&lt;/version&gt;</span>
+              <span class="nt">&lt;configuration&gt;</span>
+                <span class="nt">&lt;argline&gt;</span>-XstartOnFirstThread<span class="nt">&lt;/argline&gt;</span>
+              <span class="nt">&lt;/configuration&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+          <span class="nt">&lt;/plugins&gt;</span>
+        <span class="nt">&lt;/pluginmanagement&gt;</span>
+      <span class="nt">&lt;/build&gt;</span>
+    <span class="nt">&lt;/profile&gt;</span>
+  <span class="nt">&lt;/profiles&gt;</span>
+
+<span class="nt">&lt;/project&gt;</span>
+</pre>
+</div>

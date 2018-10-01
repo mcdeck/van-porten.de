@@ -1,0 +1,50 @@
+---
+layout: post
+title: Pylons and Apache with repoze.who BasicAuth
+date: 2011-01-03 11:44:00.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- apache
+- Pylons
+- repoze
+- web
+- xmlrpc
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1522087246;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:147;}i:1;a:1:{s:2:"id";i:145;}i:2;a:1:{s:2:"id";i:491;}}}}
+  dsq_thread_id: '1349319047'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>To be able to use Basic Authentification in repoze.who running in a wsgi<br />
+app in your Apache installation, you need to tell Apache to<br />
+<strong>WSGIPassAuthorization</strong>. An Apache configuration like this will do:</p>
+<div class="highlight">
+<pre><span class="c"># Setup mod_wsgi</span>
+<span class="nb">WSGIPythonHome</span> <span class="sx">/var/www/pylons/runtime</span>
+<span class="nb">WSGIScriptAlias</span> <span class="sx">/myApp</span> <span class="sx">/var/www/pylons/myApp/mod_wsgi/dispatch.wsgi</span>
+<span class="nb">WSGIPassAuthorization</span> <span class="k">On</span>
+
+<span class="nt">&lt;directory</span> <span class="s">/var/www/pylons/myApp/mod_wsgi</span><span class="nt">&gt;</span>
+<span class="nb">Order</span> deny,allow
+<span class="nb">Allow</span> from <span class="k">all</span>
+<span class="nt">&lt;/directory&gt;</span>
+</pre>
+</div>
+<p>The importanat part here is</p>
+<div class="highlight">
+<pre><span class="nb">WSGIPassAuthorization</span> <span class="k">On</span>
+</pre>
+</div>
+<p>This will pass HTTP authorisation headers through to the WSGI<br />
+application.</p>
+<p>Sources: <a class="reference external" href="http://www.mail-archive.com/repoze-dev&#64;lists.repoze.org/msg02894.html">Repoze-dev Mailing List</a>, <a class="reference external" href="http://code.google.com/p/modwsgi/wiki/ConfigurationDirectives#WSGIPassAuthorization">modwsgi Wiki</a></p>

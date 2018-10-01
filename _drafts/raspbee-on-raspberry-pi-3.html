@@ -1,0 +1,91 @@
+---
+layout: post
+title: RaspBee on Raspberry Pi 3
+date: 
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories: []
+tags: []
+meta:
+  _edit_last: '2'
+  _yoast_wpseo_primary_category: ''
+  _oembed_fd3aaec3b04f75f854232b6f7f935465: "{{unknown}}"
+  _oembed_36c7dae4e44a96b5b0d26f0eec4e7c3e: "{{unknown}}"
+  _oembed_00b4ee12365e4679f94cce5eeecfe6bc: '<blockquote data-secret="BDi5VdmmZw"
+    class="wp-embedded-content"><a href="http://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspbian/">Setting
+    up the Arduino IDE on Raspbian</a></blockquote><iframe class="wp-embedded-content"
+    sandbox="allow-scripts" security="restricted" style="position: absolute; clip:
+    rect(1px, 1px, 1px, 1px);" src="http://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspbian/embed/#?secret=BDi5VdmmZw"
+    data-secret="BDi5VdmmZw" width="600" height="338" title="&#8220;Setting up the
+    Arduino IDE on Raspbian&#8221; &#8212; Spell Foundry" frameborder="0" marginwidth="0"
+    marginheight="0" scrolling="no"></iframe>'
+  _oembed_e1b4e8e2e8207ec742e458344990709a: "{{unknown}}"
+  _oembed_83c929fd66ffb55fdcbbab68f982889d: "{{unknown}}"
+  _oembed_3069277d32ba041ac80bdd26f448951d: "{{unknown}}"
+  _oembed_deaec96ecf340b0fc7f12a0661856cf3: "{{unknown}}"
+  _oembed_fd5d299964866c538ad96dd9e528c0cf: "{{unknown}}"
+  _oembed_3f040025790cacddad3d0817dbb6f1ae: "{{unknown}}"
+  _oembed_bfd514490564edba9301fd7fde78fbdb: "{{unknown}}"
+  _oembed_time_00b4ee12365e4679f94cce5eeecfe6bc: '1475585632'
+  _oembed_bce49d511a7d770e70eb1ba798efb691: "{{unknown}}"
+  _oembed_8827c25d7cd891954ee7f59b9dfe0747: "{{unknown}}"
+  _oembed_3238b82cbb91a21df56ee9ce7a6c856d: "{{unknown}}"
+  _oembed_21d7290cfc23d79bd0b9e007d75b9601: '<blockquote class="wp-embedded-content"
+    data-secret="6w1ovuLl95"><a href="https://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspbian/">Setting
+    up the Arduino IDE on Raspbian</a></blockquote><iframe class="wp-embedded-content"
+    sandbox="allow-scripts" security="restricted" style="position: absolute; clip:
+    rect(1px, 1px, 1px, 1px);" src="https://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspbian/embed/#?secret=6w1ovuLl95"
+    data-secret="6w1ovuLl95" width="525" height="296" title="&#8220;Setting up the
+    Arduino IDE on Raspbian&#8221; &#8212; Spell Foundry" frameborder="0" marginwidth="0"
+    marginheight="0" scrolling="no"></iframe>'
+  _oembed_time_21d7290cfc23d79bd0b9e007d75b9601: '1516477715'
+  _oembed_4cc8a9e45cdbd9bdc5186e553f546a8c: "{{unknown}}"
+  _oembed_4dfb1de857057e3d85ae7e092df5a194: "{{unknown}}"
+  _oembed_1824c5c47f46aa4545721444bbde65e0: "{{unknown}}"
+  _oembed_4729479d694383ca8fd83d3691f7d664: "{{unknown}}"
+  _oembed_68e2cb0bb5edc18ea3107c120cba1ffc: "{{unknown}}"
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>Bought RaspBee (https://www.dresden-elektronik.de/funktechnik/solutions/wireless-light-control/raspbee/)</p>
+<p>Running on Pi 3</p>
+<p>Seems GPIO pins are no longer exactly the same as on RPi2</p>
+<p>Need to but AMA0 back to GPIO pin 14/15</p>
+<p>Expand Filesystem on your card in Preferences and disable serial. Reboot.<br />
+sudo apt-get update<br />
+sudo apt-get upgrade<br />
+sudo apt-get dist-upgrade !!!<br />
+sudo rpi-update !!!</p>
+<p>Disable bluetooth and put ttyAMA0 back on BCM gpio’s 14&amp;15:</p>
+<p>sudo nano /boot/config.txt</p>
+<p>Add the following:</p>
+<p>dtoverlay=pi3-miniuart-bt<br />
+exit and save file</p>
+<p>Stop the Bluetooth device from attempting to connect with uart:</p>
+<p>sudo systemctl disable hciuart<br />
+sudo nano /lib/systemd/system/hciuart.service<br />
+change the first ttyAMA0 in ttyS0</p>
+<p>If not already, remove console=serial0,115200 in/boot/cmdline.txt</p>
+<p>sudo nano /boot/cmdline.txt<br />
+delete: console=serial0,115200</p>
+<p>References<br />
+UART<br />
+https://openenergymonitor.org/emon/node/12412<br />
+http://pinout.xyz/pinout/uart</p>
+<p>Disable service on AMA0<br />
+https://github.com/InitialState/rpi-gps/wiki/2-Part-1.-Raspberry-Pi-Setup<br />
+http://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspbian/</p>
+<p>General instructions<br />
+http://www2.htw-dresden.de/~wiki_sn/index.php5/ZigBee/RaspBee<br />
+http://www2.htw-dresden.de/~wiki_sn/index.php5/ZigBee/RaspBee/Funklichtsteuerung_mit_FHEM</p>
+<p>https://www.dresden-elektronik.de/funktechnik/service/downloads/software/#c3946<br />
+https://www.dresden-elektronik.de/funktechnik/products/software/pc/deconz/</p>
+<p>REST API<br />
+http://www2.htw-dresden.de/~wiki_sn/index.php5/ZigBee/RaspBee/deCONZ_REST_Plug-in</p>

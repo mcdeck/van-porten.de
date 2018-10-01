@@ -1,0 +1,50 @@
+---
+layout: post
+title: What to do if biber stops working on MacOS X
+date: 2012-01-23 20:36:00.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- biber
+- biblatex
+- latex
+meta:
+  _wpas_done_all: '1'
+  _edit_last: '1'
+  _wpas_skip_2057687: '1'
+  _wpas_skip_2057689: '1'
+  _wpas_skip_2057702: '1'
+  _wpas_skip_2057714: '1'
+  _wpas_skip_7715030: '1'
+  _wpas_skip_7715001: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523052610;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:140;}i:1;a:1:{s:2:"id";i:153;}i:2;a:1:{s:2:"id";i:151;}}}}
+  dsq_thread_id: '3440057050'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>Yesterday evening I ran into a bit of a problem when I tried building my latex document that uses biblatex/biber. For some reason, biber would not generate any output but fail with</p>
+<pre class="lang:default decode:true ">Olivers-MacBook-Air:~ porten$ biber
+data source /var/folders/5c/y7ssnfgj2fz1fnx1gz_z7ng80000gn/T/par-porten/cache-5a7f3069e2a4d51fd3557003fc55ec74c554c947//inc/lib/Biber/LaTeX/recode_data.xml not found in .
+Compilation failed in require at Biber/Utils.pm line 21.
+BEGIN failed--compilation aborted at Biber/Utils.pm line 21.
+Compilation failed in require at Biber/Internals.pm line 8.
+BEGIN failed--compilation aborted at Biber/Internals.pm line 8.
+Compilation failed in require at (eval 22) line 2.
+    ...propagated at /opt/local/lib/perl5/5.14.1/base.pm line 94.
+BEGIN failed--compilation aborted at Biber.pm line 5.
+Compilation failed in require at script/biber-darwin line 20.
+BEGIN failed--compilation aborted at script/biber-darwin line 20.</pre>
+<p>Now, what fixes this is simply deleting the par cache:</p>
+<pre class="lang:default decode:true">sudo rm -rf /var/folders/5c/y7ssnfgj2fz1fnx1gz_z7ng80000gn/T/par-porten/</pre>
+<p>Sources:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://humtex.wordpress.com/2011/11/29/biber-first-aid-for-data-source-not-found/">Andrew Goldstone's Blog</a></li>
+</ul>

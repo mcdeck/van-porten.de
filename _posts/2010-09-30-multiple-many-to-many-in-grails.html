@@ -1,0 +1,103 @@
+---
+layout: post
+title: Multiple Many-to-Many in Grails
+date: 2010-09-30 08:02:00.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- gorm
+- grails
+- groovy
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523276384;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:137;}i:1;a:1:{s:2:"id";i:164;}i:2;a:1:{s:2:"id";i:145;}}}}
+  dsq_thread_id: '1265389524'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>Creating many-to-many relationships in <a class="reference external" href="http://www.grails.org">Grails</a> is quite simple. It is<br />
+also possible to have multiple many-to-many relationships in a single<br />
+class, but for some reason I found little documentation on how to do<br />
+this. It is actually quite simple once you know how to and pretty much<br />
+comes down to syntactic sugar, so to speak. Read more after the break.</p>
+<p>Let's assume you wanted to model two distinct domain classes which both<br />
+can have <strong>Tags</strong>.</p>
+<p><a class="reference external" href="http://wordpress.van-porten.de/wp-content/uploads/2010/09/manytomany.jpg"><img alt="Many-to-Many UML Diagram" src="{{ site.baseurl }}/assets/manytomany.jpg" /></a></p>
+<p>Now, the owning side of the relationship should be the <strong>DomainClass1</strong><br />
+and <strong>DomainClass2</strong> respectively.</p>
+<p>Your domain class code would look something like this:</p>
+<div class="highlight">
+<pre><span class="kd">class</span> <span class="nc">DomainClass1</span> <span class="o">{</span>
+  <span class="o">...</span>
+  <span class="kd">static</span> <span class="n">hasMany</span> <span class="o">=</span> <span class="o">[</span>
+    <span class="nl">tags:</span> <span class="n">Tag</span>
+  <span class="o">]</span>
+  <span class="kd">static</span> <span class="n">mappedBy</span> <span class="o">=</span> <span class="o">[</span>
+    <span class="nl">tags:</span> <span class="s2">&quot;domainClass1s&quot;</span>
+  <span class="o">]</span>
+<span class="o">}</span>
+</pre>
+</div>
+<div class="highlight">
+<pre><span class="kd">class</span> <span class="nc">DomainClass2</span> <span class="o">{</span>
+  <span class="o">...</span>
+  <span class="kd">static</span> <span class="n">hasMany</span> <span class="o">=</span> <span class="o">[</span>
+    <span class="nl">tags:</span> <span class="n">Tag</span>
+  <span class="o">]</span>
+  <span class="kd">static</span> <span class="n">mappedBy</span> <span class="o">=</span> <span class="o">[</span>
+    <span class="nl">tags:</span> <span class="s2">&quot;domainClass2s&quot;</span>
+  <span class="o">]</span>
+<span class="o">}</span>
+</pre>
+</div>
+<p>Next, you need to define the Tag class:</p>
+<div class="highlight">
+<pre><span class="kd">class</span> <span class="nc">Tag</span> <span class="o">{</span>
+
+  <span class="n">String</span> <span class="n">value</span>
+
+  <span class="kd">static</span> <span class="n">hasMany</span> <span class="o">=</span> <span class="o">[</span>
+    <span class="nl">domainClass1s:</span> <span class="n">DomainClass1</span><span class="o">,</span>
+    <span class="nl">domainClass2s:</span> <span class="n">DomainClass2</span>
+  <span class="o">]</span>
+
+  <span class="kd">static</span> <span class="n">mappedBy</span> <span class="o">=</span> <span class="o">[</span>
+    <span class="nl">domainClass1s:</span> <span class="s2">&quot;tags&quot;</span><span class="o">,</span>
+    <span class="nl">domainClass2s:</span> <span class="s2">&quot;tags&quot;</span>
+  <span class="o">]</span>
+
+  <span class="kd">static</span> <span class="n">belongsTo</span> <span class="o">=</span> <span class="o">[</span>
+    <span class="n">DomainClass1</span><span class="o">,</span> <span class="n">DomainClass1</span>
+  <span class="o">]</span>
+
+  <span class="kd">static</span> <span class="n">constraints</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="n">value</span><span class="o">(</span><span class="nl">unique:</span><span class="kc">true</span><span class="o">)</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Override</span> <span class="kd">public</span> <span class="n">String</span> <span class="n">toString</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">value</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+</div>
+<p>The part that is rarely documented online is the <strong>belongsTo</strong><br />
+statement.</p>
+<div class="highlight">
+<pre><span class="kd">static</span> <span class="n">belongsTo</span> <span class="o">=</span> <span class="o">[</span>
+  <span class="n">DomainClass1</span><span class="o">,</span> <span class="n">DomainClass1</span>
+<span class="o">]</span>
+</pre>
+</div>
+<p>This tells groovy the owners are DomainClass1 and DomainClass2. You're<br />
+done. Pretty simple, isn't it? Hope this helps someone.</p>
+<p><strong>References</strong></p>
+<p><a class="reference external" href="http://www.grails.org/doc/latest/guide/single.html#5.5.2%20Custom%20ORM%20Mapping">http://www.grails.org/doc/latest/guide/single.html#5.5.2%20Custom%20ORM%20Mapping</a></p>
+<p><a class="reference external" href="http://osdir.com/ml/lang.groovy.grails.user/2008-05/msg02094.html">http://osdir.com/ml/lang.groovy.grails.user/2008-05/msg02094.html</a></p>

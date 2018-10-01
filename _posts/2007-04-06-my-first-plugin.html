@@ -1,0 +1,117 @@
+---
+layout: post
+title: My first "Plugin"
+date: 2007-04-06 00:55:00.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _wpas_done_all: '1'
+  _edit_last: '1'
+  _wpas_skip_2057687: '1'
+  _wpas_skip_2057689: '1'
+  _wpas_skip_2057702: '1'
+  _wpas_skip_2057714: '1'
+  _wpas_skip_7715030: '1'
+  _wpas_skip_7715001: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1522313838;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:567;}i:1;a:1:{s:2:"id";i:438;}i:2;a:1:{s:2:"id";i:157;}}}}
+  dsq_thread_id: '2440025992'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>As you might have noticed I'm still struggeling with my theme choice. I'll be switching themes a lot soon but wanted to get started on integrating plugins (like, for instance, <a class="reference external" href="http://sw-guide.de/wordpress/link-indication-plugin/">Link Indication</a> ). Some of<br />
+those require adding CSS code though. I stumbeled upon one guide on how to preserve your CSS changes througout themes <a class="reference external" href="http://www.pearsonified.com/2007/02/how_to_protect_css_mods_for_any_wordpress_theme.php">HERE</a> but that still required you to modify the template and that I did not want to do.</p>
+<p>So I came up with this, my first, wordpress plugin. It allows you to add Custom CSS code to the "wp_head" action hook. This will basically preserve your precious CSS in the database while you can go on changing themes as you please .. at least as long as the theme author calls "the_head()" at some point, but that he (or she for that matter) should do in any case.</p>
+<p>So now, here is a quick Copy &amp; Paste version.</p>
+<p>Simply save the file as "mcd_custom_css.php" into your plugin folder<br />
+and active. Some kind of release coming tomorrow, though I doubt anyone will actually use this much.</p>
+<div class="highlight">
+<pre><span class="cp">&lt;?php</span>
+<span class="cm">/*</span>
+<span class="cm">Plugin Name: Custom CSS Loader</span>
+<span class="cm">Plugin URI: TBA</span>
+<span class="cm">Description: A brief description of the plugin.</span>
+<span class="cm">Version: 0.1</span>
+<span class="cm">Author: Oliver van Porten</span>
+<span class="cm">Author URI: http://www.van-porten.de</span>
+<span class="cm">*/</span>
+<span class="cp">?&gt;</span>
+<span class="cp">&lt;?php</span>
+<span class="cm">/*  Copyright 2007 Oliver van Porten  (email : info@van-porten.de)</span>
+
+<span class="cm">    This program is free software; you can redistribute it and/or modify</span>
+<span class="cm">    it under the terms of the GNU General Public License as published by</span>
+<span class="cm">    the Free Software Foundation; either version 2 of the License, or</span>
+<span class="cm">    (at your option) any later version.</span>
+
+<span class="cm">    This program is distributed in the hope that it will be useful,</span>
+<span class="cm">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="cm">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="cm">    GNU General Public License for more details.</span>
+
+<span class="cm">    You should have received a copy of the GNU General Public License</span>
+<span class="cm">    along with this program; if not, write to the Free Software</span>
+<span class="cm">    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</span>
+<span class="cm">*/</span>
+<span class="cp">?&gt;</span>
+<span class="cp">&lt;?php</span>
+
+<span class="k">function</span> <span class="nf">__mcd_custom_css_install</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">add_option</span><span class="p">(</span><span class="s2">"mcd_custom_css"</span><span class="p">,</span> <span class="s2">""</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">mcd_custom_css_header</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s1">'&lt;style type="text/css"&gt;'</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="nx">get_option</span><span class="p">(</span> <span class="s2">"mcd_custom_css"</span> <span class="p">);</span>
+    <span class="k">echo</span> <span class="s1">'&lt;/style&gt;'</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">mcd_custom_css_add_admin_pages</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">add_options_page</span><span class="p">(</span> <span class="s2">"Custom CSS Settings"</span><span class="p">,</span> <span class="s2">"Custom CSS"</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">"mcd_cust_css_admin"</span><span class="p">,</span> <span class="s2">"mcd_custom_css_settings"</span> <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">mcd_custom_css_settings</span><span class="p">()</span> <span class="p">{</span>
+
+    <span class="k">if</span><span class="p">(</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'custom_css'</span><span class="p">])</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nx">update_option</span><span class="p">(</span> <span class="s2">"mcd_custom_css"</span><span class="p">,</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'custom_css'</span><span class="p">]</span> <span class="p">);</span>
+    <span class="p">}</span>
+
+
+    <span class="k">echo</span> <span class="s">&lt;&lt;&lt;eot</span>
+<span class="s">    &lt;div class="wrap"&gt;</span>
+<span class="s">        &lt;h2&gt;Custom CSS Editor&lt;/h2&gt;</span>
+<span class="s">        {$message}</span>
+<span class="s">        &lt;form name="form1" method="post" action="options-general.php?page=mcd_cust_css_admin"&gt;</span>
+<span class="s">            &lt;fieldset class="options"&gt;</span>
+<span class="s">                &lt;legend&gt;Update your CSS Code&lt;/legend&gt;</span>
+<span class="s">                &lt;p&gt;Insert your custom CSS into the box below. &lt;em&gt;DO NOT ADD &amp;lt;script ..&amp;gt; .. &amp;lt;/script&amp;gt;!&lt;/em&gt;&lt;/p&gt;</span>
+<span class="s">                &lt;textarea name="custom_css" rows="10" cols="25" style="width: 100%;"&gt;</span>
+<span class="s">EOT;</span>
+<span class="k">echo</span> <span class="nx">get_option</span><span class="p">(</span> <span class="s2">"mcd_custom_css"</span> <span class="p">);</span>
+    <span class="k">echo</span> <span class="s">&lt;&lt;&lt;eot</span>
+<span class="s">&lt;/textarea&gt;</span>
+<span class="s">            &lt;/fieldset&gt;</span>
+<span class="s">            &lt;p class="submit"&gt;</span>
+<span class="s">                &lt;input type="submit" name="Submit" value="Save &amp;raquo;" /&gt;</span>
+<span class="s">            &lt;/p&gt;</span>
+<span class="s">        &lt;/form&gt;</span>
+<span class="s">    &lt;/div&gt;</span>
+<span class="s">EOT;</span>
+<span class="p">}</span>
+
+<span class="nx">add_action</span><span class="p">(</span><span class="s1">'wp_head'</span><span class="p">,</span> <span class="s1">'mcd_custom_css_header'</span><span class="p">);</span>
+<span class="nx">add_action</span><span class="p">(</span><span class="s1">'activate_mcd_custom_css.php'</span><span class="p">,</span> <span class="s1">'__mcd_custom_css_install'</span><span class="p">);</span>
+<span class="nx">add_action</span><span class="p">(</span><span class="s1">'admin_menu'</span><span class="p">,</span> <span class="s1">'mcd_custom_css_add_admin_pages'</span><span class="p">);</span>
+
+<span class="cp">?&gt;</span>
+</pre>
+</div>
+<p><em>Note to self: Always proof-read what you post!</em></p>

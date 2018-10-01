@@ -1,0 +1,53 @@
+---
+layout: post
+title: Home Automation with FHEM
+date: 2016-01-10 21:38:05.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- fhem
+- homematic
+- openhab
+- smarthome
+meta:
+  _wpcom_is_markdown: '1'
+  _edit_last: '2'
+  otw_grid_manager_content: "[]"
+  _publicize_twitter_user: "@mcdeck"
+  _wpas_skip_7715001: '1'
+  _yoast_wpseo_focuskw_text_input: home automation
+  _yoast_wpseo_focuskw: home automation
+  _yoast_wpseo_linkdex: '71'
+  _jetpack_related_posts_cache: a:2:{s:32:"d60c059a9e601a1f7c9d1f98e1981886";a:2:{s:7:"expires";i:1523307345;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:365;}i:1;a:1:{s:2:"id";i:337;}i:2;a:1:{s:2:"id";i:335;}}}s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523331710;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:365;}i:1;a:1:{s:2:"id";i:337;}i:2;a:1:{s:2:"id";i:335;}}}}
+  _wpas_done_all: '1'
+  _wpas_skip_2057687: '1'
+  _wpas_skip_2057689: '1'
+  _wpas_skip_2057702: '1'
+  dsq_thread_id: '4479547021'
+  _thumbnail_id: '440'
+  _yoast_wpseo_content_score: '60'
+  _yoast_wpseo_primary_category: ''
+  amp_status: enabled
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>For a while I was fairly happily running <a href="http://www.openhab.org/" target="_blank" rel="noopener">OpenHAB</a> to control and automate my <a href="http://www.homematic.com/" target="_blank" rel="noopener">HomeMatic</a> devices. I had a few rules configured to trigger outdoor lighting and the like. There were a few delays occasionally, though, which I think may have been due to network timing or simply due to a delay in receiving the events from the <a href="http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html" target="_blank" rel="noopener">CCU2</a>.</p>
+<p>At some point a few weeks ago I decided that enough was enough. I moved all automation rules directly onto the <a href="http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html" target="_blank" rel="noopener">CCU2</a>. After some playing around and struggling with a few details I have a setup that works quite well now. Most importantly it is faster than it used to be, which was the whole point of the exercise.</p>
+<p>Next to the slowness in automation I never liked the OpenHAB UI - the classic UI that is. The <a href="https://www.youtube.com/watch?v=NolVoL8ewO0" target="_blank" rel="noopener">paper UI</a> looks a lot nicer, but also that lacks a few features I would like to have plus is not really release for production yet.</p>
+<p>In any case I decided it was time to move to something else. I started by exploring the benefits of using <a href="http://mqtt.org/" target="_blank" rel="noopener">MQTT</a>. I did that with the help of <a href="http://mosquitto.org/" target="_blank" rel="noopener">Mosquitto</a>, <a href="https://github.com/owagner/hm2mqtt" target="_blank" rel="noopener">hm2mqtt</a> and <a href="https://home-assistant.io/" target="_blank" rel="noopener">Home Assistant</a>. I even contributed some code to <a href="https://home-assistant.io/" target="_blank" rel="noopener">Home Assistant</a> to make it <a href="https://github.com/balloob/home-assistant/pull/811" target="_blank" rel="noopener">work with the json messages sent by hm2mqtt</a>. I like <a href="https://home-assistant.io/" target="_blank" rel="noopener">Home Assistant</a> a lot, simply because it is written in <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a> and as such makes contributing easy for me. However, also the UI did not completely satisfy me, so I kept looking.</p>
+<p>Sometime last week then I revisited <a href="http://fhem.de/fhem.html" target="_blank" rel="noopener">FHEM</a>. I had looked at <a href="http://fhem.de/fhem.html" target="_blank" rel="noopener">FHEM</a> in the beginning of my home automation journey and abandoned it at the time. The two main reasons were the UI, but more importantly the lack of support for using a <a href="http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html" target="_blank" rel="noopener">CCU2</a> to control <a href="http://www.homematic.com/" target="_blank" rel="noopener">HomeMatic</a> devices.</p>
+<p>Luckily that has changed a lot now. While <a href="http://mqtt.org/" target="_blank" rel="noopener">MQTT</a> is of course always an option there is the <a href="http://forum.fhem.de/index.php?topic=40189.0" target="_blank" rel="noopener">HMCCU</a> module now. That finally provides a way to control a <a href="http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html" target="_blank" rel="noopener">CUU2</a> plus the module is under active development (as opposed to the old <a href="http://homematic-forum.de/forum/viewtopic.php?t=7309" target="_blank" rel="noopener">HMRPC</a> module).</p>
+<p>Next to that, there is also the new <a href="http://www.fhemwiki.de/wiki/FHEM_Tablet_UI" target="_blank" rel="noopener">Tablet UI </a>now that is visually appealing and really is absolutely what I was looking for. It is based on HTML , CSS and JavaScript and as such works in virtually any modern browser. More importantly, it is easy enough to customise the interface.</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/01/Screenshot-2016-01-10-18.17.22.png" rel="attachment wp-att-440"><img class="aligncenter wp-image-440 size-large" src="{{ site.baseurl }}/assets/Screenshot-2016-01-10-18.17.22-1024x576.png" alt="FHEM Tablet UI" width="840" height="473" /></a>What you see here is a snapshot of my current setup. It is very much a work in progress now, but it already covers a lot more features than I used to have when still running on <a href="http://www.openhab.org/" target="_blank" rel="noopener">OpenHAB</a>. I will post more detailed instructions and lessons learned once I am done, of course.</p>
+<p>The one thing I currently find lacking in <a href="http://fhem.de/fhem.html" target="_blank" rel="noopener">FHEM</a> is the connectivity from outside your home. OpenHAB's <a href="https://my.openhab.org/" target="_blank" rel="noopener">my.openhab.org</a> service is quite a nice feature which I'd like to see in FHEM as well. Using simple port forwarding will also work, I guess, but also that I still need to setup.</p>
+<p>The other downside of FHEM is, obviously, that it is written in Perl, which I hate with a passion. I did <a href="http://forum.fhem.de/index.php/topic,46652.msg383843.html#msg383843" target="_blank" rel="noopener">share my first fix for HMCCU</a> already, though, so I guess I will adapt over time. :)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

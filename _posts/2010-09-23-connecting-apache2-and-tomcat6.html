@@ -1,0 +1,92 @@
+---
+layout: post
+title: Connecting Apache2 and Tomcat6
+date: 2010-09-23 19:48:00.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- apache
+- grails
+- linux
+- server
+- tomcat
+- ubuntu
+- web
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523171579;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:153;}i:1;a:1:{s:2:"id";i:475;}i:2;a:1:{s:2:"id";i:491;}}}}
+  dsq_thread_id: '1286831261'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>If you ever need to serve Tomcat applications through Apache2, here is a<br />
+quick guide on how to do this on Ubuntu.</p>
+<p>First, install <a class="reference external" href="http://tomcat.apache.org/connectors-doc/">mod-jk</a>:</p>
+<div class="highlight">
+<pre><span class="go">sudo apt-get install libapache2-mod-jk</span>
+<span class="go">sudo a2enmod jk</span>
+</pre>
+</div>
+<p>Then, edit <em>workerss.properties</em></p>
+<div class="highlight">
+<pre><span class="go">sudo vi /etc/libapache2-mod-jk/workers.properties</span>
+</pre>
+</div>
+<p>and adapt the following values (assuming you have installed the<br />
+openjdk):</p>
+<div class="highlight">
+<pre>workers.tomcat_home=/usr/share/tomcat6
+workers.java_home = /usr/lib/jvm/java-6-openjdk
+</pre>
+</div>
+<p>Then, mount the site using <em>JkMount</em>. Do</p>
+<div class="highlight">
+<pre><span class="go">sudo vi /etc/apache2/sites-enabled/000-default</span>
+</pre>
+</div>
+<p>and then add the following line</p>
+<div class="highlight">
+<pre><span class="nb">JkMount</span> <span class="sx">/path/to/app/</span>* ajp13_worker
+</pre>
+</div>
+<p>And update the mod-jk settings in <em>jk.load</em>. do</p>
+<div class="highlight">
+<pre><span class="go">sudo vi /etc/apache2/mods-available/jk.load</span>
+</pre>
+</div>
+<p>and update to file to read like this</p>
+<div class="highlight">
+<pre><span class="nb">LoadModule</span> jk_module <span class="sx">/usr/lib/apache2/modules/mod_jk.so</span>
+<span class="nb">JkWorkersFile</span> <span class="sx">/etc/libapache2-mod-jk/workers.properties</span>
+<span class="nb">JkLogFile</span> <span class="sx">/var/log/apache2/mod_jk.log</span>
+<span class="nb">JkLogLevel</span> <span class="k">error</span>
+</pre>
+</div>
+<p>Update the <em>server.xml</em> with</p>
+<div class="highlight">
+<pre><span class="go">sudo vi /etc/tomcat6/server.xml</span>
+</pre>
+</div>
+<p>and then uncommenting the line</p>
+<div class="highlight">
+<pre><span class="nt">&lt;connector</span> <span class="na">port=</span><span class="s">&quot;8009&quot;</span> <span class="na">protocol=</span><span class="s">&quot;AJP/1.3&quot;</span> <span class="na">redirectPort=</span><span class="s">&quot;8443&quot;</span> <span class="nt">/&gt;</span>
+</pre>
+</div>
+<p>Finally, restart the services</p>
+<div class="highlight">
+<pre><span class="go">sudo /etc/init.d/apache2 restart</span>
+<span class="go">sudo /etc/init.d/tomcat6 restart</span>
+</pre>
+</div>
+<p><strong>References</strong></p>
+<p><a class="reference external" href="http://www.docshare.com/doc/197611/Installing-Tomcat6-on-Ubuntu-with-Jk-Connecto">http://www.docshare.com/doc/197611/Installing-Tomcat6-on-Ubuntu-with-Jk-Connecto</a></p>
+<p><a class="reference external" href="http://ubuntuforums.org/showthread.php?t=422472">http://ubuntuforums.org/showthread.php?t=422472</a></p>
+<p><a class="reference external" href="http://rcpeters.blogspot.com/2009/05/installing-apache2-and-tomcat6-on.html">http://rcpeters.blogspot.com/2009/05/installing-apache2-and-tomcat6-on.html</a></p>

@@ -1,0 +1,38 @@
+---
+layout: post
+title: New blogging engine
+date: 2013-06-01 10:10:00.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- blog
+- software
+meta:
+  _wpas_done_all: '1'
+  _edit_last: '1'
+  _wpas_skip_2057687: '1'
+  _wpas_skip_2057689: '1'
+  _wpas_skip_2057702: '1'
+  _wpas_skip_2057714: '1'
+  _wpas_skip_7715030: '1'
+  _wpas_skip_7715001: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1522676988;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:157;}i:1;a:1:{s:2:"id";i:164;}i:2;a:1:{s:2:"id";i:438;}}}}
+  dsq_thread_id: '2770281446'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>Finally, after a year of almost no activity, I have updated my blog with new software. I used to run <a class="reference external" href="http://www.wordpress.org">Wordpress</a> for the past seven or so years but finally decided it was time for something new. As of today, I am running on <a class="reference external" href="http://blog.getpelican.com/">Pelican</a>, a Python-based static website generator. This means good-bye to the php-based dynamic colution. I hope this will give this blog some more security. Comments will be via <a class="reference external" href="http://www.disqus.com">Disqus</a> for the moment, for want of a better alternative. I still plan to eventually migrate to completely static comments, but<br />
+for now Disqus will do.</p>
+<p>Also, you might notice that the theme I use looks a lot like the one from <a class="reference external" href="http://octopress.org/">Octopress</a>. This is because I use the fabolous <cite>Pelican Octopress theme</cite> by <a class="reference external" href="http://blogs.skicelab.com/maurizio/">Maurizio Sambati</a>. I don't use Octopress itself at the moment because I still have a hard time working with <a class="reference external" href="http://www.ruby-lang.org/">Ruby</a> on Windows. Also, Pelican easily supports <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html">reStructured Text</a> out of the box which I do in fact like better than <a class="reference external" href="http://daringfireball.net/projects/markdown/">Markdown</a> (and have used it more often).</p>
+<p>My new setup includes some more nifty technical details.</p>
+<p>For ease of deployment, I have devised a workflow that is based on <a class="reference external" href="http://rhodecode.org/">RhodeCode</a> and <a class="reference external" href="http://jenkins-ci.org/">Jenkins</a>. I have setup a <a class="reference external" href="http://rc.van-porten.de">RhodeCode instance</a> on my local server where I store the source to my blog. At the moment I use <a class="reference external" href="http://mercurial.selenic.com/">Mercurial</a> to manage the versions. Furthermore, I have a <a class="reference external" href="http://ci.van-porten.de/">Jenkins installation</a> on the same server that pulls from the RhodeCode instance, builds the blog contents and publishes the result here afterwards. To avoid frequently polling on Mercurial, I have also installed a trigger in Mercurial (or RhodeCode respectively) that triggers the rebuild of the blog. The following figure gives an overview.</p>
+<p><img class="align-center" style="width: 689.0px; height: 300.0px;" src="{{ site.baseurl }}/assets/workflow.png" alt="new publishing workflow" /></p>
+<p>Now, this might seem like a bit of overhead on the setup side, but I had a lot of fun automating it this way. Technically I could just as well pusblish the blog from my personal PC everytime, but I found that to be an unworthy alternative ;)</p>

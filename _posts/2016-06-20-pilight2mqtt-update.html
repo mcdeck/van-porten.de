@@ -1,0 +1,69 @@
+---
+layout: post
+title: pilight2mqtt update
+date: 2016-06-20 22:00:14.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- home assistant
+- mqtt
+- pilight
+meta:
+  _edit_last: '2'
+  _wpas_done_all: '1'
+  _yoast_wpseo_content_score: '60'
+  _yoast_wpseo_primary_category: ''
+  _jetpack_related_posts_cache: a:1:{s:32:"0682d807f4a056e5b61e9634feead928";a:2:{s:7:"expires";i:1522878888;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:475;}i:1;a:1:{s:2:"id";i:686;}i:2;a:1:{s:2:"id";i:438;}}}}
+  _thumbnail_id: '704'
+  dsq_thread_id: '4925867910'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>Today I finally found a moment to make <a href="https://www.van-porten.de/blog/2016/05/pilight2mqtt/">pilight2mqtt</a> a bit more usable and also add some infrastructure.</p>
+<p>I basically refactored the code a little and added a launcher script. Installing is now as easy as executing setup.py and running the pilight2mqtt executable afterwards.</p>
+<p><!--more--></p>
+<pre class="theme:dark-terminal lang:sh decode:true">python setup.py install
+pilight2mqtt --help</pre>
+<p>Parameters for pilight2mqtt are really not that many</p>
+<pre class="theme:dark-terminal lang:sh decode:true">&gt; python -m pilight2mqtt --help
+usage: __main__.py [-h] [--version] [--mqtt-server MQTT_SERVER]
+                   [--mqtt-port MQTT_PORT] [--mqtt-topic MQTT_TOPIC]
+                   [--pilight-server PILIGHT_SERVER]
+                   [--pilight-port PILIGHT_PORT] [--debug] [--verbose]
+                   [--pid-file path_to_pid_file]
+
+pilight2mqtt: Translate pilight events to MQTT.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  --mqtt-server MQTT_SERVER
+                        Address of the MQTT server to talk to.
+  --mqtt-port MQTT_PORT
+                        Port of the MQTT server to talk to.
+  --mqtt-topic MQTT_TOPIC
+                        MQTT topic to use.
+  --pilight-server PILIGHT_SERVER
+                        Set the address of the pilight server to use. If not
+                        specified will try to auto discover
+  --pilight-port PILIGHT_PORT
+                        Port of the pilight server. Only used when pilight-
+                        server is also specified
+  --debug               Start pilight2mqtt in debug mode
+  --verbose             Start pilight2mqtt in verbose mode
+  --pid-file path_to_pid_file
+                        Path to PID file useful for running as daemon</pre>
+<p>You can find the updated <a href="https://github.com/mcdeck/pilight2mqtt">code on GitHub</a>. There is now also a <a href="https://travis-ci.org/mcdeck/pilight2mqtt">Travis-CI project</a> that builds automatically. I will cover how to setup <a href="https://home-assistant.io/">Home Assistant</a> and connect it to pilight2mqtt in a future article.</p>
+<p>Stuff still on my to do list:<br />
+- improve build &amp; test infrastructure<br />
+- write tests<br />
+- support for DHT11 sensor<br />
+- support for other stuff I missed in the initial version</p>

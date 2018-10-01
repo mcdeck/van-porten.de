@@ -1,0 +1,108 @@
+---
+layout: post
+title: FHEM Installation on Raspberry PI
+date: 2016-01-31 21:44:45.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- fhem
+- homematic
+- smarthome
+meta:
+  _wpcom_is_markdown: '1'
+  _edit_last: '2'
+  otw_grid_manager_content: "[]"
+  _publicize_twitter_user: "@mcdeck"
+  _oembed_d0b3241f9bd7df5a9e40d54b25662804: "{{unknown}}"
+  _oembed_ac8c8974ed902f45b2bec8655bc03eea: "{{unknown}}"
+  _oembed_85023e50b01d29f541669ce4b1f1c947: "{{unknown}}"
+  _oembed_f0725962361c1781dbb6047ceb72a89f: "{{unknown}}"
+  _wpas_done_all: '1'
+  _wpas_skip_2057687: '1'
+  _wpas_skip_2057689: '1'
+  _wpas_skip_2057702: '1'
+  _wpas_skip_7715001: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1523302779;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:475;}i:1;a:1:{s:2:"id";i:153;}i:2;a:1:{s:2:"id";i:567;}}}}
+  _yoast_wpseo_primary_category: '1'
+  dsq_thread_id: '4539945447'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p class="">In my previous posted I briefly outlined my current attempts at a <a href="https://www.van-porten.de/blog/2016/01/home-automation-with-fhem/">home automation setup using FHEM</a>. In this post I will describe the basic steps necessary to set up <a href="http://fhem.de/fhem.html" target="_blank">FHEM </a>on a <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> - or rather what I did to set it up. There may be simpler ways.</p>
+<p class=""><!--more--></p>
+<h2 class="">FHEM basic installation</h2>
+<p class="">I wanted the latest and greatest FHEM version, so I pulled the latest sources from Sourceforge:</p>
+<pre class="">cd /home/pi
+svn co https://svn.code.sf.net/p/fhem/code/trunk/fhem</pre>
+<p class="">Once you obtained the sources, the easiest is building a Debian package for installation and installing it afterwards.</p>
+<pre class="">cd /home/pi/fhem
+sudo make deb</pre>
+<p class="">Mind the <strong><em>sudo</em> </strong>before the <strong><em>make deb</em></strong>. The makefile apparently wants to <em>chown</em> some files and folders to <em>root:root</em> - and only root can do that.</p>
+<p class="">Afterwards we can use <em>dpkg</em> to install the new package. This will likely fail with some errors because of missing dependencies. We are going to fix that with <em>apt-get.</em></p>
+<pre class="">sudo dpkg -i fhem-5.7.deb
+sudo apt-get -f install</pre>
+<p class="">That covers the basics. You will normally have a basic FHEM installed under <strong><em>/opt/fhem</em></strong> and can start it if apt did not already do that for you.</p>
+<pre class="">sudo service fhem start</pre>
+<h2 class="">Setting up some additional modules</h2>
+<p class="">In my setup I use the Fritz and SONOS components as well and both require some additional perl modules to be installed. The easiest is to do this via apt (although cpan of course also works just fine)</p>
+<p class="">For the Fritz module:</p>
+<pre class="">sudo apt-get install libnet-telnet-perl libjson-perl libsoap-lite-perl</pre>
+<p class="">And for the SONOS module you will need:</p>
+<pre class="">sudo apt-get install libxml-parser-lite-perl</pre>
+<h2 class="">Installing HMCCU</h2>
+<p class="">I own a <a href="http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html" target="_blank">CCU2</a> and wanted to continue using it regardless of <a href="http://fhem.de/fhem.html" target="_blank">FHEM</a>, at least for now. There used to be a HMRPC module but that seems to be no longer maintained. Luckily, the HMCCU module is a very good, if not better, replacement. You find it in the <em>contrib </em>directory of your <em>FHEM </em>installation and needs to be enabled first by copying or linking it to the <em>FHEM </em>folder.</p>
+<pre class="">cd /opt/fhem/FHEM/
+sudo ln -s ../contrib/HMCCU/88_HMCCUCHN.pm
+sudo ln -s ../contrib/HMCCU/88_HMCCUDEV.pm
+sudo ln -s ../contrib/HMCCU/88_HMCCU.pm
+sudo ln -s ../contrib/HMCCU/ccurpcd.pl
+sudo ln -s ../contrib/HMCCU/RPCQueue.pm
+sudo chown -h fhem:dialout *</pre>
+<p class="">Mind the <strong><em>chown -h</em></strong> which actually sets the proper user on the links (and not only on the target). Finally, you will also need to make <strong><em>ccurpc.pl</em> </strong>executable.</p>
+<pre class="">sudo chmod +x /opt/fhem/contrib/HMCCU/ccurpcd.pl</pre>
+<p class="">HMCCU also uses a file called <em>hmvalues.txt</em> (path can be changed in <em>fhem.cfg</em>, of course). To be honest, I have yet to figure out how to use it properly, but I've put it in its place nonetheless.</p>
+<pre class="">cd /opt/fhem/
+sudo touch hmvalues.txt
+sudo chown fhem:dialout hmvalues.txt</pre>
+<p class="">Next, we again need to install some dependencies.</p>
+<pre class="">sudo apt-get install librpc-xml-perl</pre>
+<h2 class="">RpiUtils</h2>
+<p class="">Since we are running on a Raspberry Pi we might as well install some utilities that allow us to monitor system temperature and other things. Again you find them in <em>contrib </em>and need to install them.</p>
+<pre class="">cd /opt/fhem/FHEM/
+sudo ln -s ../contrib/RaspberryPi/99_RpiUtils.pm
+sudo chown -h fhem:dialout 99_RpiUtils.pm</pre>
+<h2 class="">Giving it a go</h2>
+<p class="">With everything installed, (re)start the FHEM service.</p>
+<pre class="">sudo service fhem restart</pre>
+<p class="">Make sure everything is running properly. For me, I need ccurpcd for HMCCU and the SONOS service for my SONOS devices.</p>
+<pre class="">sudo ps ax | grep perl</pre>
+<p class="">You should see output similar to the following:</p>
+<pre class="">pi@spock:/opt/fhem $ sudo ps ax | grep perl
+13475 ? S 0:07 perl fhem.pl fhem.cfg
+13486 ? S 0:03 /usr/bin/perl ./FHEM/ccurpcd.pl homematic-ccu2 2001 /tmp/ccuqueue_2001 ./log/ccurpcd_2001.log
+13495 ? S 0:02 /usr/bin/perl ./FHEM/00_SONOS.pm 4711 3 0</pre>
+<p>You should be able to browse to your FHEM installation at <a href="http://&lt;yourhost&gt;:8083" target="_blank">http://&lt;yourhost&gt;:8083</a>.</p>
+<h2>Installing Tablet UI</h2>
+<p class="">The last step in my installation is setting up the tablet ui basics. They have an excellent wiki which covers the installation process in a lot of detail, so I will be brief. For further details <a href="http://www.fhemwiki.de/wiki/FHEM_Tablet_UI" target="_blank">visit the fhemwiki</a>.</p>
+<p class="">In your FHEM web interface, enter the following commands to install Tablet UI and some additional widgets (see also <a href="https://github.com/nesges/Widgets-for-fhem-tablet-ui/wiki/Installation" target="_blank">GitHub page of widgets</a>):</p>
+<pre class="">update all https://raw.githubusercontent.com/knowthelist/fhem-tablet-ui/master/controls_fhemtabletui.txt
+
+update all https://raw.githubusercontent.com/nesges/Widgets-for-fhem-tablet-ui/master/controls_widgets-for-fhem-tablet-ui.txt</pre>
+<p class="">Then we define the URL to the Tablet UI.</p>
+<pre class="">define TABLETUI HTTPSRV ftui/ ./www/tablet Tablet-UI</pre>
+<p>Note that the installation of Tablet UI just comes with an example page. You will have to go into your installation's www/tablet folder and create an index.html file. Again <a href="http://www.fhemwiki.de/wiki/FHEM_Tablet_UI" target="_blank">visit the fhemwiki</a> for further instructions. Once my setup is complete I will also post more details here.</p>
+<p>Finally, you can also add the tablet UI to the normal update process of FHEM by running the following command on the web interface:</p>
+<pre class="">update add https://raw.githubusercontent.com/knowthelist/fhem-tablet-ui/master</pre>
+<p>A subsequent <em><strong>update check</strong></em> should also show updates for the Tablet UI now. On the FHEM forum you will also find instructions to create an update button. I have not done that yet, but if you are interested, <a href="http://forum.fhem.de/index.php/topic,34233.msg287146.html#msg287146" target="_blank">have a look at the forum topic that describes the details.</a></p>
+<h2>Ready, set, go</h2>
+<p>Ok, with all this done, you are basically ready to dive deeper into the configuration of FHEM. I'll simply close with a picture of my current web UI - the Tablet U has not changed since I last wrote.</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/01/2016-01-31-21_39_07-Home-Sweet-Home.png" rel="attachment wp-att-501"><img class="aligncenter size-large wp-image-501" src="{{ site.baseurl }}/assets/2016-01-31-21_39_07-Home-Sweet-Home-1024x581.png" alt="2016-01-31 21_39_07-Home, Sweet Home" width="840" height="477" /></a></p>
+<p>I am going to describe further details of my installation and how to set things up, but that is something I will leave for another post.</p>

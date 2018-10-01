@@ -1,0 +1,40 @@
+---
+layout: post
+title: AWK Function
+date: 2006-06-07 09:54:00.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1522971407;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:162;}i:1;a:1:{s:2:"id";i:567;}i:2;a:1:{s:2:"id";i:152;}}}}
+  dsq_thread_id: '1265389481'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p>Just for the hell of it. A little awk function to find a columns id in a<br />
+csv file. Quite a handy one I might add:</p>
+<div class="highlight">
+<pre><span class="kd">function</span> <span class="nx">find_column</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span>  <span class="nx">column</span><span class="p">,</span><span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">column</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">while</span><span class="p">(</span> <span class="nx">i</span> <span class="o">!=</span> <span class="nb">NF</span> <span class="p">)</span>
+        <span class="p">{</span>
+                <span class="k">if</span><span class="p">(</span> <span class="o">$</span><span class="nx">i</span> <span class="o">==</span> <span class="nx">name</span> <span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="nx">column</span> <span class="o">=</span> <span class="nx">i</span><span class="p">;</span>
+            <span class="p">}</span>
+                <span class="nx">i</span><span class="o">++</span>
+        <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">column</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+</div>
