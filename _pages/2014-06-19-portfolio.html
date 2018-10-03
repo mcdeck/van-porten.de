@@ -9,15 +9,13 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_page_template: default
-  _wpas_done_all: '1'
-author:
-  login: porten
-  email: oliver@van-porten.de
-  display_name: Oliver van Porten
-  first_name: Oliver
-  last_name: van Porten
+author: Oliver van Porten
 ---
-<p>soon</p>
+<ul>
+  {% for project in site.portfolio %}
+    <li>
+      <a href="{{ project.url }}">{{ project.title }}</a>
+      <p>{{ project.description | markdownify}}</p>
+    </li>
+  {% endfor %}
+</ul>
