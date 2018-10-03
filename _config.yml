@@ -31,6 +31,10 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -48,3 +52,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:title
+  pages:
+    output: true
+    permalink: /:title
+  portfolio:
+    output: true
+    permalink: /portfolio/:title

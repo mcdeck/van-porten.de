@@ -1,0 +1,79 @@
+---
+layout: page
+title: Visual REST
+date: 2016-01-10 22:01:22.000000000 +01:00
+type: jetpack-portfolio
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _wpcom_is_markdown: '1'
+  _edit_last: '2'
+  _oembed_9826b920ea544566c9eacc6a30678916: "{{unknown}}"
+  otw_grid_manager_content: "[]"
+  _publicize_twitter_user: "@mcdeck"
+  _yoast_wpseo_focuskw_text_input: REST
+  _yoast_wpseo_focuskw: REST
+  _yoast_wpseo_linkdex: '68'
+  _jetpack_related_posts_cache: a:1:{s:32:"8b265fe74299c9fbe5992d781d95c0f2";a:2:{s:7:"expires";i:1522657241;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:282;}i:1;a:1:{s:2:"id";i:280;}i:2;a:1:{s:2:"id";i:281;}}}}
+  _wpas_done_all: '1'
+  _wpas_skip_2057687: '1'
+  _wpas_skip_2057689: '1'
+  _wpas_skip_2057702: '1'
+  _wpas_skip_7715001: '1'
+  dsq_thread_id: '4479598974'
+author:
+  login: porten
+  email: oliver@van-porten.de
+  display_name: Oliver van Porten
+  first_name: Oliver
+  last_name: van Porten
+---
+<p><a href="https://bitbucket.org/visualrest/visual-rest/wiki/Home" target="_blank">Visual REST</a> is a graphical modelling language for the design of resource-oriented applications. I developed Visual REST as part of my <a href="http://deposit.fernuni-hagen.de/2810/" target="_blank">master's thesis at the University of Hagen</a> in 2012. It is implemented as an <a href="http://www.eclipse.org/">Eclipse</a>-based editor using <a href="http://www.eclipse.org/graphiti/">Graphiti</a> and enables creation of application models. As of today, code generation is not part of the IDE, though.</p>
+<p>Visual REST is <a href="https://bitbucket.org/visualrest/visual-rest/wiki/Home" target="_blank">available on Bitbucket.</a> It is, however, no longer actively developed. If you are looking for a graphical modelling language for RESTful applications I suggest taking a look at the <a href="http://www.visual-paradigm.com/solution/rest-api-design-tool/" target="_blank">REST API design tool</a> developer by the people at <a href="http://www.visual-paradigm.com/" target="_blank">Visual Paradigm.</a></p>
+<h2 id="!the-views">The views</h2>
+<p>Visual REST as a language and thus also our Eclipse-based implementation consists of four types of views on an application model. The resource structure type overview diagram shows the complete resource-oriented application:</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/01/bookshop_overview.png" rel="attachment wp-att-453"><img class="aligncenter wp-image-453 size-large" src="{{ site.baseurl }}/assets/bookshop_overview-1024x361.png" alt="bookshop_overview" width="840" height="296" /></a></p>
+<p>&nbsp;</p>
+<p>The resource type structure diagram shows a more verbose representation of resource types in an application. Visual REST also allows partitioning an application over more than one such diagram.</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/01/bookshop_structure.png" rel="attachment wp-att-455"><img class="aligncenter wp-image-455 size-large" src="{{ site.baseurl }}/assets/bookshop_structure-1024x395.png" alt="bookshop_structure" width="840" height="324" /></a></p>
+<p>&nbsp;</p>
+<p>The resource type states diagram visualizes resource type states and the methods that are supported in each state. It also shows the transitions between states.</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/01/bookshop_states.png" rel="attachment wp-att-454"><img class="aligncenter wp-image-454 size-medium" src="{{ site.baseurl }}/assets/bookshop_states-300x121.png" alt="bookshop_states" width="300" height="121" /></a></p>
+<p>&nbsp;</p>
+<p>Finally, the resource type method behavior diagram models the behaviour of each method.</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/01/bookshop_methods.png" rel="attachment wp-att-452"><img class="aligncenter size-medium wp-image-452" src="{{ site.baseurl }}/assets/bookshop_methods-300x262.png" alt="bookshop_methods" width="300" height="262" /></a></p>
+<p>&nbsp;</p>
+<p>The following image shows how the different view of the language relate:</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/01/model_layers.png" rel="attachment wp-att-457"><img class="aligncenter wp-image-457 size-large" src="{{ site.baseurl }}/assets/model_layers-1024x740.png" alt="model_layers" width="840" height="607" /></a></p>
+<p>&nbsp;</p>
+<h2 id="!syntax-elements">Syntax Elements</h2>
+<p>The following pages give an overview of the syntax elements available for the different Visual REST views:</p>
+<ul>
+<li><a href="https://bitbucket.org/visualrest/visual-rest/wiki/StructureOverviewSyntax">Overview Diagram</a></li>
+<li><a href="https://bitbucket.org/visualrest/visual-rest/wiki/StructureSyntax">Structure Diagram</a></li>
+<li><a href="https://bitbucket.org/visualrest/visual-rest/wiki/StatesSyntax">States Diagram</a></li>
+<li><a href="https://bitbucket.org/visualrest/visual-rest/wiki/MethodSyntax">Method Diagram</a></li>
+</ul>
+<h2 id="!the-eclipse-editor">The Eclipse Editor</h2>
+<p>The editor supports developers by prodiving additional features besides editing the language itself. Amongst others, one of these features is the application outline which the following screenshots shows:</p>
+<p><a href="https://www.van-porten.de/wp-content/uploads/2016/01/editor.png" rel="attachment wp-att-456"><img class="aligncenter size-large wp-image-456" src="{{ site.baseurl }}/assets/editor-1024x749.png" alt="editor" width="840" height="614" /></a></p>
+<p>&nbsp;</p>
+<h2 id="!obtaining-the-editor">Obtaining the Editor</h2>
+<p>The editor is built from source automatically. The latest stable builds can be obtained from our continuous integration server:</p>
+<ul>
+<li><a href="http://ci.van-porten.de/job/VisualREST/lastSuccessfulBuild/artifact/src/de.van_porten.vrest.p2-repository/target/products/">latest stable build (continuous build)</a></li>
+<li>nightly build (TBD)</li>
+<li>release builds (TBD)</li>
+</ul>
+<h2 id="!continuous-integration">Continuous Integration</h2>
+<p>More info can be found on the <a href="https://bitbucket.org/visualrest/visual-rest/wiki/ContinuousIntegration">ContinuousIntegration</a> wiki page.</p>
+<h2 id="!publications">Publications</h2>
+<ul>
+<li>Schreier, S.: Modeling RESTful applications. In: Proceedings of the Second International Workshop on RESTful Design. pp. 15-21. ACM, New York (2011)</li>
+<li>van Porten, O.: Development and Evaluation of a Graphical Notation for Modelling Resource-Oriented Applications. Research Report 1/2012, FernUniversität in Hagen (2012), <a href="http://deposit.fernuni-hagen.de/2810/">http://deposit.fernuni-hagen.de/2810/</a></li>
+</ul>
+<h2 id="!the-eclipse-editor"></h2>
