@@ -28,7 +28,7 @@ github_username:  mcdeck
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: minima
 plugins:
   - jekyll-feed
 
@@ -43,3 +43,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:title
