@@ -33,7 +33,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-show_excerpts: true
+show_excerpts: false
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 disqus:
   shortname: porten
