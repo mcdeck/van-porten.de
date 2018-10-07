@@ -57,10 +57,10 @@ exclude:
 collections:
   posts:
     output: true
-    permalink: /blog/:year/:month/:title
+    permalink: /blog/:year/:month/:title/
   pages:
     output: true
-    permalink: /:title
+    permalink: /:title/
   portfolio:
     output: true
-    permalink: /portfolio/:title
+    permalink: /portfolio/:title/
