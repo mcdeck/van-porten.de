@@ -130,9 +130,9 @@ Grafana is a web front end that allows you to create various views on the data i
 
 Installing everything is again very straight forward. Unless you want to compile all packages yourself I suggest you download the pre-built debs from here. The packages provided here are a mirror of those built by [padcom](http://padcom13.blogspot.de/2015/12/influxdb-telegraf-and-grafana-on.html). You can also [go to his page and get the original files](http://padcom13.blogspot.de/2015/12/influxdb-telegraf-and-grafana-on.html).
 
-*   [influxdb\_0.9.6.1\_armhf.deb]({{ site.baseurl }}/assets/influxdb_0.9.6.1_armhf.deb)
-*   [telegraf\_0.3.0-beta2\_armhf.deb]({{ site.baseurl }}/assets/telegraf_0.3.0-beta2_armhf.deb)
-*   [grafana\_2.6.0\_armhf.deb]({{ site.baseurl }}/assets/grafana_2.6.0_armhf.deb)
+*   [influxdb\_0.9.6.1\_armhf.deb](https://github.com/mcdeck/mcdeck.github.io/releases/download/untagged-2889747c569859d634eb/influxdb_0.9.6.1_armhf.deb)
+*   [telegraf\_0.3.0-beta2\_armhf.deb](https://github.com/mcdeck/mcdeck.github.io/releases/download/untagged-2889747c569859d634eb/telegraf_0.3.0-beta2_armhf.deb)
+*   [grafana\_2.6.0\_armhf.deb](https://github.com/mcdeck/mcdeck.github.io/releases/download/untagged-2889747c569859d634eb/grafana_2.6.0_armhf.deb)
 
 Once you downloaded the deb simply install them using dpkg and fix missing dependencies afterwards.
 
