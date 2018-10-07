@@ -36,6 +36,14 @@ youtube_username: mcdeck
 googleplus_username: +OlivervanPorten
 rss: rss
 
+header_pages:
+  - _pages/blog.md
+  - _pages/portfolio.md
+  - _pages/about.md
+  - _pages/contact.md
+  - _pages/datenschutz.md
+  - _pages/imprint.md
+
 # Build settings
 markdown: kramdown
 theme: minima
