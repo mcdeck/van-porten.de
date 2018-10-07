@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-repository: mcdeck/van-porten.de
+repository: mcdeck/mcdeck.github.io
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -19,11 +19,22 @@ title: Oliver van Porten
 email: oliver@van-porten.de
 description: >- # this means to ignore newlines until "baseurl:"
   [![](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) 
+
   This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.van-porten.de" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social accounts
 twitter_username: mcdeck
 github_username:  mcdeck
+facebook_username: ovanporten
+flickr_username: mcdeck
+instagram_username: mcdeck
+linkedin_username: ovanporten
+pinterest_username: ovanporten
+youtube_username: mcdeck
+googleplus_username: +OlivervanPorten
+rss: rss
 
 # Build settings
 markdown: kramdown
@@ -32,6 +43,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-include-cache
 
 show_excerpts: false
 
