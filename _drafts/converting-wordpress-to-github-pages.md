@@ -23,3 +23,7 @@ JekyllImport::Importers::WordpressDotCom.run({
     "assets_folder" => "assets"
 })
 ```
+
+for fav icons
+https://realfavicongenerator.net/
+https://editor.method.ac/
