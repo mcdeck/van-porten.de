@@ -11,6 +11,9 @@ tags:
 - Development
 - MDA
 author: Oliver van Porten
+redirect_from:
+  - /2009/02/mda-tools-ueberblick/
+  - /2009/02/mda-tools-uberblick/
 ---
 Wer sucht, der findet. Leider nur ein Ausschnitt aus einem relativ alten iX Artikel über MDA Tools: [iX 5/2005, S. 102: Softwareentwicklung](http://www.heise.de/ix/artikel/2005/05/102/).
 

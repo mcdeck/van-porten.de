@@ -12,6 +12,8 @@ tags:
 - biblatex
 - latex
 author: Oliver van Porten
+redirect_from:
+  - /2012/01/what-to-do-if-biber-stops-working-on-macos-x/
 ---
 Yesterday evening I ran into a bit of a problem when I tried building my latex document that uses biblatex/biber. For some reason, biber would not generate any output but fail with
 

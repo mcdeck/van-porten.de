@@ -9,6 +9,8 @@ status: publish
 categories: []
 tags: []
 author: Oliver van Porten
+redirect_from:
+  - /2016/05/fixing-boot-camp-wifi-issues/
 ---
 After installing Windows 10 on my old MacBook Air I ran into some problems with my WiFi. Specifically, WiFi drops every so often when using Boot Camp. The network connection simply stalls for some time and then I would manually need to reconnect the connection to make it work again.
 

@@ -12,6 +12,8 @@ tags:
 - fun
 - metrics
 author: Oliver van Porten
+redirect_from:
+  - /2009/02/code-metrics-wtfsm/
 ---
 Good metrics:
 

@@ -14,6 +14,8 @@ tags:
 - mqtt
 - smarthome
 author: Oliver van Porten
+redirect_from:
+  - /2016/03/home-assistant/
 ---
 I believe home automation, at least for me, is to a large extent driven by the joy of trying out new things and extending my system. I think this is why, despite my previous endeavors into FHEM, I kept on tinkering with Home Assistant. I am a big Python fanboy and do dislike PERL with a passion, so it seems in a way natural to do so.
 

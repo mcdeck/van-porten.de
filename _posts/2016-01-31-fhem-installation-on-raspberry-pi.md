@@ -12,6 +12,8 @@ tags:
 - homematic
 - smarthome
 author: Oliver van Porten
+redirect_from:
+  - /2016/01/fhem-installation-on-raspberry-pi/
 ---
 In my previous posted I briefly outlined my current attempts at a [home automation setup using FHEM]({{ site.baseurl }}/blog/2016/01/home-automation-with-fhem/). In this post I will describe the basic steps necessary to set up [FHEM](http://fhem.de/fhem.html) on a [Raspberry Pi](https://www.raspberrypi.org/) - or rather what I did to set it up. There may be simpler ways.
 

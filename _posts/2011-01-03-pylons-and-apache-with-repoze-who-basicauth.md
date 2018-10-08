@@ -14,6 +14,8 @@ tags:
 - web
 - xmlrpc
 author: Oliver van Porten
+redirect_from:
+  - /2011/01/pylons-and-apache-with-repozewho-basicauth/
 ---
 To be able to use Basic Authentification in repoze.who running in a wsgi app in your Apache installation, you need to tell Apache to **WSGIPassAuthorization**. An Apache configuration like this will do:
 

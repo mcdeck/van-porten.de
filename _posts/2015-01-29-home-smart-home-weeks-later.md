@@ -12,6 +12,8 @@ tags:
 - smarthome
 - zwave
 author: Oliver van Porten
+redirect_from:
+  - /2015/01/home-smart-home-weeks-later/
 ---
 After a few attempts to get my Z-Wave network to work reliably I finally decided to maybe try something else for the outdoor lights. The Z-Wave setup did not have the range to cover my driveway and yard, unfortunately.
 

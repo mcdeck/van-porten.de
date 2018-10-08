@@ -14,6 +14,8 @@ tags:
 - xmlrpc
 - XMLRPCController
 author: Oliver van Porten
+redirect_from:
+  - /2011/01/testing-xmlrpc-controllers-in-pylons/
 ---
 Testing is one of the essential tasks in modern software development, so it is only natural to want to test an application as thoroughly as possible.
 

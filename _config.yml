@@ -57,7 +57,9 @@ plugins:
   - jekyll-mentions
   - jekyll-include-cache
 
-show_excerpts: false
+show_excerpts: true
+# paginate: 7
+# paginate_path: "/blog/page:num/"
 
 kramdown:
   input: GFM

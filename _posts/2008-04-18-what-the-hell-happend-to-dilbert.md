@@ -11,6 +11,8 @@ tags:
 - comics
 - dilbert
 author: Oliver van Porten
+redirect_from:
+  - /2008/04/what-the-hell-happend-to-dilbert/
 ---
 [![poop emeralds]({{ site.baseurl }}/assets/130190834_f3b6c72390_m.jpg)](http://www.flickr.com/photos/37996594423@N01/130190834)
 

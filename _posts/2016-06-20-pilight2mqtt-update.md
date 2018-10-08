@@ -12,6 +12,8 @@ tags:
 - mqtt
 - pilight
 author: Oliver van Porten
+redirect_from:
+  - /2016/06/pilight2mqtt-update/
 ---
 Today I finally found a moment to make [pilight2mqtt]({{ site.baseurl }}/blog/2016/05/pilight2mqtt/) a bit more usable and also add some infrastructure.
 

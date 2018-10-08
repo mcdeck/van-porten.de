@@ -11,6 +11,9 @@ tags:
 - linux
 - ubuntu
 author: Oliver van Porten
+redirect_from:
+  - /2011/02/setting-default-applications-in-ubuntu-1010/
+  - /2011/02/setting-default-applications-in-ubuntu-10-10/
 ---
 After installing Adobe Reader into my Ubuntu installation I noticed that the Adobe Reader was actually making itself at home as the default viewer for PDF files. However, I do only rarely use it because I feel that the Ubuntu Document Viewer (aka evince) is the quicker and better solution most of the time.
 

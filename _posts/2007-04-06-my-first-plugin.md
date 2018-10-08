@@ -9,6 +9,8 @@ status: publish
 categories: []
 tags: []
 author: Oliver van Porten
+redirect_from:
+  - /2007/04/my-first-plugin/
 ---
 As you might have noticed I'm still struggeling with my theme choice. I'll be switching themes a lot soon but wanted to get started on integrating plugins (like, for instance, [Link Indication](http://sw-guide.de/wordpress/link-indication-plugin/) ). Some of those require adding CSS code though. I stumbeled upon one guide on how to preserve your CSS changes througout themes [HERE](http://www.pearsonified.com/2007/02/how_to_protect_css_mods_for_any_wordpress_theme.php) but that still required you to modify the template and that I did not want to do.
 

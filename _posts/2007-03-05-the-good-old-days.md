@@ -11,6 +11,8 @@ categories: []
 tags:
 - Rants
 author: Oliver van Porten
+redirect_from:
+  - /2007/03/the-good-old-days/
 ---
 Lately I've been playing a lot of [Titan Quest](http://www.ironlore.com/game.php). Being some kind of Diablo Clone it is quite fun to play, though it does not reach the  
 originals level of quality (i.e. fun) by far. And I for one have been wondering why.

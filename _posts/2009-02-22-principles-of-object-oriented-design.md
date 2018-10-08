@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Principles Of Object Oriented Design
@@ -12,7 +11,10 @@ tags:
 - Design Principles
 - Development
 author: Oliver van Porten
+redirect_from:
+  - /2009/02/principles-of-object-oriented-design/
 ---
+
 Muss man mal gelesen haben:
 
 [ArticleS.UncleBob.PrinciplesOfOod](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod).

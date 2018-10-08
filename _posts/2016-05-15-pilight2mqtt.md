@@ -13,6 +13,8 @@ tags:
 - Python
 - smart home
 author: Oliver van Porten
+redirect_from:
+  - /2016/05/pilight2mqtt/
 ---
 Some days ago [I blogged about my first experiments with pilight]({{ site.baseurl }}/blog/2016/03/pilight/) and mentioned that I intended to attach it to [Home Assistant](https://home-assistant.io/). Today I finally found the time to get started and now have a working prototype ready.
 

@@ -11,6 +11,10 @@ tags:
 - N900
 - ubuntu
 author: Oliver van Porten
+redirect_from:
+  - /2010/06/flashing-pr-12-to-the-n900-from-ubuntu-1004-64bit/
+  - /2010/06/flashing-pr-12-to-the-n900-from-ubuntu-10-04-64bit/
+  - /2010/06/flashing-pr-1-2-to-the-n900-from-ubuntu-10-04-64bit/
 ---
 To install flasher, do
 

@@ -13,6 +13,8 @@ tags:
 - gifts
 - Hardware
 author: Oliver van Porten
+redirect_from:
+  - /2009/12/des-christkinds-liebste-gadgets/
 ---
 
 Da ja bald Weihnachten ist stelle ich an dieser Stelle einfach mal eine  

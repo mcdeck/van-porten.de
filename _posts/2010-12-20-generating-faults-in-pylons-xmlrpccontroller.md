@@ -13,6 +13,8 @@ tags:
 - web
 - XML-RPC
 author: Oliver van Porten
+redirect_from:
+  - /2010/12/generating-faults-in-pylons-xmlrpccontroller/
 ---
 This might seem easy enough, but it took me a while to get it right since the Pylons documentation is a bit misleading here, really. It says you should use **xmlrpc\_fault** from **pylons.controllers.xmlrpc** but that's actually not working if you're doing something like:
 

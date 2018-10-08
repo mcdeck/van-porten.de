@@ -12,6 +12,8 @@ tags:
 - Python
 - Windows
 author: Oliver van Porten
+redirect_from:
+  - /2010/11/django-on-windows/
 ---
 To more easily use [Django](http://www.djangoproject.com/) on Windows, create a dos .bat file in Django's **bin** directory named **django-admin.bat** with the following content:
 

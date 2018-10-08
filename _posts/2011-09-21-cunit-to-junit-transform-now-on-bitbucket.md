@@ -15,6 +15,8 @@ tags:
 - junit
 - xslt
 author: Oliver van Porten
+redirect_from:
+  - /2011/09/cunit-to-junit-transform-now-on-bitbucket/
 ---
 One of the most visited blog entries on this blog probably is my article on transforming [CUnit](http://cunit.sourceforge.net/) results to JUnit results: [CUnit Tests in Hudson](http://www.van-porten.de/2009/05/cunit-tests-in-hudson/). There I write about how to use [xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html) to transform the output of CUnit to be processed by [Hudson](http://hudson-ci.org/)/[Jenkins](http://jenkins-ci.org/).
 

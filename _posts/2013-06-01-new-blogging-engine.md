@@ -11,6 +11,8 @@ tags:
 - blog
 - software
 author: Oliver van Porten
+redirect_from:
+  - /2013/06/new-blogging-engine/
 ---
 Finally, after a year of almost no activity, I have updated my blog with new software. I used to run [Wordpress](http://www.wordpress.org) for the past seven or so years but finally decided it was time for something new. As of today, I am running on [Pelican](http://blog.getpelican.com/), a Python-based static website generator. This means good-bye to the php-based dynamic colution. I hope this will give this blog some more security. Comments will be via [Disqus](http://www.disqus.com) for the moment, for want of a better alternative. I still plan to eventually migrate to completely static comments, but for now Disqus will do.
 

@@ -12,6 +12,9 @@ tags:
 - Hardware
 - NAS
 author: Oliver van Porten
+redirect_from:
+  - /2011/08/nas-diy-1-introduction/
+  - /2011/08/diy-nas-1-introduction/
 ---
 I've been pondering the thought of buying a [NAS](http://en.wikipedia.org/wiki/Network-attached_storage) system for quite some time now but could not find a suitable one. My requirements are quite challenging though, I must admit:
 

@@ -9,6 +9,8 @@ status: publish
 categories: []
 tags: []
 author: Oliver van Porten
+redirect_from:
+  - /2007/06/singleton-pattern-in-python/
 ---
 I was looking for a smooth way to create singletons in python. Here is a metaclass solution that seems to work:
 

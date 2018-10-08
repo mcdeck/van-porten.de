@@ -9,6 +9,8 @@ status: publish
 categories: []
 tags: []
 author: Oliver van Porten
+redirect_from:
+  - /2017/10/killing-hanging-polling-jenkins/
 ---
 For one reason or another Jenkins sometimes gets stuck when polling SCM (which is, apparently, a known issue, cf [[JENKINS-5413] SCM polling getting hung - Jenkins JIRA](https://issues.jenkins-ci.org/browse/JENKINS-5413)).
 
