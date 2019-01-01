@@ -73,7 +73,7 @@ switch state - maybe there is a more elegant solution, but this works.
 
 To still explain a bit more, when the switch is set to on/off via the web interface that sets the state, but that state has nothing to do
 with the actual state of the diskstation. So I use ping to check if it is up. Then I call **SET_STATE** of the virtual button (CUX2801003)
-with the (inverted) result of that ping command. **SET_STATE** modifies the button state without triggering a switch aciton, i.e. by
+with the (inverted) result of that ping command. **SET_STATE** modifies the button state without triggering a switch action, i.e. by
 doing **SET_STATE** to on that does not execute ether-wake but just modified button state.
   
 ```
