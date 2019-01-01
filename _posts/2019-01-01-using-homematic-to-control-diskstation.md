@@ -35,14 +35,6 @@ I then configured the device to only have one channel and report as unreachable 
 
 ![CUxd Device General Parameters]({{ site.baseurl }}/assets/cuxd_general_params.png)
 
-```
-CHANNELS	
-1
- 	 
-UNREACH	
--1
-```
-
 Now comes the tricky bit - the actual channel settings.
 
 ![CUxd Device Channel 1 Parameters]({{ site.baseurl }}/assets/cuxd_channel1_params.png)
