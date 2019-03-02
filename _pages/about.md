@@ -25,11 +25,11 @@ author: Oliver van Porten
 Fähigkeiten
 -----------
 
-*   **Sprachen**: Deutsch (muttersprachlich), Englisch (verhandlungssicher), Französisch (ein wenig), Spanisch (noch ein bisschen weniger), Latein (das wenige, was aus der Schule hängen geblieben ist)
-*   **Programmiersprachen und Frameworks:** C, C++, Python, C#, Java, PHP, LATEX, Django, Grails
-*   **Betriebssysteme**: Windows, Linux, MaxOS X
+*   **Sprachen**: Deutsch (muttersprachlich), Englisch (verhandlungssicher), Französisch (Schulwissen), Spanisch (Schulwissen)
+*   **Programmiersprachen und Frameworks:** C, C++, Python, Java, C#, Groovy, PHP, LATEX, Django, Grails
+*   **Betriebssysteme**: Windows, Linux, MaxOS
 *   **Prozesse und Modellierung**: Scrum, Kanban, UML
-*   **Sonstiges**: Spracherkennung und -synthese, Embedded Systems, Web Entwicklung
+*   **Sonstiges**: Spracherkennung und -synthese, Embedded Systems, Web Entwicklung, Jenkins, Continuous Integration, Continuous Delivery, Software Tests
 
 Zertifikate
 -----------
