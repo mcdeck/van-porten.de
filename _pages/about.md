@@ -46,7 +46,11 @@ Berufserfahrung
 
 *   **Nuance Communications Deutschland GmbH**, Aachen, Deutschland
     
-    _Manager Product Delivery - TTS Research & Development,  seit Mai 2016_
+    _Manager Software Engineering TTS - TTS Research & Development,  seit NOvember 2017_
+    
+    Leitung des Text to Speech Engineering Teams (Entwicklung, Infrastruktur Engineering, Release Engineering)
+    
+    _Manager Product Delivery - TTS Research & Development,  Mai 2016 - Oktober 2017_
     
     Leitung des Product Delivery Teams (als Erweiterung des QA Engineering) in der Nuance Embedded Text to Speech (TTS) Engineering Gruppe.
     
@@ -55,8 +59,11 @@ Berufserfahrung
     Leitung des QA Engineering Teams in der Nuance Embedded Text to Speech (TTS) Engineering Gruppe.
     
 *   **Fachhochschule Aachen**, Aachen, Deutschland  
-    _Lehrbeauftragter,  seit März 2015  
-    _Lehrbeauftragter im Fach Informationssyteme I im Studiengang Kommunikations- und Multimedia-Design (CMD). Ausarbeitung und Durchführung der Lehrveranstaltung und zugehörige Übungen sowie Praktika und Klausuren. Themenschwerpunkt war die Entwicklung von Webseiten mit HTML5, CSS3, PHP und MySQL.
+    
+    _Lehrbeauftragter,  März 2015 - Juli 2017_  
+    
+    Lehrbeauftragter im Fach Informationssyteme I im Studiengang Kommunikations- und Multimedia-Design (CMD). Ausarbeitung und Durchführung der Lehrveranstaltung und zugehörige Übungen sowie Praktika und Klausuren. Themenschwerpunkt war die Entwicklung von Webseiten mit HTML5, CSS3, PHP und MySQL.
+    
 *   **Nuance Communications Deutschland GmbH**, Aachen, Deutschland  
     
     _Manager Software Engineering - Embedded Research & Development, Februar 2014 - April 2015_
@@ -66,8 +73,7 @@ Berufserfahrung
 
 *   **Nuance Communications Aachen GmbH**, Aachen, Deutschland
     
-    _Senior Software Engineer - Embedded Research & Development, Mai 2012 - Januar 2014  
-    _
+    _Senior Software Engineer - Embedded Research & Development, Mai 2012 - Januar 2014_
     
     Architektur und Entwicklung eines Frameworks für Embedded Sprachsysteme mit C++. Einführung von Scrum als Scrum Master. Aufbau eines agilen Teams.
     
