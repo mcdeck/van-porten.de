@@ -14,7 +14,7 @@ author: Oliver van Porten
  Biographie
 --------------------------------------------------
 
-![me]({{ site.baseurl }}/assets/me.jpg)
+![me]({{ site.baseurl }}/assets/me_small.jpg)
 
 *   Name: Oliver Hendrik van Porten
 *   Geboren am: 20 Mai 1982 in Köln, Deutschland
