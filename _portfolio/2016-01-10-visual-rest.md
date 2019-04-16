@@ -12,14 +12,14 @@ tags: []
 author: Oliver van Porten
 
 description: >-
-  [Visual REST](https://bitbucket.org/visualrest/visual-rest/wiki/Home) is a graphical modelling language for the design of resource-oriented applications. 
+  [Visual REST](https://github.com/mcdeck/visualrest/wiki) is a graphical modelling language for the design of resource-oriented applications. 
   I developed Visual REST as part of my [master's thesis at the University of Hagen](http://deposit.fernuni-hagen.de/2810/) in 2012.
   It is implemented as an [Eclipse](http://www.eclipse.org/)\-based editor using [Graphiti](http://www.eclipse.org/graphiti/) and enables
   creation of application models. As of today, code generation is not part of the IDE, though.
 ---
-[Visual REST](https://bitbucket.org/visualrest/visual-rest/wiki/Home) is a graphical modelling language for the design of resource-oriented applications. I developed Visual REST as part of my [master's thesis at the University of Hagen](http://deposit.fernuni-hagen.de/2810/) in 2012. It is implemented as an [Eclipse](http://www.eclipse.org/)\-based editor using [Graphiti](http://www.eclipse.org/graphiti/) and enables creation of application models. As of today, code generation is not part of the IDE, though.
+[Visual REST](https://github.com/mcdeck/visualrest/wiki) is a graphical modelling language for the design of resource-oriented applications. I developed Visual REST as part of my [master's thesis at the University of Hagen](http://deposit.fernuni-hagen.de/2810/) in 2012. It is implemented as an [Eclipse](http://www.eclipse.org/)\-based editor using [Graphiti](http://www.eclipse.org/graphiti/) and enables creation of application models. As of today, code generation is not part of the IDE, though.
 
-Visual REST is [available on Bitbucket.](https://bitbucket.org/visualrest/visual-rest/wiki/Home) It is, however, no longer actively developed. If you are looking for a graphical modelling language for RESTful applications I suggest taking a look at the [REST API design tool](http://www.visual-paradigm.com/solution/rest-api-design-tool/) developer by the people at [Visual Paradigm.](http://www.visual-paradigm.com/)
+Visual REST is ~~[available on Bitbucket.](https://bitbucket.org/visualrest/visual-rest/wiki/Home)~~ [available on GitHub](https://github.com/mcdeck/visualrest) It is, however, no longer actively developed. If you are looking for a graphical modelling language for RESTful applications I suggest taking a look at the [REST API design tool](http://www.visual-paradigm.com/solution/rest-api-design-tool/) developer by the people at [Visual Paradigm.](http://www.visual-paradigm.com/)
 
 The views
 ---------
@@ -66,7 +66,7 @@ Obtaining the Editor
 
 The editor is built from source automatically. The latest stable builds can be obtained from our continuous integration server:
 
-*   [latest stable build (continuous build)](http://ci.van-porten.de/job/VisualREST/lastSuccessfulBuild/artifact/src/de.van_porten.vrest.p2-repository/target/products/)
+*   ~~[latest stable build (continuous build)](http://ci.van-porten.de/job/VisualREST/lastSuccessfulBuild/artifact/src/de.van_porten.vrest.p2-repository/target/products/)~~
 *   nightly build (TBD)
 *   release builds (TBD)
 
