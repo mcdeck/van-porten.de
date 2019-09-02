@@ -59,70 +59,69 @@ Berufserfahrung
     
 *   **Fachhochschule Aachen**, Aachen, Deutschland  
     
-    _Lehrbeauftragter,  März 2015 - Juli 2017_  
+    * _Lehrbeauftragter,  März 2015 - Juli 2017_  
     
-    Lehrbeauftragter im Fach Informationssyteme I im Studiengang Kommunikations- und Multimedia-Design (CMD). Ausarbeitung und Durchführung der Lehrveranstaltung und zugehörige Übungen sowie Praktika und Klausuren. Themenschwerpunkt war die Entwicklung von Webseiten mit HTML5, CSS3, PHP und MySQL.
+      Lehrbeauftragter im Fach Informationssyteme I im Studiengang Kommunikations- und Multimedia-Design (CMD). Ausarbeitung und Durchführung der Lehrveranstaltung und zugehörige Übungen sowie Praktika und Klausuren. Themenschwerpunkt war die Entwicklung von Webseiten mit HTML5, CSS3, PHP und MySQL.
     
 *   **Nuance Communications Deutschland GmbH**, Aachen, Deutschland  
     
-    _Manager Software Engineering - Embedded Research & Development, Februar 2014 - April 2015_
+    * _Manager Software Engineering - Embedded Research & Development, Februar 2014 - April 2015_
     
-    Leitung eines Engineering Teams in der Nuance Embedded Speech Recognition (ASR) Engineering Gruppe.
+      Leitung eines Engineering Teams in der Nuance Embedded Speech Recognition (ASR) Engineering Gruppe.
         
-    _Senior Software Engineer - Embedded Research & Development, Mai 2012 - Januar 2014_
+    * _Senior Software Engineer - Embedded Research & Development, Mai 2012 - Januar 2014_
     
-    Architektur und Entwicklung eines Frameworks für Embedded Sprachsysteme mit C++. Einführung von Scrum als Scrum Master. Aufbau eines agilen Teams.
+      Architektur und Entwicklung eines Frameworks für Embedded Sprachsysteme mit C++. Einführung von Scrum als Scrum Master. Aufbau eines agilen Teams.
     
 *   **Generali Deutschland Informatik Services GmbH**, Aachen, Deutschland
     
-    _System Designer, Januar 2012 - April 2012_
+    * _System Designer, Januar 2012 - April 2012_
     
-    Arbeit als System Designer und Applikationsentwickler im KFZ Projekt. Wartung und Weiterentwicklung des Service Angebots im Rahmen der Unternehmensweiten Service-Oriented Architecture (SOA) Strategie.
+      Arbeit als System Designer und Applikationsentwickler im KFZ Projekt. Wartung und Weiterentwicklung des Service Angebots im Rahmen der Unternehmensweiten Service-Oriented Architecture (SOA) Strategie.
     
 *   **Nuance Communications Aachen GmbH**, Aachen, Deutschland
     
-    _Software Engineer - Embedded Research & Development, October 2009 - December 2011_
+    * _Software Engineer - Embedded Research & Development, October 2009 - December 2011_
     
-    _Software Developer, September 2007 - September 2009_
+    * _Software Developer, September 2007 - September 2009_
     
-    Tätigkeit als Software Entwickler im Professional Services Team. Hauptfokus war die Portierung der Spracheingabe und -ausgabe Engines auf verschieden Embedded Platformen. Weiterhin maßgebliche Beteiligung an Architektur und Implementierung eines Software Stacks zur Ausführung von Remote Procedure Calls auf eine Multi-Processor (Big-Little) Platform.
+      Tätigkeit als Software Entwickler im Professional Services Team. Hauptfokus war die Portierung der Spracheingabe und -ausgabe Engines auf verschieden Embedded Platformen. Weiterhin maßgebliche Beteiligung an Architektur und Implementierung eines Software Stacks zur Ausführung von Remote Procedure Calls auf eine Multi-Processor (Big-Little) Platform.
         
-    _Diplomand, Januar 2007 - August 2007_
+    * _Diplomand, Januar 2007 - August 2007_
     
-    Einführung und Entwicklung eines Prozesses sowie der zugehörigen Tools zum automatischen Tuning der Parameter der Spracherkennungs-Engine. Die Tools wurden in Python erstellt. Der Prozess orientierte sich an Best-Practices aus Projekten.
+      Einführung und Entwicklung eines Prozesses sowie der zugehörigen Tools zum automatischen Tuning der Parameter der Spracherkennungs-Engine. Die Tools wurden in Python erstellt. Der Prozess orientierte sich an Best-Practices aus Projekten.
     
-    _Praktikant, Juni 2006 - Januar 2007_
+    * _Praktikant, Juni 2006 - Januar 2007_
     
-    Praktikant im Professional Services Team zur Durchführung des Praxissemesters. Hauptsächlich Entwicklung von Software mit C.
+      Praktikant im Professional Services Team zur Durchführung des Praxissemesters. Hauptsächlich Entwicklung von Software mit C.
     
-    _Studentische Hilfskraft, Dezember 2005 - Juni 2006_
+    * _Studentische Hilfskraft, Dezember 2005 - Juni 2006_
     
-    Sprachdatenverarbeitung. Aufbereitung von Sprach Corpora für Kunden Datensammlungen. Entwicklung von Tools, um den Prozess zu vereinfachen.
+      Sprachdatenverarbeitung. Aufbereitung von Sprach Corpora für Kunden Datensammlungen. Entwicklung von Tools, um den Prozess zu vereinfachen.
     
 *   **Fachhochschule Aachen**, Aachen, Deutschland
     
-    _Studentische Hilfskraft bei Prof. Dr. rer. nat. Faßbender, September 2005 - Juni 2006_
+    * _Studentische Hilfskraft bei Prof. Dr. rer. nat. Faßbender, September 2005 - Juni 2006_
     
-    Hilfskraft für die Lehrveranstaltungen Objekt-orientierte Software Entwicklung und Compilerbau. Mehrer Präsentationen über Software Test Techniken wie JUnit, FIT/FitNesse und JWebUnit. Unterstützung der Kommilitonen bei der Durchführung der vorlesungsbegleitenden Praktika.
+      Hilfskraft für die Lehrveranstaltungen Objekt-orientierte Software Entwicklung und Compilerbau. Mehrer Präsentationen über Software Test Techniken wie JUnit, FIT/FitNesse und JWebUnit. Unterstützung der Kommilitonen bei der Durchführung der vorlesungsbegleitenden Praktika.
     
 *   **Developia.de**, Berlin, Deutschland
     
-    _Leitender Entwickler, Juni 2004 - Dezember 2006_
+    * _Leitender Entwickler, Juni 2004 - Dezember 2006_
     
-    Mit- und Weiterentwicklung des PHP-basierten Content Management Systems für developia.de. Developia.de war zu dem Zeitpunkt die größte deutschsprachige Community für Hobby and Semi-professionelle Entwickler. Entwicklung eines Webservices mit SOAP.
+      Mit- und Weiterentwicklung des PHP-basierten Content Management Systems für developia.de. Developia.de war zu dem Zeitpunkt die größte deutschsprachige Community für Hobby and Semi-professionelle Entwickler. Entwicklung eines Webservices mit SOAP.
     
 *   **EMI Music Germany GmbH & Co. KG**, Köln, Deutschland
     
-    _Praktikant IT, June 2002 - August 2002_
+    * _Praktikant IT, June 2002 - August 2002_
     
-    Entwicklung von Software, Betreuung der Arbeitsplatzrechner im Mediapark sowie Betreuung des Rechenzentrums am Butzweilerhof.
+      Entwicklung von Software, Betreuung der Arbeitsplatzrechner im Mediapark sowie Betreuung des Rechenzentrums am Butzweilerhof.
     
 
 Other Activities
 ----------------
 
 *   **Zivildienst,** Hürth, Deutschland
-    
     _St. Sebastianus Stift (Altenheim), Juni 2001 bis Juli 2002_
     
 
