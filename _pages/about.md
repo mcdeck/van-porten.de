@@ -122,6 +122,7 @@ Other Activities
 ----------------
 
 *   **Zivildienst,** Hürth, Deutschland
+    
     _St. Sebastianus Stift (Altenheim), Juni 2001 bis Juli 2002_
     
 
