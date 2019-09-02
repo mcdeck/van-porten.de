@@ -44,19 +44,18 @@ Zertifikate
 Berufserfahrung
 ---------------
 
-*   **Nuance Communications Deutschland GmbH**, Aachen, Deutschland
-        
-    _Senior Manager Software Engineering TTS - TTS Research & Development,  seit November 2017_
+*   **Nuance Communications Deutschland GmbH**, Aachen, Deutschland        
+    * _Senior Manager Software Engineering TTS - TTS Research & Development,  seit November 2017_    
     
-    Leitung des Text to Speech Engineering Teams (Entwicklung, Infrastruktur Engineering, Release Engineering)
+      Leitung des Text to Speech Engineering Teams (Entwicklung, Infrastruktur Engineering, Release Engineering)
     
-    _Manager Product Delivery - TTS Research & Development,  Mai 2016 - Oktober 2017_
+    * _Manager Product Delivery - TTS Research & Development,  Mai 2016 - Oktober 2017_
+      
+      Leitung des Product Delivery Teams (als Erweiterung des QA Engineering) in der Nuance Embedded Text to Speech (TTS) Engineering Gruppe.
     
-    Leitung des Product Delivery Teams (als Erweiterung des QA Engineering) in der Nuance Embedded Text to Speech (TTS) Engineering Gruppe.
+    * _Manager Software Quality Assurance Engineering - TTS Research & Development,  Mai 2015 - April 2016_
     
-    _Manager Software Quality Assurance Engineering - TTS Research & Development,  Mai 2015 - April 2016_
-    
-    Leitung des QA Engineering Teams in der Nuance Embedded Text to Speech (TTS) Engineering Gruppe.
+      Leitung des QA Engineering Teams in der Nuance Embedded Text to Speech (TTS) Engineering Gruppe.
     
 *   **Fachhochschule Aachen**, Aachen, Deutschland  
     
