@@ -87,9 +87,7 @@ Berufserfahrung
     _Software Developer, September 2007 - September 2009_
     
     Tätigkeit als Software Entwickler im Professional Services Team. Hauptfokus war die Portierung der Spracheingabe und -ausgabe Engines auf verschieden Embedded Platformen. Weiterhin maßgebliche Beteiligung an Architektur und Implementierung eines Software Stacks zur Ausführung von Remote Procedure Calls auf eine Multi-Processor (Big-Little) Platform.
-    
-*   **Nuance Communications Aachen GmbH**, Aachen, Deutschland
-    
+        
     _Diplomand, Januar 2007 - August 2007_
     
     Einführung und Entwicklung eines Prozesses sowie der zugehörigen Tools zum automatischen Tuning der Parameter der Spracherkennungs-Engine. Die Tools wurden in Python erstellt. Der Prozess orientierte sich an Best-Practices aus Projekten.
