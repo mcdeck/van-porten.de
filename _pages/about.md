@@ -45,8 +45,8 @@ Berufserfahrung
 ---------------
 
 *   **Nuance Communications Deutschland GmbH**, Aachen, Deutschland
-    
-    _Manager Software Engineering TTS - TTS Research & Development,  seit NOvember 2017_
+        
+    _Senior Manager Software Engineering TTS - TTS Research & Development,  seit November 2017_
     
     Leitung des Text to Speech Engineering Teams (Entwicklung, Infrastruktur Engineering, Release Engineering)
     
@@ -69,10 +69,7 @@ Berufserfahrung
     _Manager Software Engineering - Embedded Research & Development, Februar 2014 - April 2015_
     
     Leitung eines Engineering Teams in der Nuance Embedded Speech Recognition (ASR) Engineering Gruppe.
-    
-
-*   **Nuance Communications Aachen GmbH**, Aachen, Deutschland
-    
+        
     _Senior Software Engineer - Embedded Research & Development, Mai 2012 - Januar 2014_
     
     Architektur und Entwicklung eines Frameworks für Embedded Sprachsysteme mit C++. Einführung von Scrum als Scrum Master. Aufbau eines agilen Teams.
