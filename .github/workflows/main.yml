@@ -22,15 +22,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: 📂 Setup
         uses: actions/checkout@v2
-        
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
-      - name: 📂 Cache
-        uses: actions/cache@v1
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
 
       - name: 💎 setup ruby
         uses: ruby/setup-ruby@v1
@@ -48,7 +39,15 @@ jobs:
 #          github_token: ${{ secrets.GITHUB_TOKEN }}
 #          publish_dir: ./_site
 
-      - name: Print info 
+      - name: 💡 Print info 
         run: |
           pwd
           ls -al
+          
+      - name: 🚀 deploy
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ${{ secrets.FTP_SITE }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./_site
