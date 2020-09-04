@@ -2,7 +2,7 @@
 
 backend:
   name: github
-  repo: mcdeck/mcdeck.github.io # Path to your GitHub repository
+  repo: mcdeck/van-porten.de # Path to your GitHub repository
 media_folder: 'assets'
 publish_mode: editorial_workflow
 collections:
