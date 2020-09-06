@@ -7,9 +7,6 @@ categories: []
 tags: []
 permalink: /imprint/
 ---
-Impressum
-=========
-
 Angaben gemäß § 5 TMG:
 ----------------------
 
