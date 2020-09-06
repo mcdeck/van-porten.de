@@ -20,9 +20,9 @@ locale                   : "de-DE"
 title                    : "Oliver van Porten"
 title_separator          : "|"
 # site tagline that appears below site title in masthead
-#subtitle                 : 
+subtitle                 : "IT Beratung"
 name                     : "Oliver van Porten"
-description              : "IT consulting."
+description              : "IT Beratung, Software Entwicklung, CI/CD, DevOps, Scrum, SAFe."
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 url                      : "https://www.van-porten.de" 
 # the subpath of your site, e.g. "/blog"
@@ -33,7 +33,7 @@ teaser                   : "" # path of fallback teaser image, e.g. "/assets/ima
 # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 logo                     : "/assets/logo_notext_88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -93,7 +93,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "UA-18665649-3"
     anonymize_ip         : # true, false (default)
@@ -221,24 +221,6 @@ pagination:
   permalink: /blog/page/:num/
 timezone: Europe/Berlin # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
@@ -298,7 +280,7 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: "pages"
       type: pages
     values:
       layout: single
