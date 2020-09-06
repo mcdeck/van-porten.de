@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: pilight2mqtt
 date: 2016-05-15 22:43:29.000000000 +02:00
 type: post

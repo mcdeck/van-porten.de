@@ -1,15 +1,11 @@
 ---
-layout: page
+
 title: Dienstleitungen
 date: 2014-06-19
-type: page
-parent_id: '0'
 published: false
-password: ''
-status: private
 categories: []
 tags: []
-author: Oliver van Porten
+permalink: /services/
 ---
 Auf dieser Seite finden Sie eine Übersicht über meine Dienstleitungen. Sollten Sie meine Dienst in Anspruch nehmen wollen, 
 **[sprechen Sie mich an.]({{ site.baseurl }}/contact/) **

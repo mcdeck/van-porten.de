@@ -1,0 +1,13 @@
+main:
+  - title: "Blog"
+    url: /blog/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Über Mich"
+    url: /about/
+  - title: "Kontakt"
+    url: /contact/
+  - title: "Datenschutz"
+    url: /privacy/
+  - title: "Impressum"
+    url: /imprint/

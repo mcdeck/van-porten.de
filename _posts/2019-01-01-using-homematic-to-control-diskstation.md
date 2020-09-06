@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Using Homematic / CUxd to control Synology Diskstation
 date: 2019-01-01 23:23:00.000000000 +02:00
 type: post

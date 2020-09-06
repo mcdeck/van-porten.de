@@ -1,15 +1,13 @@
 ---
-layout: page
+
 title: Über Mich
 date: 2014-06-19 11:36:42.000000000 +02:00
 type: page
-parent_id: '0'
 published: true
-password: ''
 status: publish
 categories: []
 tags: []
-author: Oliver van Porten
+permalink: /about/
 ---
  Biographie
 --------------------------------------------------

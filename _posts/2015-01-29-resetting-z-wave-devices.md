@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Resetting Z-Wave devices
 date: 2015-01-29 14:41:26.000000000 +01:00
 type: post

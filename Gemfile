@@ -27,6 +27,8 @@ group :jekyll_plugins do
   gem 'jemoji'
   gem 'jekyll-mentions'
   gem 'jekyll-include-cache'
+  gem 'jekyll-data'
+  gem 'jekyll-paginate-v2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -36,3 +38,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "jekyll-agency"
+gem "minimal-mistakes-jekyll"

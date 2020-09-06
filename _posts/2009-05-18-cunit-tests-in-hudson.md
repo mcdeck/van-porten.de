@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: CUnit Tests in Hudson
 date: 2009-05-18 14:24:00.000000000 +02:00
 type: post

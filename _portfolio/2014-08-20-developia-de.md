@@ -1,19 +1,14 @@
 ---
-layout: page
+
 title: Developia.de
 date: 2014-08-20 20:59:44.000000000 +02:00
-parent_id: '0'
 published: true
-password: ''
 status: publish
 categories: []
 tags: []
-author: Oliver van Porten
 
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  developia.de
 ---
 **Developia.de has been merged with zfx.info under the leadership of zfx.info effective September 5. 2010, discontinuing developia.de as a project. However, the latest version of developia.de has been archived and can still be found under http://da.zfx.info/developia/.**
 

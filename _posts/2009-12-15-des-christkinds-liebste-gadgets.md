@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Des Christkinds liebste Gadgets
 date: 2009-12-15 23:46:00.000000000 +01:00
 type: post

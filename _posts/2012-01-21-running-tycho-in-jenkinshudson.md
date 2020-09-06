@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Running Tycho in Jenkins/Hudson
 date: 2012-01-21 17:56:00.000000000 +01:00
 type: post

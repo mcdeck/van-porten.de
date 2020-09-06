@@ -1,15 +1,11 @@
 ---
-layout: page
+
 title: Datenschutz
 date: 2015-12-31 17:45:01.000000000 +01:00
-type: page
-parent_id: '0'
 published: true
-password: ''
-status: publish
 categories: []
 tags: []
-author: Oliver van Porten
+permalink: /privacy/
 ---
 Datenschutzerklärung
 --------------------

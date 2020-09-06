@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Principles Of Object Oriented Design
 date: 2009-02-22 16:13:00.000000000 +01:00
 type: post

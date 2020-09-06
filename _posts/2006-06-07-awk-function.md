@@ -1,5 +1,4 @@
 ---
-layout: post
 title: AWK Function
 date: 2006-06-07 09:54:00.000000000 +02:00
 type: post

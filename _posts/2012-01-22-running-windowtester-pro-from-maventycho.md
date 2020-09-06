@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Running WindowTester Pro from Maven/Tycho
 date: 2012-01-22 12:40:00.000000000 +01:00
 type: post

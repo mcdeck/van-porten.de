@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: vRest maven build finally working
 date: 2011-11-26 22:23:00.000000000 +01:00
 type: post

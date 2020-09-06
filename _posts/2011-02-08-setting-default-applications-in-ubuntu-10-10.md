@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Setting default applications in Ubuntu 10.10
 date: 2011-02-08 23:15:00.000000000 +01:00
 type: post

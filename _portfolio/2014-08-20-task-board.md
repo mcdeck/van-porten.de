@@ -1,14 +1,11 @@
 ---
-layout: page
+
 title: Task Board
 date: 2014-08-20 21:02:09.000000000 +02:00
-parent_id: '0'
 published: true
-password: ''
 status: publish
 categories: []
 tags: []
-author: Oliver van Porten
 
 description: >-
   A task board is typically a phyisical whiteboard that an agile team uses to track their progress. The notion of a task board is most prominently used in 

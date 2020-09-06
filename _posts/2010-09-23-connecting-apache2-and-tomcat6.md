@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Connecting Apache2 and Tomcat6
 date: 2010-09-23 19:48:00.000000000 +02:00
 type: post

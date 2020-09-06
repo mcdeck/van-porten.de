@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Home Assistant
 date: 2016-03-04 22:05:46.000000000 +01:00
 type: post

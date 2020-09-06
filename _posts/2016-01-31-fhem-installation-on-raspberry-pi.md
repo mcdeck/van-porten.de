@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: FHEM Installation on Raspberry PI
 date: 2016-01-31 21:44:45.000000000 +01:00
 type: post

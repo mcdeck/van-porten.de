@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Home Smart Home
 date: 2014-11-10 22:34:46.000000000 +01:00
 type: post

@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Multiple Many-to-Many in Grails
 date: 2010-09-30 08:02:00.000000000 +02:00
 type: post

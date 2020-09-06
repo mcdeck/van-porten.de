@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 'Popsy Team: V.I.P. 2 – My all-time favourite Demo'
 date: 2009-11-08 14:15:00.000000000 +01:00
 type: post

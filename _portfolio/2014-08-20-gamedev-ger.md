@@ -1,10 +1,8 @@
 ---
-layout: page
+
 title: "#gamedev.ger"
 date: 2014-08-20 21:01:35.000000000 +02:00
-parent_id: '0'
 published: true
-password: ''
 status: publish
 categories: []
 tags: []

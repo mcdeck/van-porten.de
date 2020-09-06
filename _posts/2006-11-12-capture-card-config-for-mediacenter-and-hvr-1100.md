@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Capture card config for MediaCenter and HVR-1100
 date: 2006-11-12 20:00:00.000000000 +01:00
 type: post

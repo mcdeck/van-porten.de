@@ -1,15 +1,10 @@
 ---
-layout: page
+
 title: Visual REST
 date: 2016-01-10 22:01:22.000000000 +01:00
-type: jetpack-portfolio
-parent_id: '0'
 published: true
-password: ''
-status: publish
 categories: []
 tags: []
-author: Oliver van Porten
 
 description: >-
   [Visual REST](https://github.com/mcdeck/visualrest/wiki) is a graphical modelling language for the design of resource-oriented applications. 
