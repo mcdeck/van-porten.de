@@ -6,7 +6,8 @@ type: post
 parent_id: '0'
 published: true
 status: publish
-categories: []
+categories: 
+- smart home
 tags:
 - homematic
 - smart home

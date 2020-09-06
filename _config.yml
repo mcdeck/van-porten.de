@@ -278,6 +278,7 @@ defaults:
       comments: true
       share: true
       related: true
+      author_profile: true
   # _pages
   - scope:
       path: "pages"
