@@ -5,7 +5,6 @@ date: 2016-01-10 22:01:22.000000000 +01:00
 published: true
 categories: []
 tags: []
-
 description: >-
   [Visual REST](https://github.com/mcdeck/visualrest/wiki) is a graphical modelling language for the design of resource-oriented applications. 
   I developed Visual REST as part of my [master's thesis at the University of Hagen](http://deposit.fernuni-hagen.de/2810/) in 2012.

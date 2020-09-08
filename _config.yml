@@ -20,7 +20,6 @@ locale                   : "de-DE"
 title                    : "Oliver van Porten"
 title_separator          : "|"
 # site tagline that appears below site title in masthead
-subtitle                 : "IT Beratung"
 name                     : "Oliver van Porten"
 description              : "IT Beratung, Software Entwicklung, CI/CD, DevOps, Scrum, SAFe."
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -32,7 +31,10 @@ repository               : "mcdeck/van-porten.de"
 teaser                   : "" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 logo                     : "/assets/logo_notext_88x88.png"
+subtitle                 : "IT Beratung"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# logo                     : "/assets/logo_wide.png"
+#masthead_title           : " "
 # breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:

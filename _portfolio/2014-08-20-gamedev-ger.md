@@ -6,7 +6,6 @@ published: true
 status: publish
 categories: []
 tags: []
-author: Oliver van Porten
 
 description: >-
  The homepage for the infamous IRC channel [#gamedev.ger (on euIRC.net)](irc://euirc.net/#gamedev.ger).
