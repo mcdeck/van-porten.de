@@ -9,6 +9,8 @@ tags: []
 
 description: >-
  The homepage for the infamous IRC channel [#gamedev.ger (on euIRC.net)](irc://euirc.net/#gamedev.ger).
+
+active: false 
 ---
 **Note: The server hosting the site was taken offline beginning of 2014 and as such the site no longer exists.**
 

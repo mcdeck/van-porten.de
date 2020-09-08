@@ -10,6 +10,12 @@ tags: []
 description: >-
   A task board is typically a phyisical whiteboard that an agile team uses to track their progress. The notion of a task board is most prominently used in 
   [Software Kanban](http://en.wikipedia.org/wiki/Kanban_%28development%29), where the board is the one central information hub the team works with.
+
+teaser: /assets/editor-1024x749.png
+header: 
+  # image: /assets/editor-1024x749.png
+
+active: false  
 ---
 
 What is a task board?
