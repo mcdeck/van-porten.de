@@ -16,7 +16,7 @@ theme                  : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "default" 
 
 # Site Settings
-locale                   : "de-DE"
+locale                   : "en-US"
 title                    : "Oliver van Porten"
 title_separator          : "|"
 # site tagline that appears below site title in masthead
@@ -103,9 +103,10 @@ analytics:
 
 # Site Author
 author:
+  short_name       : "Oliver"
   name             : "Oliver van Porten"
   avatar           : "/assets/me_small.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Software Engineer, father, wannabe guitarist."
   location         : "Roetgen, Germany"
   email            : "oliver@van-porten.de"
   links:
@@ -219,8 +220,11 @@ sass:
 permalink: /:categories/:title/
 pagination: 
   enabled: true
-  paginate: 10 # amount of posts to show
-  permalink: /blog/page/:num/
+  sort_field: 'date'
+  # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
+  sort_reverse: true
+  paginate: 7 # amount of posts to show#
+paginate_path: "/blog/page/:num/"
 timezone: Europe/Berlin # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Archives

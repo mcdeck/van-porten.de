@@ -6,7 +6,7 @@ published: true
 categories: []
 tags: []
 permalink: /portfolio/
-author_profile: true
+
 ---
 <ul>
   {% for project in site.portfolio %}

@@ -41,8 +41,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
-    jekyll-agency (1.1.0)
-      jekyll (>= 4.0, < 4.2)
     jekyll-avatar (0.7.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-data (1.1.0)
@@ -128,7 +126,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.0)
-  jekyll-agency
   jekyll-avatar
   jekyll-data
   jekyll-feed (~> 0.6)

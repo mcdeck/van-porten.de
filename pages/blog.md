@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: home
 title: Blog
 date: 2014-06-19 10:34:10.000000000 +02:00
 published: true
@@ -9,7 +9,8 @@ tags:
   - blog
 permalink: /blog/  
 
-author_profile: true
-author: Oliver van Porten
+pagination:
+  enabled: true
+  permalink: '/page/:num/'
 ---
 

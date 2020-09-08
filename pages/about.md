@@ -1,7 +1,7 @@
 ---
 
 title: Über Mich
-date: 2014-06-19 11:36:42.000000000 +02:00
+date: 2020-09-08
 type: page
 published: true
 status: publish
@@ -9,92 +9,68 @@ categories: []
 tags: []
 permalink: /about/
 ---
- Biographie
---------------------------------------------------
-
 ![me]({{ site.baseurl }}/assets/me_small.jpg)
 
-*   Name: Oliver Hendrik van Porten
-*   Geboren am: 20 Mai 1982 in Köln, Deutschland
-*   Abschlüsse:
-    *   Master of Science in Informatik
-    *   Diplom Informatiker (FH)
+Mein Name ist Oliver van Porten. Ich wurde am 20 Mai 1982 in Köln geboren. Eine Auswahl aktueller und älterer 
+Projekte finden sie in meinem [Portfolio]({{ site.baseurl }}/portfolio/). Einen detailierten Lebenslauf entnehmen
+Sie bitte meinen Profile bei [Xing](https://www.xing.com/profile/Oliver_vanPorten) und [LinkedIn](https://de.linkedin.com/in/ovanporten/).
 
-Fähigkeiten
------------
-
+*   [Certified SAFe Agilist (SAFe, 2/2018) - expired]({{ site.baseurl }}/assets/2018_01_SAFe.pdf)
+*   [Scrum Alliance CSM Certificate (Scrum Alliance, 3/2013) - expired]({{ site.baseurl }}/assets/Oliver-van-Porten-ScrumAlliance_CSM_Certificate.pdf)
 *   **Sprachen**: Deutsch (muttersprachlich), Englisch (verhandlungssicher), Französisch (Schulwissen), Spanisch (Schulwissen)
 *   **Programmiersprachen und Frameworks:** C, C++, Python, Java, C#, Groovy, PHP, LATEX, Django, Grails
 *   **Betriebssysteme**: Windows, Linux, MaxOS
 *   **Prozesse und Modellierung**: Scrum, Kanban, UML
 *   **Sonstiges**: Spracherkennung und -synthese, Embedded Systems, Web Entwicklung, Jenkins, Continuous Integration, Continuous Delivery, Software Tests
 
-Zertifikate
------------
-
-*   [Certified SAFe Agilist (SAFe, 2/2018)]({{ site.baseurl }}/assets/2018_01_SAFe.pdf)
-*   [Unternehmensgründung im IT-Bereich (OpenHPI, 5/2016)]({{ site.baseurl }}/assets/2016_05_Unternehmensgruendung_im_IT_Bereich.pdf)
-*   [Google Digital Workshop Certificate (Google, 3/2016)]({{ site.baseurl }}/assets/2016_03_GoogleDigitalWorkshop.pdf)
-*   [Scrum Alliance CSM Certificate (Scrum Alliance, 3/2013)]({{ site.baseurl }}/assets/Oliver-van-Porten-ScrumAlliance_CSM_Certificate.pdf)
-*   [Semantic Web Technologies Certificate (OpenHPI, 8/2013)]({{ site.baseurl }}/assets/2013_08_SemanticWebTechnologiesCertificate.pdf)
-*   [Human Computer Interaction Certificate (Coursera, 12/2012)]({{ site.baseurl }}/assets/2012_06_HCI.pdf)
 
 Berufserfahrung
 ---------------
 
-*   **Nuance Communications Deutschland GmbH**, Aachen, Deutschland        
-    * _Senior Manager Software Engineering TTS - TTS Research & Development,  seit November 2017_    
-    
-      Leitung des Text to Speech Engineering Teams (Entwicklung, Infrastruktur Engineering, Release Engineering)
-    
-    * _Manager Product Delivery - TTS Research & Development,  Mai 2016 - Oktober 2017_
+*   **Trimplement GmbH**, Köln, Deutschland
+
+    * _Senior Software Engineer, ab November 2020_
+
+      The best is yet to come :)      
+
+*   **Cerence GmbH** / **Nuance Communications Deutschland GmbH** , Aachen, Deutschland        
+
+    * _(Senior) Manager Software Engineering TTS - TTS Research & Development, Mai 2014 - Oktober 2020_    
+
+      Für Cerence/Nuance war ich in diversen Rollen als Manager tätig und leitete unterschiedliche Teams. 
       
-      Leitung des Product Delivery Teams (als Erweiterung des QA Engineering) in der Nuance Embedded Text to Speech (TTS) Engineering Gruppe.
+      In meiner Management Laufbahn war ich unter anderem für die Entwicklung von Spracheingabe (ASR, Automatic Speech Recognition)
+      als auch Sprachausgabe (TTS, Text-to-Speech) Systemen verantwortlich. Darüber hinaus verantwortete ich
+      die komplette Release Infrstruktur sowie die zugehören Prozesse für die Text-to.Speech Organisation.
+
+      Ich pflegte und pflege bis heute einen agilen und kooperativen Führungsstil und sehe mich ehr als Coach, denn als Chef.      
+
+    * _Senior Software Engineer - Embedded Research & Development, Mai 2012 - Januar 2014_
     
-    * _Manager Software Quality Assurance Engineering - TTS Research & Development,  Mai 2015 - April 2016_
-    
-      Leitung des QA Engineering Teams in der Nuance Embedded Text to Speech (TTS) Engineering Gruppe.
+      Architektur und Entwicklung eines Frameworks für Embedded Sprachsysteme mit C++. Einführung von Scrum als Scrum Master. Aufbau eines agilen Teams.  
     
 *   **Fachhochschule Aachen**, Aachen, Deutschland  
     
     * _Lehrbeauftragter,  März 2015 - Juli 2017_  
     
       Lehrbeauftragter im Fach Informationssyteme I im Studiengang Kommunikations- und Multimedia-Design (CMD). Ausarbeitung und Durchführung der Lehrveranstaltung und zugehörige Übungen sowie Praktika und Klausuren. Themenschwerpunkt war die Entwicklung von Webseiten mit HTML5, CSS3, PHP und MySQL.
-    
-*   **Nuance Communications Deutschland GmbH**, Aachen, Deutschland  
-    
-    * _Manager Software Engineering - Embedded Research & Development, Februar 2014 - April 2015_
-    
-      Leitung eines Engineering Teams in der Nuance Embedded Speech Recognition (ASR) Engineering Gruppe.
         
-    * _Senior Software Engineer - Embedded Research & Development, Mai 2012 - Januar 2014_
-    
-      Architektur und Entwicklung eines Frameworks für Embedded Sprachsysteme mit C++. Einführung von Scrum als Scrum Master. Aufbau eines agilen Teams.
-    
 *   **Generali Deutschland Informatik Services GmbH**, Aachen, Deutschland
     
     * _System Designer, Januar 2012 - April 2012_
     
-      Arbeit als System Designer und Applikationsentwickler im KFZ Projekt. Wartung und Weiterentwicklung des Service Angebots im Rahmen der Unternehmensweiten Service-Oriented Architecture (SOA) Strategie.
+      Ein kurzes Gastspiel als System Designer und Applikationsentwickler im KFZ Projekt. Wartung und Weiterentwicklung des Service Angebots im Rahmen der Unternehmensweiten Service-Oriented Architecture (SOA) Strategie.
     
 *   **Nuance Communications Aachen GmbH**, Aachen, Deutschland
     
-    * _Software Engineer - Embedded Research & Development, October 2009 - December 2011_
-    
-    * _Software Developer, September 2007 - September 2009_
+    * _Software Engineer, September 2007 - December 2011_
     
       Tätigkeit als Software Entwickler im Professional Services Team. Hauptfokus war die Portierung der Spracheingabe und -ausgabe Engines auf verschieden Embedded Platformen. Weiterhin maßgebliche Beteiligung an Architektur und Implementierung eines Software Stacks zur Ausführung von Remote Procedure Calls auf eine Multi-Processor (Big-Little) Platform.
         
-    * _Diplomand, Januar 2007 - August 2007_
+    * _Studentische Hilfskraft, Praktikant, Diplomand, Dezember 2005 - August 2007_
     
-      Einführung und Entwicklung eines Prozesses sowie der zugehörigen Tools zum automatischen Tuning der Parameter der Spracherkennungs-Engine. Die Tools wurden in Python erstellt. Der Prozess orientierte sich an Best-Practices aus Projekten.
-    
-    * _Praktikant, Juni 2006 - Januar 2007_
-    
+      Einführung und Entwicklung eines Prozesses sowie der zugehörigen Tools zum automatischen Tuning der Parameter der Spracherkennungs-Engine. Die Tools wurden in Python erstellt. Der Prozess orientierte sich an Best-Practices aus Projekten.        
       Praktikant im Professional Services Team zur Durchführung des Praxissemesters. Hauptsächlich Entwicklung von Software mit C.
-    
-    * _Studentische Hilfskraft, Dezember 2005 - Juni 2006_
-    
       Sprachdatenverarbeitung. Aufbereitung von Sprach Corpora für Kunden Datensammlungen. Entwicklung von Tools, um den Prozess zu vereinfachen.
     
 *   **Fachhochschule Aachen**, Aachen, Deutschland
@@ -114,15 +90,7 @@ Berufserfahrung
     * _Praktikant IT, June 2002 - August 2002_
     
       Entwicklung von Software, Betreuung der Arbeitsplatzrechner im Mediapark sowie Betreuung des Rechenzentrums am Butzweilerhof.
-    
 
-Other Activities
-----------------
-
-*   **Zivildienst,** Hürth, Deutschland
-    
-    _St. Sebastianus Stift (Altenheim), Juni 2001 bis Juli 2002_
-    
 
 Veröffentlichungen
 ------------------
@@ -130,15 +98,6 @@ Veröffentlichungen
 *   van Porten, O.: Development and Evaluation of a Graphical Notation for Modelling Resource-Oriented Applications. Research Report 1/2012, FernUniversität in Hagen (March 2012), [http://deposit.fernuni-hagen.de/2810/](http://deposit.fernuni-hagen.de/2810/)
 *   van Porten, O., Schreier, S., 2012, 'Visual REST: A Graphical Modeling Language for Resource-Oriented Applications', Pre-proceedings of the Poster Track of the 5th International Conference on Software Language Engineering, ed A. Bagge, D. Kolovos, pp. 14-19.
 
-Interessengebiete
------------------
-
-*   Model Driven Development
-*   Domain Specific Languages
-*   Architecture Description Languages
-*   Software Architecture
-*   Software Testing
-*   Programming Languages
 
 Ausbildung
 ----------
