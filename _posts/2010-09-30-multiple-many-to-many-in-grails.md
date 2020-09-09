@@ -19,7 +19,7 @@ Creating many-to-many relationships in [Grails](http://www.grails.org) is quite 
 
 Let's assume you wanted to model two distinct domain classes which both can have **Tags**.
 
-![Many-to-Many UML Diagram]({{ site.baseurl }}/assets/manytomany.jpg)
+![Many-to-Many UML Diagram]({{ site.baseurl }}/assets/images/manytomany.jpg)
 
 Now, the owning side of the relationship should be the **DomainClass1** and **DomainClass2** respectively.
 

@@ -30,6 +30,6 @@ mvn clean install -Dmaven.test.failure.ignore=true
 
 With Jenkins, this is equally straight forward:
 
-![image0]({{ site.baseurl }}/assets/vREST-Config-Jenkins-Mozilla-Firefox_2012-01-21_17-45-38.png)
+![image0]({{ site.baseurl }}/assets/images/vREST-Config-Jenkins-Mozilla-Firefox_2012-01-21_17-45-38.png)
 
 Now Jenkins acts nicely and reports unstable builds while still producing all artifacts.

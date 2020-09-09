@@ -172,6 +172,6 @@ Ready, set, go
 
 Ok, with all this done, you are basically ready to dive deeper into the configuration of FHEM. I'll simply close with a picture of my current web UI - the Tablet U has not changed since I last wrote.
 
-[![2016-01-31 21_39_07-Home, Sweet Home]({{ site.baseurl }}/assets/2016-01-31-21_39_07-Home-Sweet-Home-1024x581.png)]({{ site.baseurl }}/assets/2016-01-31-21_39_07-Home-Sweet-Home.png)
+[![2016-01-31 21_39_07-Home, Sweet Home]({{ site.baseurl }}/assets/images/2016-01-31-21_39_07-Home-Sweet-Home-1024x581.png)]({{ site.baseurl }}/assets/images/2016-01-31-21_39_07-Home-Sweet-Home.png)
 
 I am going to describe further details of my installation and how to set things up, but that is something I will leave for another post.

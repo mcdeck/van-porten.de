@@ -22,6 +22,6 @@ My new setup includes some more nifty technical details.
 
 For ease of deployment, I have devised a workflow that is based on [RhodeCode](http://rhodecode.org/) and [Jenkins](http://jenkins-ci.org/). I have setup a [RhodeCode instance](http://rc.van-porten.de) on my local server where I store the source to my blog. At the moment I use [Mercurial](http://mercurial.selenic.com/) to manage the versions. Furthermore, I have a [Jenkins installation](http://ci.van-porten.de/) on the same server that pulls from the RhodeCode instance, builds the blog contents and publishes the result here afterwards. To avoid frequently polling on Mercurial, I have also installed a trigger in Mercurial (or RhodeCode respectively) that triggers the rebuild of the blog. The following figure gives an overview.
 
-![new publishing workflow]({{ site.baseurl }}/assets/workflow.png)
+![new publishing workflow]({{ site.baseurl }}/assets/images/workflow.png)
 
 Now, this might seem like a bit of overhead on the setup side, but I had a lot of fun automating it this way. Technically I could just as well pusblish the blog from my personal PC everytime, but I found that to be an unworthy alternative ;)

@@ -28,12 +28,12 @@ url                      : "https://www.van-porten.de"
 baseurl                  : ""
 # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "mcdeck/van-porten.de"
-teaser                   : "" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-logo                     : "/assets/logo_notext_88x88.png"
+teaser                   : "" # path of fallback teaser image, e.g. "/assets/images/images/500x300.png"
+# path of logo image to display in the masthead, e.g. "/assets/images/images/88x88.png"
+logo                     : "/assets/images/logo_notext_88x88.png"
 subtitle                 : "IT Beratung"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# logo                     : "/assets/logo_wide.png"
+# logo                     : "/assets/images/logo_wide.png"
 #masthead_title           : " "
 # breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 author:
   short_name       : "Oliver"
   name             : "Oliver van Porten"
-  avatar           : "/assets/me_small.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/me_small.jpg" # path of avatar image, e.g. "/assets/images/images/bio-photo.jpg"
   bio              : "Software Engineer, father, wannabe guitarist."
   location         : "Roetgen, Germany"
   email            : "oliver@van-porten.de"

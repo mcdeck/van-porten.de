@@ -7,18 +7,17 @@ status: publish
 categories: []
 tags: []
 
-description: >-
- The homepage for the infamous IRC channel [#gamedev.ger (on euIRC.net)](irc://euirc.net/#gamedev.ger).
-
-active: false 
+header: 
+  # image: /assets/images/gamedev_ger.png
+  teaser: /assets/images/gamedev_ger.png
 ---
-**Note: The server hosting the site was taken offline beginning of 2014 and as such the site no longer exists.**
-
 The homepage for the infamous IRC channel [#gamedev.ger (on euIRC.net)](irc://euirc.net/#gamedev.ger).
+
+**Note: The server hosting the site was taken offline beginning of 2014 and as such the site no longer exists.**
 
 The page can be found on [http://gamedev.dword.org](http://gamedev.dword.org) and looks like this:
 
-[![gamedev_ger]({{ site.baseurl }}/assets/gamedev_ger.png)](http://gamedev.dword.org)
+[![gamedev_ger]({{ site.baseurl }}/assets/images/gamedev_ger.png)](http://gamedev.dword.org)
 
 I did this page together with [Jan Althaus (aka. tciny)](http://www.tciny.net/) who really is a very talented artist.
 

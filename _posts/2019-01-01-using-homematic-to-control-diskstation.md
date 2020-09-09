@@ -25,20 +25,20 @@ CUxd, though.
 
 As for configuration, I ended up creating a new Switch through the CUxd interface, e.g. http://homematic-ccu2/addons/cuxd/index.ccc?m=4.
 
-![CUxd Settings]({{ site.baseurl }}/assets/cuxd_settings.png)
+![CUxd Settings]({{ site.baseurl }}/assets/images/cuxd_settings.png)
 
 It's a **system** switch, type **exec** and use a virtual switch, set to **switch mode** - this allows me to trigger actions and capture 
 state with a single virtual device. 
 
-![CUxd Device]({{ site.baseurl }}/assets/cuxd_switch.png)
+![CUxd Device]({{ site.baseurl }}/assets/images/cuxd_switch.png)
 
 I then configured the device to only have one channel and report as unreachable if any of the commands returns any error.
 
-![CUxd Device General Parameters]({{ site.baseurl }}/assets/cuxd_general_params.png)
+![CUxd Device General Parameters]({{ site.baseurl }}/assets/images/cuxd_general_params.png)
 
 Now comes the tricky bit - the actual channel settings.
 
-![CUxd Device Channel 1 Parameters]({{ site.baseurl }}/assets/cuxd_channel1_params.png)
+![CUxd Device Channel 1 Parameters]({{ site.baseurl }}/assets/images/cuxd_channel1_params.png)
 
 **CMD_SHORT** is executed when the switch is turned off. It essentially logs into the diskstation and executes `poweroff`. This
 requires root access, hence the need to `echo` the admin password to `sudo`. 

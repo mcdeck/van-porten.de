@@ -16,7 +16,7 @@ redirect_from:
 ---
 After a day of experimentation with openHAB I finally decided to first build a prototype system, rather than cutting real wires and putting the actors in between. This is what my prototype looks like:
 
-[![IMG_20141110_230439]({{ site.baseurl }}/assets/IMG_20141110_230439-300x225.jpg)]({{ site.baseurl }}/assets/IMG_20141110_230439.jpg)
+[![IMG_20141110_230439]({{ site.baseurl }}/assets/images/IMG_20141110_230439-300x225.jpg)]({{ site.baseurl }}/assets/images/IMG_20141110_230439.jpg)
 
 I must say it was in fact a good idea to start this way. The actors did not work yesterday for whatever reason, but after giving them a day to relax now and restarting my rPI they now work just fine. No more messages droppped no nothing. Maybe I will eventually figure out what the problem was, who knows.
 

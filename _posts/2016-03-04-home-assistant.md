@@ -19,7 +19,7 @@ redirect_from:
 ---
 I believe home automation, at least for me, is to a large extent driven by the joy of trying out new things and extending my system. I think this is why, despite my previous endeavors into FHEM, I kept on tinkering with Home Assistant. I am a big Python fanboy and do dislike PERL with a passion, so it seems in a way natural to do so.
 
-[![Home Assistant States]({{ site.baseurl }}/assets/Screenshot-2016-02-22-22.14.27-300x151.png)]({{ site.baseurl }}/assets/Screenshot-2016-02-22-22.14.27.png "Snapshot of my Home Assistant setup - obviously it is a work in progress.") 
+[![Home Assistant States]({{ site.baseurl }}/assets/images/Screenshot-2016-02-22-22.14.27-300x151.png)]({{ site.baseurl }}/assets/images/Screenshot-2016-02-22-22.14.27.png "Snapshot of my Home Assistant setup - obviously it is a work in progress.") 
 
 There are a lot of things going on around [Home Assistant](https://home-assistant.io/) at the moment and I think that is quite fantastic. In this post I'd like to take a moment to describe the basic steps needed to get up and running with Home Assistant on a Raspberry Pi, including setting up InfluxDB and Grafana for all your graphing needs.
 
@@ -69,19 +69,19 @@ This will generate **_hm2mqtt/build/distributions/_****_hm2mqtt-addon.tar.gz_**
 
 To install the addon, point your browser to http://homematic-ccu2/ (or whatever hostname you chose for your CCU2) and navigate to the system settings, add ons dialog. 
 
-[![The CCU2 addon dialog.]({{ site.baseurl }}/assets/Screenshot-2016-03-04-14.00.54-300x197.png)](https://www.van-porten.de/wp-content/uploads/2016/03/Screenshot-2016-03-04-14.00.54.png "The CCU2 addon dialog.")
+[![The CCU2 addon dialog.]({{ site.baseurl }}/assets/images/Screenshot-2016-03-04-14.00.54-300x197.png)](https://www.van-porten.de/wp-content/uploads/2016/03/Screenshot-2016-03-04-14.00.54.png "The CCU2 addon dialog.")
 
 At the bottom of the dialog, point the _choose file_ dialog to the _hm2mqtt-addon.tar.gz_ we built previously and select install. After the CCU2 reboots, you should see a hm2mqtt button in the system settings. This will take you to the configuration page of the hm2mqtt addon where we can set the broker address correctly.
 
-[![CCU2 system settings with hm2mqtt button]({{ site.baseurl }}/assets/Screenshot-2016-03-04-14.35.03-300x116.png)]({{ site.baseurl }}/assets/Screenshot-2016-03-04-14.35.03.png "CCU2 system settings with hm2mqtt button.")
+[![CCU2 system settings with hm2mqtt button]({{ site.baseurl }}/assets/images/Screenshot-2016-03-04-14.35.03-300x116.png)]({{ site.baseurl }}/assets/images/Screenshot-2016-03-04-14.35.03.png "CCU2 system settings with hm2mqtt button.")
 
 Enter the address of the system you installed Mosquitto on, leaving the port 1883 as is. Save settings and then stop and start the daemon.
 
-[![hm2mqtt settings]({{ site.baseurl }}/assets/Screenshot-2016-03-04-14.35.32-300x205.png)]({{ site.baseurl }}/assets/Screenshot-2016-03-04-14.35.32.png "hm2mqtt settings")
+[![hm2mqtt settings]({{ site.baseurl }}/assets/images/Screenshot-2016-03-04-14.35.32-300x205.png)]({{ site.baseurl }}/assets/images/Screenshot-2016-03-04-14.35.32.png "hm2mqtt settings")
 
 That's it. You can now fire up mqtt-spy, connect it to your broker and subscribe to **hm/#.**
 
-[![mqtt-spy]({{ site.baseurl }}/assets/Screenshot-2016-02-22-22.40.24-300x220.png)]({{ site.baseurl }}/assets/Screenshot-2016-02-22-22.40.24.png "A screenshot of mqtt-spy connected to my local broker, receiving messages from HomeMatic")
+[![mqtt-spy]({{ site.baseurl }}/assets/images/Screenshot-2016-02-22-22.40.24-300x220.png)]({{ site.baseurl }}/assets/images/Screenshot-2016-02-22-22.40.24.png "A screenshot of mqtt-spy connected to my local broker, receiving messages from HomeMatic")
 
 You should start seeing MQTT messages from your CCU2 coming in.
 
@@ -117,7 +117,7 @@ HMLAND_OPTS="-l 0.0.0.0 -I"
 
 You should now be able to connect you CCU2 to the HMLANd via the system settings interface (LAN Gateway button).
 
-[![HMLAN configuration]({{ site.baseurl }}/assets/Screenshot-2016-03-04-21.53.42-300x138.png)]({{ site.baseurl }}/assets/Screenshot-2016-03-04-21.53.42.png "Connecting HMLANd to a CCU2")
+[![HMLAN configuration]({{ site.baseurl }}/assets/images/Screenshot-2016-03-04-21.53.42-300x138.png)]({{ site.baseurl }}/assets/images/Screenshot-2016-03-04-21.53.42.png "Connecting HMLANd to a CCU2")
 
 After a reboot of the CCU2 the interface should be usable. The LAN Gateway page should show status as _**connected**_.
 
@@ -128,7 +128,7 @@ Influx DB is the database backend I use to store data from sensors. It is specif
 
 Grafana is a web front end that allows you to create various views on the data in Influx DB (and some other databases, actually).
 
-[![Grafana graph view]({{ site.baseurl }}/assets/Screenshot-2016-02-22-22.13.17-300x184.png)]({{ site.baseurl }}/assets/Screenshot-2016-02-22-22.13.17.png "Grafana plotting data taken from my InfluxDB, filled by Home Assistant")
+[![Grafana graph view]({{ site.baseurl }}/assets/images/Screenshot-2016-02-22-22.13.17-300x184.png)]({{ site.baseurl }}/assets/images/Screenshot-2016-02-22-22.13.17.png "Grafana plotting data taken from my InfluxDB, filled by Home Assistant")
 
 Installing everything is again very straight forward. Unless you want to compile all packages yourself I suggest you download the pre-built debs from here. The packages provided here are a mirror of those built by [padcom](http://padcom13.blogspot.de/2015/12/influxdb-telegraf-and-grafana-on.html). You can also [go to his page and get the original files](http://padcom13.blogspot.de/2015/12/influxdb-telegraf-and-grafana-on.html).
 

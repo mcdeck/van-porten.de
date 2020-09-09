@@ -17,6 +17,6 @@ redirect_from:
 ---
 Good metrics:
 
-[![image0]({{ site.baseurl }}/assets/wtfm.jpg)](http://www.osnews.com/story/19266/WTFs_m)
+[![image0]({{ site.baseurl }}/assets/images/wtfm.jpg)](http://www.osnews.com/story/19266/WTFs_m)
 
 **Source:** [WTFs/m](http://www.osnews.com/story/19266/WTFs_m)

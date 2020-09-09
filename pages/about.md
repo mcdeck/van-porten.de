@@ -9,14 +9,14 @@ categories: []
 tags: []
 permalink: /about/
 ---
-![me]({{ site.baseurl }}/assets/me_small.jpg)
+![me]({{ site.baseurl }}/assets/images/me_small.jpg)
 
 Mein Name ist Oliver van Porten. Ich wurde am 20 Mai 1982 in Köln geboren. Eine Auswahl aktueller und älterer 
 Projekte finden sie in meinem [Portfolio]({{ site.baseurl }}/portfolio/). Einen detailierten Lebenslauf entnehmen
 Sie bitte meinen Profile bei [Xing](https://www.xing.com/profile/Oliver_vanPorten) und [LinkedIn](https://de.linkedin.com/in/ovanporten/).
 
-*   [Certified SAFe Agilist (SAFe, 2/2018) - expired]({{ site.baseurl }}/assets/2018_01_SAFe.pdf)
-*   [Scrum Alliance CSM Certificate (Scrum Alliance, 3/2013) - expired]({{ site.baseurl }}/assets/Oliver-van-Porten-ScrumAlliance_CSM_Certificate.pdf)
+*   [Certified SAFe Agilist (SAFe, 2/2018) - expired]({{ site.baseurl }}/assets/documents/2018_01_SAFe.pdf)
+*   [Scrum Alliance CSM Certificate (Scrum Alliance, 3/2013) - expired]({{ site.baseurl }}/assets/documents/Oliver-van-Porten-ScrumAlliance_CSM_Certificate.pdf)
 *   **Sprachen**: Deutsch (muttersprachlich), Englisch (verhandlungssicher), Französisch (Schulwissen), Spanisch (Schulwissen)
 *   **Programmiersprachen und Frameworks:** C, C++, Python, Java, C#, Groovy, PHP, LATEX, Django, Grails
 *   **Betriebssysteme**: Windows, Linux, MaxOS

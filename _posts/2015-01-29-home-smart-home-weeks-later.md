@@ -19,7 +19,7 @@ After a few attempts to get my Z-Wave network to work reliably I finally decided
 
 Now, I decided to go with the [HomeMatic](http://www.homematic.com/). That really worked like a charm from day one. My current setup now looks like illustrated on the following picture.
 
-![]({{ site.baseurl }}/assets/My-Smart-Home2.png)
+![]({{ site.baseurl }}/assets/images/My-Smart-Home2.png)
 
 I use three HomeMatic Actors to switch the five lamps in my yard and driveway (2+2+1). The HomeMatic motion detector is used to measure lumincance as well and switches on the lights when it gets dark permanently. At nine o'clock it then goes into motion detector mode and only switches the lights on if motion is detected. In the morning, I also turn on the lights at seven or so and turn t hem off when it gets too bright or after nine o'clock, whichever comes first.
 

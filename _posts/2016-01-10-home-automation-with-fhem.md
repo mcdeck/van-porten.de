@@ -30,7 +30,7 @@ Luckily that has changed a lot now. While [MQTT](http://mqtt.org/) is of course 
 
 Next to that, there is also the new [Tablet UI](http://www.fhemwiki.de/wiki/FHEM_Tablet_UI) now that is visually appealing and really is absolutely what I was looking for. It is based on HTML , CSS and JavaScript and as such works in virtually any modern browser. More importantly, it is easy enough to customise the interface.
 
-[![FHEM Tablet UI]({{ site.baseurl }}/assets/Screenshot-2016-01-10-18.17.22-1024x576.png)]({{ site.baseurl }}/assets/Screenshot-2016-01-10-18.17.22.png)
+[![FHEM Tablet UI]({{ site.baseurl }}/assets/images/Screenshot-2016-01-10-18.17.22-1024x576.png)]({{ site.baseurl }}/assets/images/Screenshot-2016-01-10-18.17.22.png)
 
 What you see here is a snapshot of my current setup. It is very much a work in progress now, but it already covers a lot more features than I used to have when still running on [OpenHAB](http://www.openhab.org/). I will post more detailed instructions and lessons learned once I am done, of course.
 

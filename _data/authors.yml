@@ -1,7 +1,7 @@
 Oliver van Porten:
   short_name       : "Oliver"
   name             : "Oliver van Porten"
-  avatar           : "/assets/me_small.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/me_small.jpg" # path of avatar image, e.g. "/assets/images/images/bio-photo.jpg"
   bio              : "Software Engineer, father, wannabe guitarist."
   location         : "Roetgen, Germany"
   email            : "oliver@van-porten.de"

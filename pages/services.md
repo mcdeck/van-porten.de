@@ -25,7 +25,7 @@ Ich unterstütze Sie mit meinem Wissen und meiner Erfahrung gerne bei einem Ihre
 Agilität wird groß geschrieben 
 ------------------------------
 
-![2a0d84a7-0a22-40b4-8311-1391520ae924]({{ site.baseurl }}/assets/2a0d84a7-0a22-40b4-8311-1391520ae924.png)]
+![2a0d84a7-0a22-40b4-8311-1391520ae924]({{ site.baseurl }}/assets/images/2a0d84a7-0a22-40b4-8311-1391520ae924.png)]
 
 Als [Certified Scrum Master]({{ site.baseurl }}/about/#certified_scrum_master) berate und begleite ich Sie auch gerne bei der Einführung und 
 Weiterentwicklung Ihres agilen Vorgehensmodells, zum Beispiel auf Basis von Scrum. Sie profitieren von meiner langjährigen Erfahrung in 

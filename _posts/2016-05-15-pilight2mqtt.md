@@ -18,7 +18,7 @@ redirect_from:
 ---
 Some days ago [I blogged about my first experiments with pilight]({{ site.baseurl }}/blog/2016/03/pilight/) and mentioned that I intended to attach it to [Home Assistant](https://home-assistant.io/). Today I finally found the time to get started and now have a working prototype ready.
 
-[![pilight2mqtt]({{ site.baseurl }}/assets/2016-05-15-23_25_54-cmd-python-service.py_-300x178.png)]({{ site.baseurl }}/assets/2016-05-15-23_25_54-cmd-python-service.py_.png)
+[![pilight2mqtt]({{ site.baseurl }}/assets/images/2016-05-15-23_25_54-cmd-python-service.py_-300x178.png)]({{ site.baseurl }}/assets/images/2016-05-15-23_25_54-cmd-python-service.py_.png)
 
 I started a new project on GitHub called [pilight2mqtt](https://github.com/mcdeck/pilight2mqtt). What it does is basically talk to the [pilight API](https://manual.pilight.org/en/api#pf1) and broker between an [MQTT](http://mqtt.org/) channel and [pilight](https://www.pilight.org/) that way.
 
