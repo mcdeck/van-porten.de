@@ -6,19 +6,24 @@ categories: []
 tags: []
 permalink: /
 ---
-Über mich.
-==========
 
-Mein Name ist Oliver van Porten. Ich bin studierter Informatiker und arbeite seit mehr als 10 Jahren im Bereich des Software Engineering, der Software Architektur und Informationstechnologie.
+Seit mehr mehr als 15 Jahren im Bereich Software Engineering und Software Architektur. 
 
 Auf der [Über Mich Seite]({{ site.baseurl }}/about/) als auch auf [Xing](https://www.xing.com/profile/Oliver_vanPorten) und [LinkedIn](https://de.linkedin.com/in/ovanporten/) finden Sie weitere Informationen über meinen Lebenslauf.
 
 Blog.
 =====
 
-[Meinen Blog finden Sie hier.]({{ site.baseurl }}/blog/) Dort schreibe ich zu allen möglichen Themen rund um die IT. Zur Zeit beschäftige ich mit intensiv mit Themen rund um das Internet of Things und SmartHome. Meinen Blog verfasse ich normalerweise auf Englisch.
+[In meinem Blog]({{ site.baseurl }}/blog/) schreibe ich zu allen möglichen Themen rund um die IT. Zur Zeit beschäftige ich mit intensiv mit Themen rund um das Internet of Things und SmartHome. Meinen Blog verfasse ich normalerweise auf Englisch. 
 
-Referenzen.
-===========
+Die aktuellsten Einträge:
 
-Einen Auszug aus meinem [Portfolio finden Sie hier]({{ site.baseurl }}/portfolio/).
+{% for post in site.posts limit:2 %}
+  * [{{ post.title }}]({{ post.url }}) ({{ post.date }})
+{% endfor %}
+  * [mehr ...]({{ site.baseurl }}/blog/) 
+
+Projekte und Referenzen
+=======================
+
+Einen Auszug aus meinem [Portfolio gibt es hier]({{ site.baseurl }}/portfolio/).

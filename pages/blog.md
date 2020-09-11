@@ -9,6 +9,8 @@ tags:
   - blog
 permalink: /blog/  
 
+author_profile: true
+
 pagination:
   enabled: true
   permalink: '/page/:num/'

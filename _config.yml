@@ -31,7 +31,7 @@ repository               : "mcdeck/van-porten.de"
 teaser                   : "" # path of fallback teaser image, e.g. "/assets/images/images/500x300.png"
 # path of logo image to display in the masthead, e.g. "/assets/images/images/88x88.png"
 logo                     : "/assets/images/logo_notext_88x88.png"
-subtitle                 : "IT Beratung"
+# subtitle                 : "IT Beratung"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # logo                     : "/assets/images/logo_wide.png"
 #masthead_title           : " "
@@ -89,17 +89,37 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Oliver van Porten" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://instagram.com/mcdeck"
+    - "https://twitter.com/mcdeck"
+    - "https://facebook.com/ovanporten"
+    - "https://github.com/mcdeck"
+    - "https://www.linkedin.com/in/ovanporten"
+    - "https://www.xing.com/profile/Oliver_vanPorten"          
+
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
+  # provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
+  # custom provider implements cookie consent
+  provider               : "custom"
   google:
     tracking_id          : "UA-18665649-3"
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : true # true, false (default)
 
+# using https://www.osano.com/cookieconsent/download/
+cookieconsent:
+  css: "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" # 'assets/css/cookieconsent.css'
+  js: "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" # 'assets/js/cookieconsent.min.js'
+  type: "opt-in" # only opt-in will work for now
+  content:
+    message: 'Ich nutze Cookies und Google Analytics, um diese Website für Dich so interessant wie möglich zu gestalten. Bist Du damit einverstanden? (Du kannst diese Entscheidung jederzeit widerrufen)'
+    deny: "Ablehnen"
+    allow: "OK, gerne!"
+    link: "Datenschutzhinweise"
+    href: "www.van-porten.de/privacy/"
 
 # Site Author
 author:
@@ -128,6 +148,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mcdeck"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ovanporten"
+    - label: "Xing"
+      icon: "fab fa-fw fa-xing"
+      url: "https://www.xing.com/profile/Oliver_vanPorten"      
 
 # Site Footer
 footer:
@@ -256,6 +282,10 @@ tag_archive:
 #     tag: /tags/:name/
 
 
+# Scripts + CSS
+# after_footer_scripts:
+ 
+  
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
