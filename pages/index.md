@@ -20,7 +20,7 @@ Blog.
 =====
 
 [In meinem Blog]({{ site.baseurl }}/blog/) schreibe ich zu allen möglichen Themen rund um die IT. 
-Zur Zeit beschäftige ich mit intensiv mit Themen rund um das CI/CD, Cloud, DevOps und Full Stack Web Entwicklung.
+Zur Zeit beschäftige ich mich intensiv mit Themen rund um das CI/CD, Cloud, DevOps und Full Stack Web Entwicklung.
 Andere Dauerbrenner sind das Internet of Things und SmartHome. Meinen Blog verfasse ich normalerweise auf Englisch. 
 
 Die aktuellsten Einträge:
