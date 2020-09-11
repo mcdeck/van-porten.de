@@ -12,8 +12,8 @@ permalink: /about/
 ![me]({{ site.baseurl }}/assets/images/me_small.jpg)
 
 Mein Name ist Oliver van Porten. Ich wurde am 20 Mai 1982 in Köln geboren. Eine Auswahl aktueller und älterer 
-Projekte finden sie in meinem [Portfolio]({{ site.baseurl }}/portfolio/). Einen detailierten Lebenslauf entnehmen
-Sie bitte meinen Profile bei [Xing](https://www.xing.com/profile/Oliver_vanPorten) und [LinkedIn](https://de.linkedin.com/in/ovanporten/).
+Projekte finden sie in meinem [Portfolio]({{ site.baseurl }}/portfolio/). Einen detailierten Lebenslauf gibt es
+in meinen Profilen bei [Xing](https://www.xing.com/profile/Oliver_vanPorten) und [LinkedIn](https://de.linkedin.com/in/ovanporten/).
 
 *   [Certified SAFe Agilist (SAFe, 2/2018) - expired]({{ site.baseurl }}/assets/documents/2018_01_SAFe.pdf)
 *   [Scrum Alliance CSM Certificate (Scrum Alliance, 3/2013) - expired]({{ site.baseurl }}/assets/documents/Oliver-van-Porten-ScrumAlliance_CSM_Certificate.pdf)
@@ -23,6 +23,12 @@ Sie bitte meinen Profile bei [Xing](https://www.xing.com/profile/Oliver_vanPorte
 *   **Prozesse und Modellierung**: Scrum, Kanban, UML
 *   **Sonstiges**: Spracherkennung und -synthese, Embedded Systems, Web Entwicklung, Jenkins, Continuous Integration, Continuous Delivery, Software Tests
 
+Persönliches
+------------
+
+Ich lese viel, vor allem [Science Fiction](http://en.wikipedia.org/wiki/Science_fiction), [Cyberpunk](http://en.wikipedia.org/wiki/Cyberpunk) and [Fantasy](http://en.wikipedia.org/wiki/Fantasy), aber auch nicht-fiktionale Romane, wenn es sich ergibt. Ich bin ein großer Fan von Terry Pratchet und Douglas Adams. Die Harry Potter Romane von J.K. Rowling haben es mir ebenfalls angetan. Ich warte sehnsüchtig auf die Fortsetzung der Game of Thrones Roman-Reihe.
+
+Neben dem Lesen spiele ich leidenschaftlich gerne Badminton beim [TV Roetgen](http://www.tv-roetgen.de/). Neben dem freien Spiel dort nehme ich regelmäßig an Turnieren anderer Freizeitmannschaften teil. Vor ein paar Jahren habe ich angefangen, Gitarre zu spielen. Und glaube auch langsam besser zu werden - [meinem Gitarrenlehrer Klaus](https://playtheguitar.de/) sei Dank. Angenfangeb habe ich mit einer Dreadnought Western Gitarre, aktuelle spiele ich eigentlich nur noch auf meiner Epiphone Les Paul E-Gitarre.
 
 Berufserfahrung
 ---------------
@@ -31,23 +37,27 @@ Berufserfahrung
 
     * _Senior Software Engineer, ab November 2020_
 
-      The best is yet to come :)      
+      Bald mehr .. :)
 
 *   **Cerence GmbH** / **Nuance Communications Deutschland GmbH** , Aachen, Deutschland        
 
     * _(Senior) Manager Software Engineering TTS - TTS Research & Development, Mai 2014 - Oktober 2020_    
 
-      Für Cerence/Nuance war ich in diversen Rollen als Manager tätig und leitete unterschiedliche Teams. 
+      Für Cerence/Nuance bin/war ich in diversen Management Rollen tätig und leitete unterschiedliche Teams. 
       
       In meiner Management Laufbahn war ich unter anderem für die Entwicklung von Spracheingabe (ASR, Automatic Speech Recognition)
       als auch Sprachausgabe (TTS, Text-to-Speech) Systemen verantwortlich. Darüber hinaus verantwortete ich
-      die komplette Release Infrstruktur sowie die zugehören Prozesse für die Text-to.Speech Organisation.
+      die komplette Release Infrstruktur sowie die zugehören Prozesse für die Text-to-Speech Organisation.
 
       Ich pflegte und pflege bis heute einen agilen und kooperativen Führungsstil und sehe mich ehr als Coach, denn als Chef.      
 
+      Soweit es meine Zeit erlaubte habe ich - auch als Manager - aktiv mit entwickelt und angepackt, speziell im Bereich
+      DevOps und Automatisierung, aber auch bei der Entwicklung von Web-basierten Tools und Demos.
+
     * _Senior Software Engineer - Embedded Research & Development, Mai 2012 - Januar 2014_
     
-      Architektur und Entwicklung eines Frameworks für Embedded Sprachsysteme mit C++. Einführung von Scrum als Scrum Master. Aufbau eines agilen Teams.  
+      Ich war maßgeblich an der Architektur und Entwicklung eines Frameworks für Embedded Sprachsysteme mit C++ beteiligt.
+      Als Scrum Master habe ich Scrum als Prozess etabliert und mich dann viel mit dem Aufbau und der Entwicklung des Teams befasst. 
     
 *   **Fachhochschule Aachen**, Aachen, Deutschland  
     
@@ -91,7 +101,6 @@ Berufserfahrung
     
       Entwicklung von Software, Betreuung der Arbeitsplatzrechner im Mediapark sowie Betreuung des Rechenzentrums am Butzweilerhof.
 
-
 Veröffentlichungen
 ------------------
 
@@ -117,9 +126,3 @@ Ausbildung
     Abitur 2001
     
 
-Persönliches
-------------
-
-Ich lese viel, vor allem [Science Fiction](http://en.wikipedia.org/wiki/Science_fiction), [Cyberpunk](http://en.wikipedia.org/wiki/Cyberpunk) and [Fantasy](http://en.wikipedia.org/wiki/Fantasy), aber auch nicht-fiktionale Romane, wenn es sich ergibt. Ich bin ein großer Fan von Terry Pratchet und Douglas Adams. Die Harry Potter Romane von J.K. Rowling haben es mir ebenfalls angetan. Ich warte sehnsüchtig auf die Fortsetzung der Game of Thrones Roman-Reihe.
-
-Neben dem Lesen spiele ich leidenschaftlich gerne Badminton beim [TV Roetgen](http://www.tv-roetgen.de/de/willkommen/). Neben dem freien Spiel dort nehme ich regelmäßig an Turnieren anderer Freizeitmannschaften teil.
