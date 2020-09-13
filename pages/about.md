@@ -12,7 +12,7 @@ permalink: /about/
 ![me]({{ site.baseurl }}/assets/images/me_small.jpg)
 
 Mein Name ist Oliver van Porten. Ich wurde am 20 Mai 1982 in Köln geboren. Eine Auswahl aktueller und älterer 
-Projekte finden sie in meinem [Portfolio]({{ site.baseurl }}/portfolio/). Einen detailierten Lebenslauf gibt es
+Projekte gibt es in meinem [Portfolio]({{ site.baseurl }}/portfolio/). Einen detailierten Lebenslauf gibt es
 in meinen Profilen bei [Xing](https://www.xing.com/profile/Oliver_vanPorten) und [LinkedIn](https://de.linkedin.com/in/ovanporten/).
 
 *   [Certified SAFe Agilist (SAFe, 2/2018) - expired]({{ site.baseurl }}/assets/documents/2018_01_SAFe.pdf)
