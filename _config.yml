@@ -114,7 +114,8 @@ cookieconsent:
   js: "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" # 'assets/js/cookieconsent.min.js'
   type: "opt-in" # only opt-in will work for now
   theme: "block"
-  position": "bottom-left"
+  position: "bottom-left"
+  static: false # only set to true if you want the popup the push down the header
   content:
     message: 'Ich nutze Cookies und Google Analytics, um diese Website für Dich so interessant wie möglich zu gestalten. Bist Du damit einverstanden? (Du kannst diese Entscheidung jederzeit widerrufen)'
     deny: "Ablehnen"

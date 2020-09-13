@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="{{ site.cookieconsent.css | absolute_url  }}" />
-<script src="{{ site.cookieconsent.js | absolute_url  }}"></script>
+<script src="{{ site.cookieconsent.js | absolute_url  }}" data-cfasync="false"></script>
 <script>
 	function loadGAonConsent() {
 		window.ga = window.ga || function () {
@@ -29,13 +29,13 @@
 					"text": "#cfcfe8"
 				},
 				"button": {
-					"background": "##c26fe0",
+					"background": "#c26fe0",
 					"text": "#ffffff"
 				}
 			},
 			"theme": "{{ site.cookieconsent.theme }}",
   			"position": "{{ site.cookieconsent.position }}",
-			"static": true,
+			"static": {{ site.cookieconsent.static }},
 			"type": "{{ site.cookieconsent.type }}",
 			"content": {
 				"message": "{{ site.cookieconsent.content.message }}",
