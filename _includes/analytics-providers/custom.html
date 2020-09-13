@@ -25,14 +25,16 @@
 		window.cookieconsent.initialise({
 			"palette": {
 				"popup": {
-					"background": "#313451"
+					"background": "#343c66",
+					"text": "#cfcfe8"
 				},
 				"button": {
-					"background": "#4a4f79"
+					"background": "##c26fe0",
+					"text": "#ffffff"
 				}
 			},
-			"theme": "edgeless",
-  			"position": "top",
+			"theme": "{{ site.cookieconsent.theme }}",
+  			"position": "{{ site.cookieconsent.position }}",
 			"static": true,
 			"type": "{{ site.cookieconsent.type }}",
 			"content": {
