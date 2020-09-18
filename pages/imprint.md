@@ -49,7 +49,7 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 * * *
 
-Hinweise zum Datenschutz finden Sie [hier](https://www.van-porten.de/datenschutz/).
+Hinweise zum Datenschutz finden Sie [hier](https://www.van-porten.de/privacy/).
 
 * * *
 
