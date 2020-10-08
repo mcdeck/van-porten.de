@@ -16,8 +16,8 @@ Seit mehr als 15 Jahren bin ich beruflich im Bereich Software Engineering und
 Unter [Über Mich]({{ site.baseurl }}/about/) als auch auf [Xing](https://www.xing.com/profile/Oliver_vanPorten) 
 und [LinkedIn](https://de.linkedin.com/in/ovanporten/) gibt es weitere Informationen über mich und meinen Lebenslauf.
 
-Blog.
-=====
+Blog
+====
 
 [In meinem Blog]({{ site.baseurl }}/blog/) schreibe ich zu allen möglichen Themen rund um die IT. 
 Zur Zeit beschäftige ich mich intensiv mit Themen rund um das CI/CD, Cloud, DevOps und Full Stack Web Entwicklung.
