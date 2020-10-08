@@ -30,6 +30,14 @@ Die aktuellsten Einträge:
 {% endfor %}
   * [mehr ...]({{ site.baseurl }}/blog/) 
 
+YouTube
+=======
+
+Ich versuche mich zur Zeit auch an einem kleinen [YouTube Kanal](https://www.youtube.com/user/mcdeck). 
+Dort poste ich Videos zu meinen DIY Aktivitäten, Entwicklungs Projekten und Let's Plays. Und offentlich bald
+noch mehr.
+
+
 Projekte und Referenzen
 =======================
 
