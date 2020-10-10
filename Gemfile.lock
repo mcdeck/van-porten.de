@@ -138,6 +138,7 @@ DEPENDENCIES
   jemoji
   minima (~> 2.0)
   minimal-mistakes-jekyll
+  rouge
   tzinfo-data
 
 BUNDLED WITH

@@ -37,4 +37,36 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+# HTML pipeline dependencies,
+#  see https://github.com/jch/html-pipeline#dependencies
+
+# For SyntaxHighlightFilter 
+gem 'rouge'
+
+# for AutolinkFilter
+# gem 'rinku'
+
+# For EmailReplyFilter 
+#gem 'escape_utils'
+#gem 'email_reply_parser'
+
+# For EmojiFilter
+#gem 'gemoji'
+
+# For MarkdownFilter
+#gem 'commonmarker'
+
+# For PlainTextInputFilter 
+#gem 'escape_utils'
+
+# For SanitizationFilter
+#gem 'sanitize'
+
+# For TableOfContentsFilter
+#gem 'escape_utils'
+
+# For TextileFilter
+#gem 'RedCloth'
+
+# Theme
 gem "minimal-mistakes-jekyll"
