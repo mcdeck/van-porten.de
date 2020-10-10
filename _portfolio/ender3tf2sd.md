@@ -12,6 +12,8 @@ header:
   teaser: /assets/images/ender3tf2sd.png
 ---
 
+![Ender3tf2sd]({{ site.baseurl }}/assets/images/ender3tf2sd.png)
+
 **OctoPrint-Ender3tf2sd** is a simple plugin to make OctoPrint recognize the SD card in your Ender 3 (Pro).
 
 It seems that Marlin (depending on which version you use, I guess) sends TF card ok instead of SD card ok as OctoPrint expects. People in the OcotPrint community solved this by uploading a plugin via SSH (see Thread on the forums). I wanted this to be installable via the WebUI, though, which is why I made this plugin.
