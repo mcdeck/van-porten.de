@@ -19,12 +19,6 @@ originals level of quality (i.e. fun) by far. And I for one have been wondering 
 
 After thinking about this for a bit and trying to figure out what made Diablo so damn special I came up with pretty much nothing. Diablo had good graphics at the time, same applies to Diablo 2 and LOD. If you dare to start any of these now .. well, let me say, your eyes will start to hurt pretty damn quick. Though Titan Quest is visually decent not to say really beautiful, it does not quite have what the Diablo series had so far. See for youself (From left to right: Diablo, Diablo 2, Titan Quest).
 
-![]({{ site.baseurl }}/assets/images/136326.jpeg)
-
-![Diablo 2 - Secret Sanctuary]({{ site.baseurl }}/assets/images/treppenall1.jpg)
-
-![Titan Quest Random Screenshot]({{ site.baseurl }}/assets/images/144461-medium1.jpg)
-
 I don't - by far - feel the exitement that I felt when I found a unique item in Diablo or Diablo 2/LOD for that matter. (Btw, you might wonder why I don't mention Hellfire .. well .. I just did not care for it to much.). I don't feel the thrill when fighting one of the level bosses.  
 Why that is? I don't know for sure. For one I liked Diablo's story a lot better. I really dig that mysterious heaven and hell stuff, with shining angels and blood-thirsty fiends and all that. Needless to say that I liked those characters best which were neither of both. There isn't only black and white after all.
 
