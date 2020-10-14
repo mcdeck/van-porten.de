@@ -11,7 +11,7 @@ permalink: /about/
 ---
 ![me]({{ site.baseurl }}/assets/images/me_small.jpg)
 
-My Name is Oliver van Porten. I was born on May 20, 1982 in Cologne, Germany. You can find a selection of current and old project in my [portfolio]({{ site.baseurl }}/portfolio/). A detailed CV is available on [Xing](https://www.xing.com/profile/Oliver_vanPorten) and [LinkedIn](https://de.linkedin.com/in/ovanporten/).
+My Name is Oliver van Porten. I was born on May 20, 1982 in Cologne, Germany. You can find a selection of current and older projects in my [portfolio]({{ site.baseurl }}/portfolio/). A detailed CV is available on [Xing](https://www.xing.com/profile/Oliver_vanPorten) and [LinkedIn](https://de.linkedin.com/in/ovanporten/).
 
 *   [Certified SAFe Agilist (SAFe, 2/2018) - expired]({{ site.baseurl }}/assets/documents/2018_01_SAFe.pdf)
 *   [Scrum Alliance CSM Certificate (Scrum Alliance, 3/2013) - expired]({{ site.baseurl }}/assets/documents/Oliver-van-Porten-ScrumAlliance_CSM_Certificate.pdf)
