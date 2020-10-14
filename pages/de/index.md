@@ -4,7 +4,7 @@ date: 2020-09-11
 published: true
 categories: []
 tags: []
-permalink: /
+permalink: /de/
 # author_profile: true
 ---
 

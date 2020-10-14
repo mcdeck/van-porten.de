@@ -3,11 +3,11 @@ main:
     url: /blog/
   - title: "Portfolio"
     url: /portfolio/
-  - title: "Über Mich"
+  - title: "About"
     url: /about/
-  - title: "Kontakt"
-    url: /contact/
-  - title: "Datenschutz"
-    url: /privacy/
-  - title: "Impressum"
-    url: /imprint/
+  #- title: "Conatct"
+  #  url: /contact/
+  #- title: "Privacy"
+  #  url: /privacy/
+  #- title: "Imprint"
+  #  url: /imprint/

@@ -1,6 +1,6 @@
 ---
 
-title: Dienstleitungen
+title: Services
 date: 2014-06-19
 published: false
 categories: []

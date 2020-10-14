@@ -7,7 +7,7 @@ published: true
 status: publish
 categories: []
 tags: []
-permalink: /about/
+permalink: /de/about/
 ---
 ![me]({{ site.baseurl }}/assets/images/me_small.jpg)
 
