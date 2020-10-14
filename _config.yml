@@ -119,8 +119,11 @@ cookieconsent:
   static: false # only set to true if you want the popup the push down the header
   content:
     #message: 'Ich nutze Cookies und Google Analytics, um diese Website für Dich so interessant wie möglich zu gestalten. Bist Du damit einverstanden? (Du kannst diese Entscheidung jederzeit widerrufen)'
+    message: 'This website uses cookies to improve your experience.'
     #deny: "Ablehnen"
+    deny: 'Decline'
     #allow: "OK, gerne!"
+    allow: 'Allow cookies'
     link: "Privacy Statement"
     href: "https://www.van-porten.de/privacy/"
 
