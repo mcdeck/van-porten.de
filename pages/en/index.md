@@ -12,12 +12,12 @@ Welcome!
 
 Computer and Software have always been my passion, and I am fortunate enough to have worked for more than 15 years in this field as a professional, focusing on Software Engineering and Software Architecture.  
 
-You can find more information about me on the the [About]({{ site.baseurl }}/about/) page as well as on [Xing](https://www.xing.com/profile/Oliver_vanPorten) and [LinkedIn](https://de.linkedin.com/in/ovanporten/).
+You can find more information about me on the [About]({{ site.baseurl }}/about/) page as well as on [Xing](https://www.xing.com/profile/Oliver_vanPorten) and [LinkedIn](https://de.linkedin.com/in/ovanporten/).
 
 Blog
 ====
 
-[On my Blog]({{ site.baseurl }}/blog/) I write about all sorts of topics related to IT. I am currently spending a lot of time and effort with `CI/CD`, `Cloud`, `DevOps` and `Full Stack Web Development`. Another constant area of interested is the `Internet of Things` and `SmartHome`. 
+[On my Blog]({{ site.baseurl }}/blog/) I write about all sorts of topics related to IT. I am currently spending a lot of time and effort with `CI/CD`, `Cloud`, `DevOps` and `Full Stack Web Development`. Another constant area of interest is the `Internet of Things` and `SmartHome`. 
 
 Latest entires:
 
