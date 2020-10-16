@@ -17,6 +17,6 @@ redirect_from:
   - /2009/11/popsy-team-v_i_p-2-my-alltime-favourite-demo/
 ---
 
-{% include youtubePlayer.html id="ObtPizPFMbo" %}
+{% include video id="ObtPizPFMbo" provider="youtube" %}
 
 Watch

@@ -14,5 +14,9 @@ author_profile: true
 pagination:
   enabled: true
   permalink: '/page/:num/'
+  per_page: 8
+
+entries_layout: grid
+classes: wide
 ---
 

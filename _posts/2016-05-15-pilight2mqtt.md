@@ -15,6 +15,11 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2016/05/pilight2mqtt/
+
+header: 
+  # image: /assets/images/2016-05-15-23_25_54-cmd-python-service.py_.png
+  teaser: /assets/teasers/teaser_empty_870x580.png
+
 ---
 Some days ago [I blogged about my first experiments with pilight]({{ site.baseurl }}/blog/2016/03/pilight/) and mentioned that I intended to attach it to [Home Assistant](https://home-assistant.io/). Today I finally found the time to get started and now have a working prototype ready.
 
@@ -24,7 +29,7 @@ I started a new project on GitHub called [pilight2mqtt](https://github.com/mcdec
 
 The following video gives an impression of how it works. I'm using the awesome [mqtt-spy](https://kamilfb.github.io/mqtt-spy/) to send MQTT messages, in case you are wondering.
 
-{% include youtubePlayer.html id="dgzDq1y2D3g" %}
+{% include video id="dgzDq1y2D3g" provider="youtube" %}
 
 The whole thing is based on [python](https://www.python.org/), using [paho-mqtt](https://pypi.python.org/pypi/paho-mqtt/1.1) for the MQTT part, which makes things fairly easy. The idea is to eventually install this as a service on my [Raspberry Pi](https://www.raspberrypi.org/) and transfer messages that way. Obviously it will work in Home Assistant the same way all other MQTT devices work there.
 

@@ -8,6 +8,10 @@ status: publish
 categories: []
 tags: []
 permalink: /about/
+
+header: 
+  image: /assets/teasers/me_hero.png
+  # teaser: /assets/teasers/teaser_empty_870x580.png
 ---
 ![me]({{ site.baseurl }}/assets/images/me_small.jpg)
 

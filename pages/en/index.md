@@ -1,11 +1,13 @@
 ---
 title: Home
+layout: single
 date: 2020-09-11
 published: true
 categories: []
 tags: []
 permalink: /
 # author_profile: true
+
 ---
 
 Welcome!
@@ -22,7 +24,7 @@ Blog
 Latest entires:
 
 {% for post in site.posts limit:2 %}
-  * [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%-d %B %Y" }})
+  * {{ post.header.teaser }} - [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%-d %B %Y" }})
 {% endfor %}
   * [more ...]({{ site.baseurl }}/blog/) 
 
