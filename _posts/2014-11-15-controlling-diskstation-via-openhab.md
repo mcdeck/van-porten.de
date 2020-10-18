@@ -13,6 +13,10 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2014/11/controlling-diskstation-via-openhab/
+
+excerpt: In this post we look at how to control a
+    Synology Diskstation via openHAB.
+
 ---
 While building my Smart Home system I figured I might as well attach my Diskstation DS212 to the controls so I can turn it on and off at will. To make this work, I used the [exec binding](https://github.com/openhab/openhab/wiki/Exec-Binding), the [network health binding](https://github.com/openhab/openhab/wiki/Network-Health-Binding) and the [WOL binding](https://github.com/openhab/openhab/wiki/Wake-on-LAN-Binding-%28WoL%29) combined into one neat little Switch:
 

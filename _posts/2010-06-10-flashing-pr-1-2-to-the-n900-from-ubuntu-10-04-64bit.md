@@ -15,6 +15,9 @@ redirect_from:
   - /2010/06/flashing-pr-12-to-the-n900-from-ubuntu-1004-64bit/
   - /2010/06/flashing-pr-12-to-the-n900-from-ubuntu-10-04-64bit/
   - /2010/06/flashing-pr-1-2-to-the-n900-from-ubuntu-10-04-64bit/
+
+excerpt: In this post we look at flashing PR 1.2 to the N900 
+    from Ubuntu 10.04 64bit
 ---
 To install flasher, do
 

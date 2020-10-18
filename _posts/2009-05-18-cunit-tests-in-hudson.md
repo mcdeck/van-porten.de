@@ -15,6 +15,9 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2009/05/cunit-tests-in-hudson/
+
+excerpt: In this post we look at how to run and capture 
+    cunit test in Hudson
 ---
 Since I needed to parse the results of some [CUnit](http://cunit.sourceforge.net/) tests in [Hudson](https://hudson.dev.java.net/) in a recent project, I came up with the following transformation which I apply to the [cunit xml result file](http://cunit.sourceforge.net/doc/running_tests.html#automated).
 

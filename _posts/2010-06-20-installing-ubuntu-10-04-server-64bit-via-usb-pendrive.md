@@ -15,6 +15,9 @@ author: Oliver van Porten
 redirect_from:
   - /2010/06/installing-ubuntu-1004-server-64bit-via-usb-pendrive/
   - /2010/06/installing-ubuntu-10-04-server-64bit-via-usb-pendrive/
+
+excerpt: In this post we look at installing Ubuntu 10.04 
+    Server 64bit via USB Pendrive
 ---
 After struggling with installing [Ubuntu Server 10.04](http://www.ubuntu.com/server) from a bootable usb stick, here are some hints in case anyone else ever wants to do this. My problem was that the Server Installer kept trying to load files from the CD and could not find them, which made the installation fail. I actually wonder why it could not find anything because it was apparently looking in the right places (i.e. the USB stick mounted under /cdrom). Feel free to enlighten me. Read more after the break.
 

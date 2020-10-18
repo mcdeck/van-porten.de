@@ -14,6 +14,8 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2010/09/multiple-many-to-many-in-grails/
+
+excerpt: In this post we look at creating Multiple Many-to-Many in Grails
 ---
 Creating many-to-many relationships in [Grails](http://www.grails.org) is quite simple. It is also possible to have multiple many-to-many relationships in a single class, but for some reason I found little documentation on how to do this. It is actually quite simple once you know how to and pretty much comes down to syntactic sugar, so to speak. Read more after the break.
 

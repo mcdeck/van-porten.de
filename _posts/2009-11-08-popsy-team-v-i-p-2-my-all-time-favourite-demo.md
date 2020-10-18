@@ -15,6 +15,8 @@ redirect_from:
   - /2009/11/popsy-team-v_i_p-2-my-all-time-favourite-demo/
   - /2009/11/popsy-team-vip-2-my-alltime-favourite-demo/
   - /2009/11/popsy-team-v_i_p-2-my-alltime-favourite-demo/
+
+excerpt: In this post we look at my all time favourite demo
 ---
 
 {% include video id="ObtPizPFMbo" provider="youtube" %}

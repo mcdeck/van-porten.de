@@ -12,6 +12,8 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2006/11/favourite-demos/
+
+excerpt: In this post we look at my favourite demos of all times
 ---
 I just tuned in to [demoscene.tv](http://www.demoscene.tv) and came to think of my five  
 favourite demos of all times. Here we go in order of appereance:

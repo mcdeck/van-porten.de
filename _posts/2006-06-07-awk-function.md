@@ -10,6 +10,8 @@ tags: []
 author: Oliver van Porten
 redirect_from:
   - /2006/06/awk-function/
+
+excerpt: In this post we look at my first AWK function
 ---
 Just for the hell of it. A little awk function to find a columns id in a  
 csv file. Quite a handy one I might add:

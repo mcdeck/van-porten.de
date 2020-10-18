@@ -11,6 +11,8 @@ tags: []
 author: Oliver van Porten
 redirect_from:
   - /2007/06/singleton-pattern-in-python/
+
+excerpt: In this post we look at how to implement singletons in Python
 ---
 I was looking for a smooth way to create singletons in python. Here is a metaclass solution that seems to work:
 

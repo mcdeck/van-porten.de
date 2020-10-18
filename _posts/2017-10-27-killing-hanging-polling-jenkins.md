@@ -12,6 +12,9 @@ author: Oliver van Porten
 redirect_from:
   - /2017/10/killing-hanging-polling-jenkins/
 
+excerpt: In this post we are looing at how to kill a hanging polling job in Jenkins
+    regularly and automatically.
+
 header: 
   # image: /assets/images/jenkins-ci_512.png
   teaser: /assets/teasers/teaser_empty_870x580.png

@@ -10,6 +10,9 @@ tags: []
 author: Oliver van Porten
 redirect_from:
   - /2006/11/capture-card-config-for-mediacenter-and-hvr-1100/
+
+excerpt: In this post we look at the capture card config 
+    for MediaCenter and HVR-1100
 ---
 As I am trying to setup my TV tuner for use with MediaPortal right now I had to write a configuration file for my card. Here is what I added to CaptureCardDefinitions.xml. The digital part actually seems to work, the analog however does not until now but I'm working on that one.
 

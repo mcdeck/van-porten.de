@@ -16,10 +16,13 @@ author: Oliver van Porten
 redirect_from:
   - /2016/05/pilight2mqtt/
 
-header: 
-  # image: /assets/images/2016-05-15-23_25_54-cmd-python-service.py_.png
-  teaser: /assets/teasers/teaser_empty_870x580.png
+excerpt: In this post we look at how to attach pilight to Home Assistant 
+    using MQTT.
 
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/teaser_empty_870x580.png
+  
 ---
 Some days ago [I blogged about my first experiments with pilight]({{ site.baseurl }}/blog/2016/03/pilight/) and mentioned that I intended to attach it to [Home Assistant](https://home-assistant.io/). Today I finally found the time to get started and now have a working prototype ready.
 

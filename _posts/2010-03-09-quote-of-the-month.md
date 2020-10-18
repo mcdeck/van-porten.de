@@ -12,6 +12,8 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2010/03/quote-of-the-month/
+
+excerpt: Universal truth
 ---
 From: Terry Pratchett - The Last Hero - A Discworld Fable.
 

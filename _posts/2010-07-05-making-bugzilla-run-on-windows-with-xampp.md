@@ -14,6 +14,8 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2010/07/making-bugzilla-run-on-windows-with-xampp/
+
+excerpt: In this post we look at making Bugzilla run on Windows with XAMPP
 ---
 I was struggling a bit with making Bugzilla 2.2 work on my Windows XAMPP. I kept getting error about child processes not being able to start. The logs said this:
 
