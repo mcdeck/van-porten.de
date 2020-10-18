@@ -11,7 +11,8 @@ tags: []
 author: Oliver van Porten
 redirect_from:
   - /2016/05/fixing-boot-camp-wifi-issues/
-   
+header:
+  teaser: /assets/teasers/mac_870x580.png
 excerpt: In this post we look at how to fix Boot Camp WiFi issues
    
 ---

@@ -17,7 +17,9 @@ redirect_from:
 
 excerpt: In this post we look at how to install FHEM on a
     RaspberryPi and make it work with HomeMatic.
-
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/smarthome.png
 ---
 In my previous posted I briefly outlined my current attempts at a [home automation setup using FHEM]({{ site.baseurl }}/blog/2016/01/home-automation-with-fhem/). In this post I will describe the basic steps necessary to set up [FHEM](http://fhem.de/fhem.html) on a [Raspberry Pi](https://www.raspberrypi.org/) - or rather what I did to set it up. There may be simpler ways.
 

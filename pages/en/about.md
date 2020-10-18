@@ -9,10 +9,9 @@ categories: []
 tags: []
 permalink: /about/
 
-header: 
+#header: 
   # image: /assets/teasers/me_hero.png
   # teaser: /assets/teasers/teaser_empty_870x580.png
-  overlay_color: "#333"
 ---
 ![me]({{ site.baseurl }}/assets/images/me_small.jpg)
 

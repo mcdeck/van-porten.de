@@ -18,7 +18,9 @@ redirect_from:
 
 excerpt: In this post we look at how FHEM and 
     how it now integrates with HomeMatic.
-
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/smarthome.png
 ---
 For a while I was fairly happily running [OpenHAB](http://www.openhab.org/) to control and automate my [HomeMatic](http://www.homematic.com/) devices. I had a few rules configured to trigger outdoor lighting and the like. There were a few delays occasionally, though, which I think may have been due to network timing or simply due to a delay in receiving the events from the [CCU2](http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html).
 

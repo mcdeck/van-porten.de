@@ -17,7 +17,9 @@ redirect_from:
 
 excerpt: In this post I review my experience with
     Z-Wave so far.
-
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/smarthome.png
 ---
 After a few attempts to get my Z-Wave network to work reliably I finally decided to maybe try something else for the outdoor lights. The Z-Wave setup did not have the range to cover my driveway and yard, unfortunately.
 

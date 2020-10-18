@@ -23,15 +23,36 @@ Blog
 
 Latest entires:
 
-{% for post in site.posts limit:2 %}
-  * {{ post.header.teaser }} - [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%-d %B %Y" }})
-{% endfor %}
-  * [more ...]({{ site.baseurl }}/blog/) 
+<div class="entries-grid" style="float:left;">
+    {% for post in site.posts limit:3 %}
+    <div class="grid__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <div class="archive__item-teaser">
+          <img src="{{ post.header.teaser }}" alt="" style="height: 80px;">
+        </div>
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+            <a href="{{ post.url }}" rel="permalink">{{ post.title }}</a>
+        </h2>
+      </article>
+    </div>
+    {% endfor %}
+    <div class="grid__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <div class="archive__item-teaser">
+          <img src="{{site.baseurl}}/assets/teasers/teaser_empty_870x580.png" alt="" style="height: 80px;">
+        </div>
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+            <a href="{{ site.baseurl }}/blog/" rel="permalink">more...</a>
+        </h2>
+      </article>
+    </div>
+</div>
 
 YouTube
 =======
 
-I am currently trying to start [YouTube Channel](https://www.youtube.com/user/mcdeck), just out of curiosity and to see if I can. I post videos around my DIY activities, development projects as well as let's plays - and a lot more soon, I hope.
+I am currently trying to start a [YouTube Channel](https://www.youtube.com/user/mcdeck), just out of curiosity and to see if I can. 
+I post videos around my DIY activities, development projects as well as let's plays - and a lot more soon, I hope.
 
 Projects and References
 =======================

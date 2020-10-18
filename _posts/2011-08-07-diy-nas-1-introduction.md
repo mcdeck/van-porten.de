@@ -18,6 +18,9 @@ redirect_from:
 
 excerpt: In this post we look at options for a DIY
     NAS build
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/hardware_870x580.png
 ---
 I've been pondering the thought of buying a [NAS](http://en.wikipedia.org/wiki/Network-attached_storage) system for quite some time now but could not find a suitable one. My requirements are quite challenging though, I must admit:
 

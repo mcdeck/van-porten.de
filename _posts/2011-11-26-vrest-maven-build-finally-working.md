@@ -17,6 +17,9 @@ redirect_from:
 
 excerpt: I finally managed to get the Maven-based build of 
     my Eclipse-based graphical editor to work!
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/construction_870x580.png
 ---
 I finally managed to get the Maven-based build of my Eclipse-based graphical editor to work - including unit and swtbot-ui tests:
 

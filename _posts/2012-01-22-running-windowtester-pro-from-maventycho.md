@@ -18,6 +18,10 @@ redirect_from:
 
 excerpt: In this post we look at how to run Window Tester
     Pro from Myven and Tycho.
+
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/construction_870x580.png
 ---
 Running SWTBot tests as part of your maven/tycho build cycle is rather well documented and pretty straight forward (see for example the [sonatype docs](https://docs.sonatype.org/display/TYCHO/How+to+run+SWTBot+tests+with+Tycho)). Doing so with a [WindowTester Pro](http://code.google.com/javadevtools/wintester/html/index.html) recorded test is not - but then again it is pretty straigt forward as well.
 

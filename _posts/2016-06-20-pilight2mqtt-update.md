@@ -20,7 +20,7 @@ excerpt: I finally found a moment to make a bit more usable
 
 header: 
   # image: /assets/images/pilight_update.png
-  teaser: /assets/teasers/teaser_empty_870x580.png
+  teaser: /assets/teasers/smarthome.png
 ---
 Today I finally found a moment to make [pilight2mqtt]({{ site.baseurl }}/blog/2016/05/pilight2mqtt/) a bit more usable and also add some infrastructure.
 

@@ -18,7 +18,7 @@ excerpt: In this post we are looing at how to set up HomeMatic to be able to con
 
 header: 
   # image: /assets/images/cuxd_settings.png
-  teaser: /assets/teasers/teaser_empty_870x580.png
+  teaser: /assets/teasers/smarthome.png
 ---
 First of all, Happy New Year! I thought I'd start this year with an attempt at being more active again here on my blog. So this is it. :)
 
