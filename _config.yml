@@ -61,9 +61,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -105,11 +105,14 @@ analytics:
   # provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   # custom provider implements cookie consent
   provider               : "custom"
+  custom_provider        : 'osano_com'
+  #custom_provider        : 'cookieconsent_com'
   google:
-    tracking_id          : "UA-18665649-3"
+    tracking_id          : UA-18665649-3
     anonymize_ip         : true # true, false (default)
 
 # using https://www.osano.com/cookieconsent/download/
+# Osano config
 cookieconsent:
   css: "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" # 'assets/css/cookieconsent.css'
   js: "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" # 'assets/js/cookieconsent.min.js'
@@ -255,7 +258,8 @@ pagination:
   sort_field: 'date'
   # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
   sort_reverse: true
-  paginate: 7 # amount of posts to show#
+  paginate: 8 # amount of posts to show#
+  per_page: 8
 paginate_path: "/blog/page/:num/"
 timezone: Europe/Berlin # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -321,6 +325,11 @@ defaults:
       share: true
       related: true
       author_profile: true
+      show_date: true
+      header: 
+        # image: /assets/images/cuxd_settings.png
+        teaser: /assets/teasers/teaser_empty_870x580.png
+        overlay_color: "#333"
   # _pages
   - scope:
       path: "pages"
@@ -342,6 +351,10 @@ defaults:
       comments: false
       share: true
       related: false
+      header: 
+        # image: /assets/images/cuxd_settings.png
+        teaser: /assets/teasers/teaser_empty_870x580.png
+        overlay_color: "#333"
 
 collections:
   posts:
@@ -356,7 +369,6 @@ collections:
     permalink: /portfolio/:title/
 #  staff_members:
 #    people: true
-
     permalink: /:title/
   portfolio:
     output: true

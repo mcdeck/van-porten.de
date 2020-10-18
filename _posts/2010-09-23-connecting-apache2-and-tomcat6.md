@@ -18,6 +18,8 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2010/09/connecting-apache2-and-tomcat6/
+
+excerpt: In this post we look at connecting Apache2 and Tomcat6
 ---
 If you ever need to serve Tomcat applications through Apache2, here is a quick guide on how to do this on Ubuntu.
 

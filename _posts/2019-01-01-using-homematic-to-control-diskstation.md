@@ -12,6 +12,13 @@ tags:
 - homematic
 - smart home
 author: Oliver van Porten
+
+excerpt: In this post we are looing at how to set up HomeMatic to be able to control
+    a Synology Diskstation using cuxd.
+
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/smarthome.png
 ---
 First of all, Happy New Year! I thought I'd start this year with an attempt at being more active again here on my blog. So this is it. :)
 

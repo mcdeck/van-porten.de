@@ -14,6 +14,12 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2012/01/what-to-do-if-biber-stops-working-on-macos-x/
+
+excerpt: In this post we look at how to fix biber if it
+    stops working on MacOS X.
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/mac_870x580.png
 ---
 Yesterday evening I ran into a bit of a problem when I tried building my latex document that uses biblatex/biber. For some reason, biber would not generate any output but fail with
 

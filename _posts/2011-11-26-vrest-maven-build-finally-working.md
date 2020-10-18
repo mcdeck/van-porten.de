@@ -14,6 +14,12 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2011/11/vrest-maven-build-finally-working/
+
+excerpt: I finally managed to get the Maven-based build of 
+    my Eclipse-based graphical editor to work!
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/construction_870x580.png
 ---
 I finally managed to get the Maven-based build of my Eclipse-based graphical editor to work - including unit and swtbot-ui tests:
 

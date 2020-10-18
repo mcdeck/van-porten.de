@@ -17,6 +17,11 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2012/01/running-tycho-in-jenkinshudson/
+
+excerpt: In this post we look at Running Tycho in Jenkins/Hudson
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/construction_870x580.png
 ---
 When I first started running my Tycho/Maven build of my visual editor in Jenkins the build would always fail if a single test failed. That was mainly because the Maven build would run the surefire test automatically but cancel the build if there were any failures in them. In turn, this would not keep artifacts from being generated and thus not create a new snapshot release. To make matters worse, my tests are not that stable yet - running them on Linux sometimes fails for no reason whatsoever, leading to yet another broken build.
 

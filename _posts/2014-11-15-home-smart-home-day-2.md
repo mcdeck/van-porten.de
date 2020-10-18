@@ -13,6 +13,12 @@ tags:
 author: Oliver van Porten
 redirect_from:
   - /2014/11/home-smart-home-day-2/
+
+excerpt: In this post I review my first
+    attempts at home automation
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/smarthome.png
 ---
 After a day of experimentation with openHAB I finally decided to first build a prototype system, rather than cutting real wires and putting the actors in between. This is what my prototype looks like:
 
