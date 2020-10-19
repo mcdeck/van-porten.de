@@ -18,7 +18,7 @@ excerpt: In this post we look at how my new
     smart home setup.
 header: 
   # image: /assets/images/cuxd_settings.png
-  teaser: /assets/teasers/smarthome.png
+  teaser: /assets/teasers/smarthome_870x580.png
 ---
 End of last week I finally ordered the first few components to start my Smart-Home project. I am basing my setup on [Z-Wave](http://www.z-wave.com/ "Z-Wave") because I like the fact that it is an open standard plus there is a USB-controller I can plug into my [RaspberryPI](http://www.raspberrypi.org/).
 

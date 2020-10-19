@@ -17,7 +17,7 @@ redirect_from:
 excerpt: In this post we look at how reset zwave devices
 header: 
   # image: /assets/images/cuxd_settings.png
-  teaser: /assets/teasers/smarthome.png
+  teaser: /assets/teasers/smarthome_870x580.png
 ---
 Since I bought a new Z-Wave controller recently ([ZME\_UZB which support Z-Wave PLUS](http://www.z-wave.me/index.php?id=28 "ZME_UZB")) I was now facing an issue there I needed to remove a device from my old controller (ZME\_Z-StickC). However, I did not have the old controller available.
 

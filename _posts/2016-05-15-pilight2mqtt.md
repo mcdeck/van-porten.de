@@ -21,7 +21,7 @@ excerpt: In this post we look at how to attach pilight to Home Assistant
 
 header: 
   # image: /assets/images/cuxd_settings.png
-  teaser: /assets/teasers/smarthome.png
+  teaser: /assets/teasers/smarthome_870x580.png
   
 ---
 Some days ago [I blogged about my first experiments with pilight]({{ site.baseurl }}/blog/2016/03/pilight/) and mentioned that I intended to attach it to [Home Assistant](https://home-assistant.io/). Today I finally found the time to get started and now have a working prototype ready.

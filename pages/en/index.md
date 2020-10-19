@@ -28,7 +28,7 @@ Latest entires:
     <div class="grid__item">
       <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
         <div class="archive__item-teaser">
-          <img src="{{ post.header.teaser }}" alt="" style="height: 80px;">
+          <img src="{{ post.header.teaser }}" alt="">
         </div>
         <h2 class="archive__item-title no_toc" itemprop="headline">
             <a href="{{ post.url }}" rel="permalink">{{ post.title }}</a>
@@ -39,7 +39,7 @@ Latest entires:
     <div class="grid__item">
       <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
         <div class="archive__item-teaser">
-          <img src="{{site.baseurl}}/assets/teasers/teaser_empty_870x580.png" alt="" style="height: 80px;">
+          <img src="{{site.baseurl}}/assets/teasers/teaser_empty_870x580.png" alt="">
         </div>
         <h2 class="archive__item-title no_toc" itemprop="headline">
             <a href="{{ site.baseurl }}/blog/" rel="permalink">more...</a>
@@ -57,4 +57,4 @@ I post videos around my DIY activities, development projects as well as let's pl
 Projects and References
 =======================
 
-You can find a curated List of projects in [my portfolio]({{ site.baseurl }}/portfolio/).
+You can find a curated overview of some of my projects in [my portfolio]({{ site.baseurl }}/portfolio/).

@@ -17,6 +17,10 @@ redirect_from:
   - /2010/12/generating-faults-in-pylons-xmlrpccontroller/
 
 excerpt: In this post we look at generating Faults in Pylons XMLRPCController
+
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/keyboard_870x580.png
 ---
 This might seem easy enough, but it took me a while to get it right since the Pylons documentation is a bit misleading here, really. It says you should use **xmlrpc\_fault** from **pylons.controllers.xmlrpc** but that's actually not working if you're doing something like:
 

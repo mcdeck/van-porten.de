@@ -18,6 +18,10 @@ redirect_from:
   - /2011/01/testing-xmlrpc-controllers-in-pylons/
 
 excerpt: In this post we look at testing XMLRPC Controllers in Pylons
+
+header: 
+  # image: /assets/images/cuxd_settings.png
+  teaser: /assets/teasers/keyboard_870x580.png
 ---
 Testing is one of the essential tasks in modern software development, so it is only natural to want to test an application as thoroughly as possible.
 
