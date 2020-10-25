@@ -360,16 +360,6 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:title/
-# this is not actually a collection ...
-#  pages:
-#    output: true
-#    permalink: /:title/
-  portfolio:
-    output: true
-    permalink: /portfolio/:title/
-#  staff_members:
-#    people: true
-    permalink: /:title/
   portfolio:
     output: true
     permalink: /portfolio/:title/
