@@ -2,37 +2,65 @@
 
 title: Services
 date: 2014-06-19
-published: false
+published: true
 categories: []
 tags: []
 permalink: /services/
 ---
-Auf dieser Seite finden Sie eine Übersicht über meine Dienstleitungen. Sollten Sie meine Dienst in Anspruch nehmen wollen, 
-**[sprechen Sie mich an.]({{ site.baseurl }}/contact/) **
+I am a professional software engineer and agile leader with many years of experience. 
+I offer some consulting and development services.
 
-Web Entwicklung
----------------
+If you are interested in working with me **[get in touch.]({{ 'contact/' | relative_url }}) **
 
-Ich unterstütze Sie mit meinem Wissen und meiner Erfahrung gerne bei einem Ihrer Software Projekte:
+Continous Integreation and Continous Delivery CI/CD
+---------------------------------------------------
 
-*   Entwicklung Ihrer Webseite aus Basis von Wordpress oderJoomla
-*   Frontend-Entwicklung mit HTML, CSS und Javascript
-*   Backend-Entwicklung mit Java, Python oder PHP
-*   Datenbankentwicklung mit MySQL oder PostgreSQL
+I can support you and your company in builing a continous integration (CI) and delivery (CD) workflow for your
+projects and products. I have many years of experience doing just that in a corporate environment based on tools
+such as ``Jenkins``, ``Artifactory``, ``BitBucket`` and ``Docker``.
 
-**[Sprechen Sie mich an.]({{ site.baseurl }}/contact/)**
+**[Get in touch!]({{ 'contact/' | relative_url }})**
 
-Agilität wird groß geschrieben 
-------------------------------
 
-![2a0d84a7-0a22-40b4-8311-1391520ae924]({{ site.baseurl }}/assets/images/2a0d84a7-0a22-40b4-8311-1391520ae924.png)]
+Sofware Design and Architecture
+-------------------------------
 
-Als [Certified Scrum Master]({{ site.baseurl }}/about/#certified_scrum_master) berate und begleite ich Sie auch gerne bei der Einführung und 
-Weiterentwicklung Ihres agilen Vorgehensmodells, zum Beispiel auf Basis von Scrum. Sie profitieren von meiner langjährigen Erfahrung in 
-diesem Bereich und gemeinsam bringen machen wir Sie agil!
+I am an experienced software architect and have overseen multiple large development project and products over the years. 
+If you need experience building low-level interfaces based on C or C++, building complex embedded software stacks, or even
+want to create a new RESTful API for your latest web-based product I can help you with all of that!
 
-Ein agiles Vorgehen im Unternehmen zu etablieren bedeutet dabei weitaus mehr, als einfach nur Scrum also Prozessmodell einzuführen. 
-**Agil sein heißt, Veränderung zu leben.** Diesen Gedanken im Unternehmen zu etablieren ist die eigentliche Herausforderung. 
-Ich unterstütze Sie dabei mit Rat und Tat auf Ihrem Weg in eine agile Zukunft.
+**[Get in touch!]({{ 'contact/' | relative_url }})**
 
-**[Sprechen Sie mich an.]({{ site.baseurl }}/contact/)**
+
+Python development
+------------------
+
+My experience with Python ranges from simple scripting to large and complex web application and restful services. 
+It also includes some experience with deep learning toolkits such as ``Keras`` and ``Tensorflow``.
+I can work with you to get your next Python project or product off the ground quickly using frameworks such as 
+``Django``, ``Flask`` and ``Click``. I can also support you in creating tests for your applications using ``pyunit`` and 
+``robotframework``.
+
+I can also support you with packaging and deployment of your tools and applications using for example ``setuptools``, 
+``pip``, ``bumpversion`` and ``twine``.
+
+**[Get in touch!]({{ 'contact/' | relative_url }})**
+
+
+Frontend development
+--------------------
+
+If you need support developing web pages and frontends using ``HTML5``, ``CSS`` and ``JavaScript`` be sure to 
+**[get in touch]({{ 'contact/' | relative_url }})**. I can help your build your new frontend or update your existing
+one based on frameworks such as as ``Angular`` and ``React``.
+
+
+Speech Input / Ouput development and integration
+------------------------------------------------
+
+Setting up and integrating a working speech input or output stack can be a daunting task. There are many things to consider
+like accuaracy, latency and quality. I can support you with the integration of speech technology into your products. My experience
+ranges from grammar based speech input (ASR - automatic speech recognition) to neural network based speech output (TTS - text to speech).
+I have worked in both fields, at the core of the technology, for many years. 
+
+**[Get in touch!]({{ 'contact/' | relative_url }})**
