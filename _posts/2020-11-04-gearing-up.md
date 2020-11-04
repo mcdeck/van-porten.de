@@ -29,7 +29,7 @@ This post contains Amazon affiliate links!
 ---
 
 
-Every since the whole Corona thing started I was stuck, working from home (and started really enjoying it, too). However, my setup at home left
+Ever since the whole Corona thing started I was stuck working from home (and started really enjoying it, too). However, my setup at home left
 something to be desired. I did have one big monitor, but then would mostly use my notebook as a second screen when I was using it. Or no second
 screen when working from my regular PC. So I started out updating some thing here and there. Buying a new webcam was a bit of a challenge (and maybe
 still is because I am not yet sure I am going to keep my hyper expensive DSLM setup).
