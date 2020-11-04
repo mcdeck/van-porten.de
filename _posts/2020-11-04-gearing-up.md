@@ -18,7 +18,7 @@ excerpt: In this post we look at my current home office setup.
 
 header: 
   # image: /assets/images/cuxd_settings.png
-  teaser: /assets/teasers/smarthome_870x580.png
+  teaser: /assets/teasers/hardware_870x580.png
 ---
 
 ---
