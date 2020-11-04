@@ -51,14 +51,14 @@ Before I go to listing all my gear in excuciating detail, here is a picture of w
 
 ![Desktop New]({{ '/assets/images/desktop_new.jpg' | relative_url }})
 
-What may not be obious is that this is now actually a height adjustable desk which is super nice. New chair also soon to be delivered I hope - that selection
+What may not be obvious is that this is now actually a height adjustable desk which is super nice. New chair also soon to be delivered I hope - that selection
 process was a journy all in its own right, by the way. I ended up going with a [Viasit Scope](https://www.viasit.com/de/produkte/stuehle/scope-netzruecken) in the end. 
 
-I am for the moment sticking to my old speakers. I wanted to swap them out for some studio monitors, but I am in no rush to do that right now as it would also mean
+I am - for the moment - sticking to my old speakers. I wanted to swap them out for some studio monitors, but I am in no rush to do that right now as it would also mean
 getting a wider table top. Maybe after Christmas. You will also notice the oddly placed light to the right of the monitors. That is my old [Sled2Pro](https://amzn.to/2I4r2GA)
-which I am using as a key light at the moment (and still need to fill/back light, but also that is a different story).
+which I am using as a key light at the moment (and still need a fill/back light, but also that is a different story).
 
-Here is the full inventory of my currnet gear (excluding PC and T480s because the former is custom built and the latter is no longer available I think). 
+Here is the full inventory of my currnet gear (excluding PC and T480s because the former is custom built and the latter is no longer available, I think). 
 Other than that let's go by category.
 
 Audio
