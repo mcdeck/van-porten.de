@@ -55,6 +55,14 @@ If you need support developing web pages and frontends using ``HTML5``, ``CSS`` 
 one based on frameworks such as as ``Angular`` and ``React``.
 
 
+Static Page Generation
+----------------------
+
+TODO: Jekyll, static site generation and design
+
+If you are looking for a blazingly fast web  - Jekyll
+
+
 Speech Input / Ouput development and integration
 ------------------------------------------------
 
