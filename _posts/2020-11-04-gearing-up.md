@@ -38,11 +38,13 @@ Anyway, I though I would do brief rundown of all the gear I have set up now. Let
 
 ![Desktop Old]({{ '/assets/images/desktop_old.jpg' | relative_url }})
 
-I think all in all it was an OK setup, but a bit dated and also a bit ugly with the peg boards distributed left and righ, the Ikea shelve above and the 
-old logitech speakers stuck to the wall (which I did in an effort to save desktop space).
+I think all in all it was an OK setup, but a bit dated and also a bit ugly with the peg boards distributed left and right, the Ikea shelve above the monitor
+and the old logitech speakers stuck to the wall (which I did in an effort to save desktop space).
 
 The monitor was actually still quite good (Dell 27" QHD, but I do not remember the exact model), but I still wanted to replace that with 
-two large displays of the same type, with thinner bezels, to make better use of my desktop real estate. You may also notice the old webcam (Logitech C615). That started to behave a bit weird on Windows at some point, randomly not working due to what I think were driver issues. The quality was also so-so, so I decided to replace it as well. 
+two large displays of the same type, with thinner bezels, to make better use of my desktop real estate. You may also notice the old webcam (Logitech C615). 
+That started to behave a bit weird on Windows at some point, randomly not working due to what I think were driver issues. 
+The quality was also so-so, so I decided to replace it as well. 
 
 I of course kept the audio interface (Steinberg UR22mkII), but replaced the old Lenovo dock (USB-C version) with the TB3 version to get two monitors connected properly. My T480s actually has TB3 port, but I was using the USB-C in that shot. (I actually thought the new MacBook I got from work would also just work with the TB3 dock, but apparently Apple disagrees with me).
 
