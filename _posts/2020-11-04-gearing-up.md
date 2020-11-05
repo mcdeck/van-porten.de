@@ -30,33 +30,31 @@ This post contains Amazon affiliate links!
 
 
 Ever since the whole Corona thing started I was stuck working from home (and started really enjoying it, too). However, my setup at home left
-something to be desired. I did have one big monitor, but then would mostly use my notebook as a second screen when I was using it. Or no second
-screen when working from my regular PC. So I started out updating some thing here and there. Buying a new webcam was a bit of a challenge (and maybe
-still is because I am not yet sure I am going to keep my hyper expensive DSLM setup).
+something to be desired. I did have one big monitor, but then would mostly use my notebook as a second screen when I was using the nobetbook. Or no second
+screen when working from my regular PC. So I started out updating some thing here and there. Buying a new webcam was a bit of a challenge - and maybe
+still is because I am not yet sure I am going to keep my hyper expensive DSLM setup.
 
 Anyway, I though I would do brief rundown of all the gear I have set up now. Let's start by looking at the setup I started from.
 
 ![Desktop Old]({{ '/assets/images/desktop_old.jpg' | relative_url }})
 
-The monitor was actually still quite good (Dell 27" QHD, but I do not remember the exact model), but I still felt I wanted to replace that with 
-two large displays of the same type, with thinner bezels. You may also notice the old webcam (Logitech C615). That started to behave a bit weird on 
-Windows at some point, randomly not working due to what I think were driver issues. The quality was also so-so, so I decided to replace it as well. Other than
-that I of course kept the audio interface (Steinberg UR22mkII), but replaced the Lenovo dock with the TB3 version in the meantime to get two monitors
-connected properly. My T480s actually has TB3 port, but I was using the USB-C in that shot.
-
 I think all in all it was an OK setup, but a bit dated and also a bit ugly with the peg boards distributed left and righ, the Ikea shelve above and the 
 old logitech speakers stuck to the wall (which I did in an effort to save desktop space).
 
-Before I go to listing all my gear in excuciating detail, here is a picture of what my current setup looks like right now.
+The monitor was actually still quite good (Dell 27" QHD, but I do not remember the exact model), but I still wanted to replace that with 
+two large displays of the same type, with thinner bezels, to make better use of my desktop real estate. You may also notice the old webcam (Logitech C615). That started to behave a bit weird on Windows at some point, randomly not working due to what I think were driver issues. The quality was also so-so, so I decided to replace it as well. 
+
+I of course kept the audio interface (Steinberg UR22mkII), but replaced the old Lenovo dock (USB-C version) with the TB3 version to get two monitors connected properly. My T480s actually has TB3 port, but I was using the USB-C in that shot. (I actually thought the new MacBook I got from work would also just work with the TB3 dock, but apparently Apple disagrees with me).
+
+
+Before I go to listing all my gear in excruciating detail, here is a picture of what my current setup looks like right now.
 
 ![Desktop New]({{ '/assets/images/desktop_new.jpg' | relative_url }})
 
 What may not be obvious is that this is now actually a height adjustable desk which is super nice. New chair also soon to be delivered I hope - that selection
 process was a journy all in its own right, by the way. I ended up going with a [Viasit Scope](https://www.viasit.com/de/produkte/stuehle/scope-netzruecken) in the end. 
 
-I am - for the moment - sticking to my old speakers. I wanted to swap them out for some studio monitors, but I am in no rush to do that right now as it would also mean
-getting a wider table top. Maybe after Christmas. You will also notice the oddly placed light to the right of the monitors. That is my old [Sled2Pro](https://amzn.to/2I4r2GA)
-which I am using as a key light at the moment (and still need a fill/back light, but also that is a different story).
+I am - for the moment - sticking to my old speakers. I wanted to swap them out for some studio monitors, but I am in no rush to do that right now as it would also mean getting a wider table top. Maybe after Christmas. You will also notice the oddly placed light to the right of the monitors. That is my old [Sled2Pro](https://amzn.to/2I4r2GA) which I am using as a key light at the moment (and still need a fill/back light, but also that is a different story).
 
 Here is the full inventory of my currnet gear (excluding PC and T480s because the former is custom built and the latter is no longer available, I think). 
 Other than that let's go by category.
