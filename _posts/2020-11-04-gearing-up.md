@@ -126,7 +126,7 @@ Peripherals
 <a href="https://www.amazon.de/-/en/gp/product/B00HDZTMBS/ref=as_li_ss_il?ie=UTF8&psc=1&linkCode=li2&tag=ovanporten-21&linkId=eb0dcbd9e3875535f6d1acbf8c341329&language=en_GB" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00HDZTMBS&Format=_SL160_&ID=AsinImage&MarketPlace=DE&ServiceVersion=20070822&WS=1&tag=ovanporten-21&language=en_GB" ></a><img src="https://ir-de.amazon-adsystem.com/e/ir?t=ovanporten-21&language=en_GB&l=li2&o=3&a=B00HDZTMBS" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> [Cherry Mx Board 3.0](https://amzn.to/35Zw532)
 
 
-There are possibly still some things to optimize and overthink (espcially the camera - I really like to quality a lot, but I wonder if I will use it much outside of streaming/webcam use, and it IS more expensive than I wanted, mainly because I was unable to get my hands on an A5100 for a reasonable price, thanks to Coronoa). All in all I am pretty happy with that setup and really enjoy home office now ;)
+There are possibly still some things to optimize and overthink (espcially the camera - I really like to quality a lot, but I wonder if I will use it much outside of streaming/webcam use, and it IS more expensive than I wanted, mainly because I was unable to get my hands on an A5100 for a reasonable price, thanks to Corona). All in all I am pretty happy with that setup and really enjoy home office now ;)
 
 
 
