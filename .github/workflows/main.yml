@@ -37,11 +37,9 @@ jobs:
           enable_cache: false
 
       - name: 🚀 deploy
-        #uses: SamKirkland/FTP-Deploy-Action@3.1.1
-        uses: SamKirkland/FTP-Deploy-Action@master
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          ftp-server: ${{ secrets.FTP_SITE }}
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.FTP_SITE }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./_site
-          known-hosts: ${{secrets.FTP_KNOWN_HOSTS}}
