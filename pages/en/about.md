@@ -54,8 +54,8 @@ Professional Experience
 
       I cultivated and still maintain an agile and cooperative management style and see myself more as a coach than as a boss.
 
-      Whenever my time allowed it I - also as a manager - actively helped with develop, especially in the area of
-      DevOps and automation, but also with development of web-based tools and demos, using tools and languages such as `Jenkins`, `Artifactory`, `BitBucket`, `Python` and `Groovy`. I do believe it is important to *eat your own dog food* and really understand your product (and the pains that come with developing it). 
+      Whenever my time allowed it I - also as a manager - actively helped with development, especially in the area of
+      DevOps and automation, but also with development of web-based tools and demos, using tools and languages such as `Jenkins`, `Artifactory`, `BitBucket`, `Python` and `Groovy` and framework such as `Angular` and `Bootstrap`. I do believe it is important to *eat your own dog food* and really understand your product (and the pains that come with developing it). 
 
     * _Senior Software Engineer - Embedded Research & Development, May 2012 - January 2014_
     
