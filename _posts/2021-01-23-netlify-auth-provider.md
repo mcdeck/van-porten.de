@@ -1,32 +1,24 @@
 ---
-
-title: Netlify CMS GitHub Oauth 
-date: 2021-01-23 20:23:00.000000000 +02:00
-type: post
-published: true
-status: publish
-categories: 
-- software
-tags:
-- development
-- php
-- symfony
+excerpt: Netlify CMS is a great content management system for Jekyll (which runs
+  this page). In this article we look at how to set it up without relying on the
+  netlify service for authentication.
 author: Oliver van Porten
-
-excerpt: Netlify CMS is a great content management system for Jekyll (which runs this page). 
-  In this article we look at how to set it up without relying on the netlify service for authentication.
-
-header: 
-  # image: /assets/images/cuxd_settings.png
+title: Netlify CMS GitHub Oauth
+date: 2021-01-23 20:23:00.000000000 +02:00
+published: true
+header:
   teaser: /assets/teasers/keyboard_870x580.png
-
+status: publish
+tags:
+  - development
+  - php
+  - symfony
+type: post
+categories:
+  - software
 ---
-
 I was looking at running [Netlify CMS](https://www.netlifycms.org/) to make posting on my new blog over at [Dad On Tech](https://www.dad-on-tech.com) a bit easier. 
-After some initial tinkering I got it to work with GitHub-based authentication, but that still relied and/or assumed I would be building
-with [Netlify Services](https://www.netlify.com/), but in fact I am using the fabulous [GitHub Actions](https://github.com/features/actions) to build. The solution 
-seems to be to run your own Oauth server that talks to GitHub, but when I looked at the [Netlify CMS Docs](https://www.netlifycms.org/docs/intro/) the one PHP-based server
-they list there does not work for me (I actually think it misses a load of code in the repo). Since it was a good opportunity to pick up PHP again I just went and implemented 
+After some initial tinkering I got it to work with GitHub-based authentication, but that still relied on and/or assumed I would be building with [Netlify Services](https://www.netlify.com/), but in fact I am using the fabulous [GitHub Actions](https://github.com/features/actions) for a while now. The solution seems to be to run your own Oauth server that talks to GitHub, but when I looked at the [Netlify CMS Docs](https://www.netlifycms.org/docs/intro/) the one PHP-based server they list there does not work for me (I actually think it misses a load of code in the repo). Since it was a good opportunity to pick up PHP again I just went and implemented 
 something myself. But let's start at the beginning.
 
 # Setting up Netlify CMS
@@ -85,7 +77,7 @@ collections:
       
 ```
 
-I also configured a GitHub oauth application following [the instructions in the Netlify docs](https://docs.netlify.com/visitor-access/oauth-provider-tokens/).
+I also configured a GitHub oauth application following [the instructions in the Netlify docs](https://docs.netlify.com/visitor-access/oauth-provider-tokens/). The finer details of how to set everything up to [work properly with Jekyll are also available in the Nelify docs](https://www.netlifycms.org/docs/jekyll/).
 
 I will not go into the details of setting up Netlify's backend to make things work - I wanted my self-hosted solution instead of relying on 
 the netlify services.
@@ -138,6 +130,7 @@ ORIGIN=https://www.example.com
 ```
 
 To make Netlify CMs use the new authentication server I only needed to update `admin/config.yml` and add this line
+
 ```yml
 backend:
   ...
@@ -146,7 +139,7 @@ backend:
 
 After redeploying the Jeklyll page everything now works as expected!
 
-# Open points 
+# Open points
 
 There are certainly still things to do. For one I need to revisit my code after I take some more time to read through the Symfony docs. I would like
 to revisit my architecture and how I split controller and service because that is not ideal. I would also want to add some tests but have do better
@@ -154,5 +147,3 @@ understand how to do that.
 
 I will also need to revisit this origin parameter thing in the Javascript code and, last but not least, look at automating deployment - uploading via FTP
 is too cumbersome for my test.
-
-
