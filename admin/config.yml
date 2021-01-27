@@ -1,53 +1,56 @@
-# config.yml
-
 backend:
+  #name: git-gateway
   name: github
-  repo: mcdeck/van-porten.de # Path to your GitHub repository
-media_folder: 'assets'
+  repo: mcdeck/van-porten.de
+  branch: master # Branch to update (optional; defaults to master)
+  base_url: https://auth.van-porten.de
+  #site_domain: www.dad-on-tech.com
+  #auth_endpoint: auth
+  #api_root: https://api.github.com
+
+# This line should *not* be indented
 publish_mode: editorial_workflow
+
+# This line should *not* be indented
+media_folder: "assets/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/assets/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'authors'
-    label: 'Authors'
-    folder: '_authors/'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
-      - { label: 'Short Name', name: 'name', widget: 'string' }
-      - { label: 'Display Name', name: 'display_name', widget: 'string' }
-      - { label: 'Position', name: 'position', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'pages'
-    label: 'Pages'
-    create: true
-    editor:
-      preview: false
-    folder: '_pages/'
-    fields:
-      - { label: 'Title', name: 'title', default: 'about' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'portfolio'
-    label: 'Portfolio'
-    editor:
-      preview: false
-    folder: '_portfolio'
-    fields:
-      - { label: 'Title', name: 'title', default: 'about' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+      # - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - label: Header
+        name: header
+        widget: object
+        collapsed: false
+        fields:
+          - {label: "Teaser", name: "teaser", widget: "image"}
+      # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
+    label: "Portfolio" # Used in the UI
+    folder: "_portfolio" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+      # - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - label: Header
+        name: header
+        widget: object
+        collapsed: false
+        fields:
+          - {label: "Teaser", name: "teaser", widget: "image"}
+      # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}      
