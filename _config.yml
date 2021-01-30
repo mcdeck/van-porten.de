@@ -139,9 +139,9 @@ author:
   location         : "Roetgen, Germany"
   email            : "oliver@van-porten.de"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:oliver@van-porten.de"
+    #- label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    #  url: "mailto:oliver@van-porten.de"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.van-porten.de"
