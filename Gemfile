@@ -29,6 +29,8 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   gem 'jekyll-data'
   gem 'jekyll-paginate-v2'
+  gem "jekyll-algolia"
+  gem "jekyll-remote-theme"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -69,4 +71,5 @@ gem 'rouge'
 #gem 'RedCloth'
 
 # Theme
-gem "minimal-mistakes-jekyll"
+# gem "minimal-mistakes-jekyll"
+
