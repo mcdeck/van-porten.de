@@ -100,9 +100,10 @@ social:
     - "https://twitter.com/mcdeck"
     - "https://facebook.com/ovanporten"
     - "https://github.com/mcdeck"
+    - "https://stackoverflow.com/story/ovanporten"
     - "https://www.linkedin.com/in/ovanporten"
-    - "https://www.xing.com/profile/Oliver_vanPorten"          
-
+    - "https://www.xing.com/profile/Oliver_vanPorten"         
+    
 
 # Analytics
 analytics:
@@ -158,6 +159,12 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mcdeck"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/porten"      
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/542056/mcdeck"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mcdeck"
@@ -182,10 +189,10 @@ footer:
       url: "https://github.com/mcdeck"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://gitlab.com/porten"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/542056/mcdeck"      
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mcdeck"
