@@ -126,7 +126,7 @@ Then created `.env.local` with the `clientId` and `clientSecret` I configured in
 OAUTH_CLIENT_ID=11111111111111
 OAUTH_CLIENT_SECRET=22222222222222222222222222222222222
 REDIRECT_URI=https://auth.example.com/callback/
-ORIGIN=https://www.example.com
+ORIGIN=example.com
 ```
 
 To make Netlify CMs use the new authentication server I only needed to update `admin/config.yml` and add this line
@@ -145,5 +145,7 @@ There are certainly still things to do. For one I need to revisit my code after 
 to revisit my architecture and how I split controller and service because that is not ideal. I would also want to add some tests but have do better
 understand how to do that. 
 
-I will also need to revisit this origin parameter thing in the Javascript code and, last but not least, look at automating deployment - uploading via FTP
+~~I will also need to revisit this origin parameter thing in the Javascript code~~ and, last but not least, look at automating deployment - uploading via FTP
 is too cumbersome for my test.
+
+EDIT: The Javascript is now actually fixed and works corretly, matching regex in ORIGIN against the even origin. I updated the config accordingly.
