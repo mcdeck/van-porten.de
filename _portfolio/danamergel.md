@@ -10,10 +10,16 @@ tags: []
 header: 
   # image: /assets/images/developia_current.png
   teaser: /assets/images/danamergel.png
+  technology:
+  - html
+  - jekyll
+  - css
+  - bootstrap
+
 ---
 
-Home page of Dana Mergel, at [dana-mergel.de](https://www.dana-mergel.de). Dana Mergel is a german author who is just starting here writing career
+Home page of Dana Mergel, at [dana-mergel.de](https://www.dana-mergel.de). Dana Mergel is a german author who is just starting her writing career
 
 ![dana-mergel.de]({{ site.baseurl }}/assets/images/danamergel.png)
 
-The page was built using [Jekyll](https://jekyllrb.com/) and a custom build theme based on [Bootstrap](https://getbootstrap.com/).
+The page was built using [Jekyll](https://jekyllrb.com/) and a custom theme using [Bootstrap](https://getbootstrap.com/).

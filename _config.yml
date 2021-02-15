@@ -357,6 +357,7 @@ defaults:
       path: "_portfolio"
       type: pages
     values:
+      # layout: single
       layout: splash
       read_time: true
       comments: false
