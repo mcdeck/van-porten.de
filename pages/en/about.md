@@ -41,7 +41,7 @@ Professional Experience
 
     * _Senior Principal Software Engineer - TTS Research & Development, since February 2021_    
 
-    Working on novel text-to-speech products in the cloud using Python, Docker, Kubernetes and a variety of other tools and frameworks. 
+      Working on novel text-to-speech products in the cloud using Python, Docker, Kubernetes and a variety of other tools and frameworks. 
 
 *   **Trimplement GmbH**, Cologne, Germany
 
