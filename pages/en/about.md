@@ -19,9 +19,9 @@ My Name is Oliver van Porten. I was born on May 20, 1982 in Cologne, Germany. Yo
 
 *   [Certified SAFe Agilist (SAFe, 2/2018) - expired]({{ site.baseurl }}/assets/documents/2018_01_SAFe.pdf)
 *   [Scrum Alliance CSM Certificate (Scrum Alliance, 3/2013) - expired]({{ site.baseurl }}/assets/documents/Oliver-van-Porten-ScrumAlliance_CSM_Certificate.pdf)
-*   **Languages**: German (mother tongue), English (business fluent)
+*   **Languages**: German (mother tongue), English (business fluent), Dutch (basic)
 *   **Programming languages and Frameworks:** C, C++, Python, Java, C#, Groovy, PHP, LATEX, Django, Grails
-*   **Operating Systems**: Windows, Linux, MaxOS
+*   **Operating Systems**: Windows, Linux, MacOS
 *   **Processes and Tools**: Scrum, Kanban, SAFe, UML
 *   **Other**: Speech recognition and synthesis, Embedded Systems, Web Development, Jenkins, Continuous Integration, Continuous Delivery, Software Testing
 
@@ -30,18 +30,24 @@ A Personal Note
 
 I like to read, mainly [Science Fiction](http://en.wikipedia.org/wiki/Science_fiction), [Cyberpunk](http://en.wikipedia.org/wiki/Cyberpunk) and [Fantasy](http://en.wikipedia.org/wiki/Fantasy). I am a big Terry Pratchett fan, and loved *The Hitchhikers Guide to the Galaxy* by Douglas Adams. As much as I don't want to admit it, I genuinly enjoyed the *Harry Potter* novels by J.K. Rowling. I am very much desperate to read the final volume of *Game of Thrones* and still refuse to watch the TV series.
 
-More recently I have been in what classifies as young adult literature: *Skullduggery Pleasant* by Darek Landy, *Lookwood & Co.* as well as *Bartimaeus* by Jonathan Strout and *The Invisible Library* by Genevieve Cogman. I also enjoed the LitRPG series *Awaken Online* by Travis Bagwell. 
+More recently I have been into what classifies as young adult literature: *Skullduggery Pleasant* by Darek Landy, *Lookwood & Co.* as well as *Bartimaeus* by Jonathan Strout and *The Invisible Library* by Genevieve Cogman. I also enjoyed the LitRPG series *Awaken Online* by Travis Bagwell. 
 
-Reading aside I passionately play Badminton at the [TV Roetgen](http://www.tv-roetgen.de/). A couple of year ago I started learning to play the guitar. I think I am (ever so slowly) improving my skills - mainly thatnks to [my guitar teacher Klaus](https://playtheguitar.de/). I started playing a Dreadnought Western Acoutistic Guitar but have in the meanwhile almost exclusively moved to playing an electric [Epiphone Les Paul Tribute Plus](https://www.musicstore.de/de_DE/EUR/Epiphone-Les-Paul-Tribute-Plus-Midnight-Sapphire/art-GIT0021302-000).
+Reading aside, I passionately play Badminton at the [TV Roetgen](http://www.tv-roetgen.de/). A couple of year ago I started learning to play the guitar. I think I am (ever so slowly) improving my skills - mainly thatnks to [my guitar teacher Klaus](https://playtheguitar.de/). I started playing a Dreadnought Western Acoutistic Guitar but have in the meanwhile almost exclusively moved to playing an electric [Epiphone Les Paul Tribute Plus](https://www.musicstore.de/de_DE/EUR/Epiphone-Les-Paul-Tribute-Plus-Midnight-Sapphire/art-GIT0021302-000).
 
 Professional Experience
 -----------------------
 
+*   **Cerence GmbH** , Aachen,Germany        
+
+    * _Senior Principal Software Engineer - TTS Research & Development, since February 2021_    
+
+    Working on novel text-to-speech products in the cloud using Python, Docker, Kubernetes and a variety of other tools and frameworks. 
+
 *   **Trimplement GmbH**, Cologne, Germany
 
-    * _Senior Software Engineer, as of November 2020_
+    * _Senior Software Engineer, November 2020 - January 2021_
 
-      More soon .. :)
+      Development of E-Wallet solutions using Java, Spring and SpringBoot.
 
 *   **Cerence GmbH** / **Nuance Communications Deutschland GmbH** , Aachen,Germany        
 
