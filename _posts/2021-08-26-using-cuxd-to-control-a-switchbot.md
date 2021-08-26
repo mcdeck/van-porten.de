@@ -1,10 +1,20 @@
 ---
-layout: blog
 title: Using CUxD to control a SwitchBot
+type: post
 date: 2021-08-26T19:35:51.135Z
 published: true
+status: publish
 header:
   teaser: /assets/uploads/img_20210826_213701.jpg
+categories: 
+- smart home
+tags:
+- homematic
+- smart home
+author: Oliver van Porten
+
+excerpt: In this post we are looing at how to set up HomeMatic to be able to control a SwitchBot switch using cuxd.
+
 ---
 
 
