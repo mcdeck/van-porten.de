@@ -48,6 +48,13 @@ Latest entires:
     </div>
 </div>
 
+Dad-On-Tech
+===========
+
+I just started a German technology blog over at [dad-on-tech.com](https://dad-on-tech.com/). I write about
+anything technology related there, from smart home, to toys, to gadgets to anything really that is fun and
+caters to my inner nerd. Check out [my portfolio for more details]({{ site.baseurl }}/portfolio/dadontech/).
+
 YouTube
 =======
 
