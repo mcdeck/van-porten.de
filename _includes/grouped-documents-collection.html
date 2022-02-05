@@ -1,0 +1,37 @@
+{% assign entries = site[include.collection] %}
+
+{% if include.sort_by %}
+  {% assign entries = entries | sort: include.sort_by %}
+{% endif %}
+
+{% if include.sort_order == 'reverse' %}
+  {% assign entries = entries | reverse %}
+{% endif %}
+
+{% if include.group_by %}
+  {% assign groups = entries | group_by: include.group_by | sort: "name" | reverse %}
+
+  {% for group in groups %}
+    <section id="{{ group.name | slugify | downcase }}">
+      <h2 class="cf">{{ group.name | capitalize }}</h2>
+      <div class="entries-{{ include.type }}">
+        {% for post in group.items %}
+          {%- unless post.hidden -%}
+            {% include archive-single.html %}
+          {%- endunless -%}
+        {%endfor%}
+      </div>
+    </section>
+  {%endfor%}
+
+{% else %}
+  <div class="entries-{{ include.type }}">
+  {%- for post in entries -%}
+    {%- unless post.hidden -%}
+      {% include archive-single.html %}
+    {%- endunless -%}
+  {%- endfor -%}
+  </div>
+{% endif %}
+
+

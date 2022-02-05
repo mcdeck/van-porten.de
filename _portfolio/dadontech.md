@@ -18,6 +18,7 @@ excerpt:
   Dad on Tech is my pet project of late. I publish articles 
   about everything tech there. Driven by Hugo and GitHub.
 
+group: web
 ---
 
 > Technologie 💻 und Gadgets 🎮 🤖 für die ganze Familie. Kann Spuren von Spielzeug 🕹️ 🃏 enthalten.

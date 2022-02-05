@@ -11,6 +11,7 @@ header:
   # image: /assets/images/editor-1024x749.png
   teaser: /assets/images/editor-1024x749.png
 
+group: code
 ---
 [Visual REST](https://github.com/mcdeck/visualrest/wiki) is a graphical modelling language for the design of resource-oriented applications. I developed Visual REST as part of my [master's thesis at the University of Hagen](http://deposit.fernuni-hagen.de/2810/) in 2012. It is implemented as an [Eclipse](http://www.eclipse.org/)\-based editor using [Graphiti](http://www.eclipse.org/graphiti/) and enables creation of application models. As of today, code generation is not part of the IDE, though.
 

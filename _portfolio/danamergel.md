@@ -16,6 +16,7 @@ header:
   - css
   - bootstrap
 
+group: web
 ---
 
 Home page of Dana Mergel, at [dana-mergel.de](https://www.dana-mergel.de). Dana Mergel is a german author who is just starting her writing career

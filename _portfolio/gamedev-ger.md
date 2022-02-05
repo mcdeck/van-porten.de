@@ -10,6 +10,8 @@ tags: []
 header: 
   # image: /assets/images/gamedev_ger.png
   teaser: /assets/images/gamedev_ger.png
+
+group: web
 ---
 The homepage for the infamous IRC channel [#gamedev.ger (on euIRC.net)](irc://euirc.net/#gamedev.ger).
 

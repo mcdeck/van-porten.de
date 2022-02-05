@@ -10,6 +10,8 @@ tags: []
 header: 
   # image: /assets/images/developia_current.png
   teaser: /assets/images/ender3tf2sd.png
+
+group: code
 ---
 
 **OctoPrint-Ender3tf2sd** is a simple plugin to make OctoPrint recognize the SD card in your Ender 3 (Pro).

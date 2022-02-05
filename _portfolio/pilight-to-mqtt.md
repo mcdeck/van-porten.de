@@ -11,6 +11,7 @@ header:
   # image: /assets/images/2016-05-15-23_25_54-cmd-python-service.py_-300x178.png
   teaser: /assets/images/2016-05-15-23_25_54-cmd-python-service.py_-300x178.png
 
+group: code
 ---
 
 **pilight2mqtt** passes messages between [pilight](https://www.pilight.org/) and any [mqtt](https://mqtt.org/) broker. What it does is basically talk to the [pilight API](https://manual.pilight.org/en/api#pf1) and broker between an [MQTT](http://mqtt.org/) channel and [pilight](https://www.pilight.org/) that way.
