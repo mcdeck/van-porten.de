@@ -113,7 +113,7 @@ analytics:
   custom_provider        : 'osano_com'
   #custom_provider        : 'cookieconsent_com'
   google:
-    tracking_id          : UA-18665649-3
+    tracking_id          : G-YT3DBFR933
     anonymize_ip         : true # true, false (default)
 
 # using https://www.osano.com/cookieconsent/download/
