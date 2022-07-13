@@ -2,16 +2,15 @@
 <script src="{{ site.cookieconsent.js | absolute_url  }}" data-cfasync="false"></script>
 <script>
 	function loadGAonConsent() {
-		window.ga = window.ga || function () {
-			(ga.q = ga.q || []).push(arguments)
-		};
-		ga.l = +new Date;
-		ga('create', '{{ site.analytics.google.tracking_id }}', 'auto');
-		ga('set', 'anonymizeIp', {{ site.analytics.google.anonymize_ip | default: false }});
-		ga('send', 'pageview');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+
+		gtag('js', new Date());
+		gtag('config', '{{ site.analytics.google.tracking_id }}', { 'anonymize_ip': {{ site.analytics.google.anonymize_ip | default: false }} });		
+
 		var gascript = document.createElement("script");
 		gascript.async = true;
-		gascript.src = "https://www.google-analytics.com/analytics.js";
+		gascript.src = "https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}";
 		document.getElementsByTagName("head")[0].appendChild(gascript, document.getElementsByTagName("head")[0]);
 	}
 
