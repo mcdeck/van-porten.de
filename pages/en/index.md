@@ -64,4 +64,4 @@ I post videos around my DIY activities, development projects as well as let's pl
 Projects and References
 =======================
 
-You can find a curated overview of some of my projects in [my portfolio]({{ site.baseurl }}/portfolio/).
+You can find a curated overview of some of my projects in [my portfolio]({{ site.baseurl }}/portfolio/) and of course on [GitHub](https://github.com/mcdeck).
