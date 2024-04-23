@@ -18,6 +18,9 @@ Deutschland
 Telefon: +49 179 90 60 779  
 E-Mail: oliver@van-porten.de
 
+Steuernummer: 202/5133/1818
+Ust-IdNr. DE365330315
+
 Verantwortlicher für journalistisch-redaktionelle gestaltete Inhalte
 --------------------------------------------------------------------
 
